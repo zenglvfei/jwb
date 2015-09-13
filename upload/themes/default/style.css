@@ -507,7 +507,7 @@ h6 span{float:left; padding-left:15px;}
     color: #ffffff;
 }
 .log li {
-    margin: 7px 10px;
+    margin: 15px 10px;
 }
 .find-job {
     right: -76px;
@@ -525,4 +525,57 @@ h6 span{float:left; padding-left:15px;}
 
 .header-img {
     height: 500px;
+    border: 1px solid #808080;
+}
+.service-phone {
+    color: yellow;
+    height: 40px;
+    line-height: 40px;
+    background: #01A5E4;
+    text-align: right;
+    padding-right: 15px ;
+}
+
+.service-phone .big {
+    font-size: 19px;
+}
+.service-phone .small{
+    font-size: 16px;
+}
+.service-slogan li{
+display: inline-block;
+    width: 24%;
+}
+
+.service-slogan {
+    margin-top: 20px;
+}
+.service-slogan p{
+    text-align: center;
+}
+.service-slogan .img {
+    background: url(images/index.png) no-repeat;
+    width: 140px;
+    height: 112px;
+
+}
+.service-slogan .tip{
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.service-slogan .training{
+    background-position:-10px 2px ;
+
+}
+.service-slogan .heart{
+    background-position:-157px -133px ;
+}
+.service-slogan .quality{
+    background-position:-150px 5px ;
+
+}
+.service-slogan .safe{
+    background-position:-15px -128px ;
+
 }

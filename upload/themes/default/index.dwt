@@ -19,6 +19,32 @@
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 <div class="block clearfix">
+    <div class="header-img"></div>
+    <div class="service-phone">
+        <span class="small">24h服务/</span>
+        <span class="big">400-066-1010</span>
+    </div>
+
+    <div>
+        <ul class="service-slogan">
+            <li>
+                <div class="img training"></div>
+                <p class="tip">全部人员专业培训</p>
+            </li>
+            <li>
+                <div class="img heart"></div>
+                <p class="tip">最贴心的服务标准</p>
+            </li>
+            <li>
+                <div class="img quality"></div>
+                <p class="tip">100%品质保证</p>
+            </li>
+            <li>
+                <div class="img safe"></div>
+                <p class="tip">100%安全保障</p>
+            </li>
+        </ul>
+    </div>
 
 <!-- {if $best_goods} -->
 <!-- {if $cat_rec_sign neq 1} -->

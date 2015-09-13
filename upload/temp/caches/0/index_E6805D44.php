@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:6:{i:0;s:58:"/Users/yeshiquan/gg/ECShop/upload/themes/default/index.dwt";i:1;s:72:"/Users/yeshiquan/gg/ECShop/upload/themes/default/library/page_header.lbi";i:2;s:68:"/Users/yeshiquan/gg/ECShop/upload/themes/default/library/auction.lbi";i:3;s:70:"/Users/yeshiquan/gg/ECShop/upload/themes/default/library/group_buy.lbi";i:4;s:65:"/Users/yeshiquan/gg/ECShop/upload/themes/default/library/help.lbi";i:5;s:72:"/Users/yeshiquan/gg/ECShop/upload/themes/default/library/page_footer.lbi";}s:7:"expires";i:1442135260;s:8:"maketime";i:1442131660;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:6:{i:0;s:58:"/Users/yeshiquan/gg/ECShop/upload/themes/default/index.dwt";i:1;s:72:"/Users/yeshiquan/gg/ECShop/upload/themes/default/library/page_header.lbi";i:2;s:68:"/Users/yeshiquan/gg/ECShop/upload/themes/default/library/auction.lbi";i:3;s:70:"/Users/yeshiquan/gg/ECShop/upload/themes/default/library/group_buy.lbi";i:4;s:65:"/Users/yeshiquan/gg/ECShop/upload/themes/default/library/help.lbi";i:5;s:72:"/Users/yeshiquan/gg/ECShop/upload/themes/default/library/page_footer.lbi";}s:7:"expires";i:1442135334;s:8:"maketime";i:1442131734;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
@@ -33,6 +33,7 @@ var process_request = "正在处理您的请求...";
  </div>
 </div>
 <div class="block clearfix">
+    <div class="header-img"></div>
 <div class="box">
 <div class="box_2 centerPadd">
   <div class="itemTit" id="itemBest">
