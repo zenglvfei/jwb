@@ -1,7 +1,8 @@
 <?php
 // database host
-$db_host   = "123.57.175.101:3306";
-
+/*$db_host   = "123.57.175.101:3306";
+$db_pass   = "";
+$prefix    = "jwb_";*/
 // database name
 $db_name   = "jwb";
 
@@ -9,19 +10,16 @@ $db_name   = "jwb";
 $db_user   = "root";
 
 // database password
-$db_pass   = "";
 
 // table prefix
-$prefix    = "jwb_";
-
 $timezone    = "UTC";
-
 $cookie_path    = "/";
-
 $cookie_domain    = "";
-
 $session = "1440";
 
+$db_host   = "localhost:3306";
+$db_pass   = "689812";
+$prefix    = "ecs_";
 define('EC_CHARSET','utf-8');
 
 define('ADMIN_PATH','admin');
