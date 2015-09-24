@@ -20,6 +20,7 @@ h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p{
 }
 .block{
     width:960px; height:auto;
+    margin: 0 auto;
 }
 .f_l{float:left;}
 .f_r{float:right;}
@@ -628,7 +629,9 @@ display: inline-block;
     margin-top: 20px;
 }
 .header-img .char{
+    margin-left: 43px;
     position: absolute;
+    top: 200px;
 
 }
 .header-img .big{

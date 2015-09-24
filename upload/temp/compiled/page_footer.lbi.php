@@ -1,91 +1,125 @@
 
-<div id="bottomNav" class="box">
- <div class="box_1">
-  <div class="bNavList clearfix">
-   <div class="f_l">
-   <?php if ($this->_var['navigator_list']['bottom']): ?>
-   <?php $_from = $this->_var['navigator_list']['bottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav_0_52503200_1440936257');$this->_foreach['nav_bottom_list'] = array('total' => count($_from), 'iteration' => 0);
-if ($this->_foreach['nav_bottom_list']['total'] > 0):
-    foreach ($_from AS $this->_var['nav_0_52503200_1440936257']):
-        $this->_foreach['nav_bottom_list']['iteration']++;
-?>
-        <a href="<?php echo $this->_var['nav_0_52503200_1440936257']['url']; ?>" <?php if ($this->_var['nav_0_52503200_1440936257']['opennew'] == 1): ?> target="_blank" <?php endif; ?>><?php echo $this->_var['nav_0_52503200_1440936257']['name']; ?></a>
-        <?php if (! ($this->_foreach['nav_bottom_list']['iteration'] == $this->_foreach['nav_bottom_list']['total'])): ?>
-           -
-        <?php endif; ?>
-      <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-  <?php endif; ?>
-   </div>
-   <div class="f_r">
-   <a href="#top"><img src="themes/default/images/bnt_top.gif" /></a> <a href="index.php"><img src="themes/default/images/bnt_home.gif" /></a>
-   </div>
-  </div>
- </div>
+
+<div class="footer-top">
+    <div class="left-img"></div>
+    <div class="right">
+        <div>
+            <span class="down-load-btn">免费下载</span>
+            <span class="android-icon"></span>
+            <span class="apple-icon"></span>
+        </div>
+        <div class="tip">
+            <p>
+                随时随地预订服务
+            </p>
+            <p>
+                把家务交给我们，把时间留给自己
+            </p>
+        </div>
+        <div class="bonus-img">
+
+        </div>
+    </div>
 </div>
+<div class="footer">
 
-<div class="blank"></div>
+    <div class="content">
+        <div class="footer_right">
+            <div class="footer_right_items">
+                <span class="footer_right_title">网站支持</span>
+                <ul>
+                    <li>
+                        <a href="http://www.homeking365.com/footer/store">联系我们</a>
+                    </li>
+                    <li><a href="javascript:olark('api.box.expand');">在线反馈</a>
+                    </li>
+                    <li>
+                        <a href="http://www.homeking365.com/footer/store">线下实体店</a>
+                    </li>
+                    <li><a href="javascript:void(0)">常见问题</a></li>
+                    <li><a href="javascript:void(0)">会员</a></li>
+                </ul>
+            </div>
+            <div class="footer_right_items">
+                <span class="footer_right_title">会员</span>
+                <ul>
+                    <li>
+                        <a href="http://www.homeking365.com/user/center/myOrder">查询订单</a>
+                    </li>
+                    <li>
+                        <a href="http://www.homeking365.com/user/center/serviceOrder">服务订单</a>
+                    </li>
+                    <li>
+                        <a href="http://www.homeking365.com/user/center/accountMoney">账户余额</a>
+                    </li>
+                    <li>
+                        <a href="http://www.homeking365.com/user/center/serviceOrder">账户设置</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_right_items">
+                <span class="footer_right_title">关于我们</span>
+                <ul>
+                    <li>
+                        <a href="http://www.homeking365.com/footer/about">关于好慷</a>
+                    </li>
+                    <li>
+                        <a href="http://www.homeking365.com/footer/story">我们的故事</a>
+                    </li>
+                    <li>
+                        <a href="http://www.homeking365.com/footer/report">媒体报道</a>
+                    </li>
+                    <li><a href="http://www.homeking365.com/news/case">每日案例</a>
+                    </li>
+                    <li><a href="http://www.homeking365.com/news/info">家政资讯</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_right_items">
+                <span class="footer_right_title">加入我们</span>
+                <ul>
+                    <li><a href="http://franchisee.homeking365.com/"
+                           target="_blank">申请城市合作</a></li>
+                    <li><a href="http://www.homeking365.com/footer/job">加入我们</a>
+                    </li>
 
-<div id="footer">
- <div class="text">
- <?php echo $this->_var['copyright']; ?><br />
- <?php echo $this->_var['shop_address']; ?> <?php echo $this->_var['shop_postcode']; ?>
- <?php if ($this->_var['service_phone']): ?>
-      Tel: <?php echo $this->_var['service_phone']; ?>
- <?php endif; ?>
- <?php if ($this->_var['service_email']): ?>
-      E-mail: <?php echo $this->_var['service_email']; ?><br />
- <?php endif; ?>
- <?php $_from = $this->_var['qq']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im');if (count($_from)):
-    foreach ($_from AS $this->_var['im']):
-?>
-      <?php if ($this->_var['im']): ?>
-      <a href="http://wpa.qq.com/msgrd?V=1&amp;Uin=<?php echo $this->_var['im']; ?>&amp;Site=<?php echo $this->_var['shop_name']; ?>&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:<?php echo $this->_var['im']; ?>:4" height="16" border="0" alt="QQ" /> <?php echo $this->_var['im']; ?></a>
-      <?php endif; ?>
-      <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-      <?php $_from = $this->_var['ww']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im');if (count($_from)):
-    foreach ($_from AS $this->_var['im']):
-?>
-      <?php if ($this->_var['im']): ?>
-      <a href="http://amos1.taobao.com/msg.ww?v=2&uid=<?php echo urlencode($this->_var['im']); ?>&s=2" target="_blank"><img src="http://amos1.taobao.com/online.ww?v=2&uid=<?php echo urlencode($this->_var['im']); ?>&s=2" width="16" height="16" border="0" alt="淘宝旺旺" /><?php echo $this->_var['im']; ?></a>
-      <?php endif; ?>
-      <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-      <?php $_from = $this->_var['ym']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im');if (count($_from)):
-    foreach ($_from AS $this->_var['im']):
-?>
-      <?php if ($this->_var['im']): ?>
-      <a href="http://edit.yahoo.com/config/send_webmesg?.target=<?php echo $this->_var['im']; ?>n&.src=pg" target="_blank"><img src="themes/default/images/yahoo.gif" width="18" height="17" border="0" alt="Yahoo Messenger" /> <?php echo $this->_var['im']; ?></a>
-      <?php endif; ?>
-      <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-      <?php $_from = $this->_var['msn']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im');if (count($_from)):
-    foreach ($_from AS $this->_var['im']):
-?>
-      <?php if ($this->_var['im']): ?>
-      <img src="themes/default/images/msn.gif" width="18" height="17" border="0" alt="MSN" /> <a href="msnim:chat?contact=<?php echo $this->_var['im']; ?>"><?php echo $this->_var['im']; ?></a>
-      <?php endif; ?>
-      <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-      <?php $_from = $this->_var['skype']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im');if (count($_from)):
-    foreach ($_from AS $this->_var['im']):
-?>
-      <?php if ($this->_var['im']): ?>
-      <img src="http://mystatus.skype.com/smallclassic/<?php echo urlencode($this->_var['im']); ?>" alt="Skype" /><a href="skype:<?php echo urlencode($this->_var['im']); ?>?call"><?php echo $this->_var['im']; ?></a>
-      <?php endif; ?>
-  <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?><br />
-  <?php if ($this->_var['icp_number']): ?>
-  <?php echo $this->_var['lang']['icp_number']; ?>:<a href="http://www.miibeian.gov.cn/" target="_blank"><?php echo $this->_var['icp_number']; ?></a><br />
-  <?php endif; ?>
-  <?php 
-$k = array (
-  'name' => 'query_info',
-);
-echo $this->_echash . $k['name'] . '|' . serialize($k) . $this->_echash;
-?><br />
-  <?php $_from = $this->_var['lang']['p_y']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'pv');if (count($_from)):
-    foreach ($_from AS $this->_var['pv']):
-?><?php echo $this->_var['pv']; ?><?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?><?php echo $this->_var['licensed']; ?><br />
-    <?php if ($this->_var['stats_code']): ?>
-    <div align="left"><?php echo $this->_var['stats_code']; ?></div>
-    <?php endif; ?>
-    <div align="left"  id="rss"><a href="<?php echo $this->_var['feed_url']; ?>"><img src="themes/default/images/xml_rss2.gif" alt="rss" /></a></div>
- </div>
+                </ul>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+        <div class="copyright">
+            <img src="./北京星级家·初体验-好慷在线_files/tel.png"
+                 alt="好慷家庭服务电话：4008-954-580"><br> ©2014-2015 好慷（厦门）信息技术有限公司
+            homeking365.com 版权所有<br>
+            <a target="_blank" href="http://www.miitbeian.gov.cn/">闽ICP备10018999号</a>
+
+            <div class="none">
+
+                <script src="./北京星级家·初体验-好慷在线_files/z_stat.php"
+                        language="JavaScript"></script>
+                <script src="./北京星级家·初体验-好慷在线_files/core.php" charset="utf-8"
+                        type="text/javascript"></script>
+                <a href="http://www.cnzz.com/stat/website.php?web_id=1254124211"
+                   target="_blank" title="站长统计">站长统计</a>
+
+                <script src="./北京星级家·初体验-好慷在线_files/z_stat(1).php"
+                        language="JavaScript"></script>
+                <script src="./北京星级家·初体验-好慷在线_files/core(1).php" charset="utf-8"
+                        type="text/javascript"></script>
+                <a href="http://www.cnzz.com/stat/website.php?web_id=1254493238"
+                   target="_blank" title="站长统计">站长统计</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var _gtc = _gtc || [];
+        _gtc.push([ "fnSetAccount", "159" ]);
+        var nGtc = document.createElement("script");
+        nGtc.type = "text/javascript";
+        nGtc.async = true;
+        nGtc.src = ("https:" == document.location.protocol ? "https://sslcdn.istreamsche.com"
+                : "http://ga.istreamsche.com")
+        + "/stat/gtc.js";
+        document.getElementsByTagName("head")[0].appendChild(nGtc);
+    </script>
 </div>
-

@@ -1,71 +1,126 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!--底部导航 start-->
-<div id="bottomNav" class="box">
- <div class="box_1">
-  <div class="bNavList clearfix">
-   <div class="f_l">
-   <!-- {if $navigator_list.bottom} -->
-   <!-- {foreach name=nav_bottom_list from=$navigator_list.bottom item=nav} -->
-        <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
-        <!-- {if !$smarty.foreach.nav_bottom_list.last} -->
-           -
-        <!-- {/if} -->
-      <!-- {/foreach} -->
-  <!-- {/if} -->
-   </div>
-   <div class="f_r">
-   <a href="#top"><img src="images/bnt_top.gif" /></a> <a href="../index.php"><img src="images/bnt_home.gif" /></a>
-   </div>
-  </div>
- </div>
-</div>
-<!--底部导航 end-->
-<div class="blank"></div>
-<!--版权 start-->
-<div id="footer">
- <div class="text">
- {$copyright}<br />
- {$shop_address} {$shop_postcode}
- <!-- 客服电话{if $service_phone} -->
-      Tel: {$service_phone}
- <!-- 结束客服电话{/if} -->
- <!-- 邮件{if $service_email} -->
-      E-mail: {$service_email}<br />
- <!-- 结束邮件{/if} -->
- <!-- QQ 号码 {foreach from=$qq item=im} -->
-      <!-- {if $im} -->
-      <a href="http://wpa.qq.com/msgrd?V=1&amp;Uin={$im}&amp;Site={$shop_name}&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:{$im}:4" height="16" border="0" alt="QQ" /> {$im}</a>
-      <!-- {/if} -->
-      <!-- {/foreach} 结束QQ号码 -->
-      <!-- 淘宝旺旺 {foreach from=$ww item=im} -->
-      <!-- {if $im} -->
-      <a href="http://amos1.taobao.com/msg.ww?v=2&uid={$im|escape:u8_url}&s=2" target="_blank"><img src="http://amos1.taobao.com/online.ww?v=2&uid={$im|escape:u8_url}&s=2" width="16" height="16" border="0" alt="淘宝旺旺" />{$im}</a>
-      <!-- {/if} -->
-      <!--{/foreach} 结束淘宝旺旺 -->
-      <!-- Yahoo Messenger {foreach from=$ym item=im} -->
-      <!-- {if $im} -->
-      <a href="http://edit.yahoo.com/config/send_webmesg?.target={$im}n&.src=pg" target="_blank"><img src="../images/yahoo.gif" width="18" height="17" border="0" alt="Yahoo Messenger" /> {$im}</a>
-      <!-- {/if} -->
-      <!-- {/foreach} 结束Yahoo Messenger -->
-      <!-- MSN Messenger {foreach from=$msn item=im} -->
-      <!-- {if $im} -->
-      <img src="../images/msn.gif" width="18" height="17" border="0" alt="MSN" /> <a href="msnim:chat?contact={$im}">{$im}</a>
-      <!-- {/if} -->
-      <!-- {/foreach} 结束MSN Messenger -->
-      <!-- Skype {foreach from=$skype item=im} -->
-      <!-- {if $im} -->
-      <img src="http://mystatus.skype.com/smallclassic/{$im|escape:url}" alt="Skype" /><a href="skype:{$im|escape:url}?call">{$im}</a>
-      <!-- {/if} -->
-  <!-- {/foreach} --><br />
-  <!-- ICP 证书{if $icp_number} -->
-  {$lang.icp_number}:<a href="http://www.miibeian.gov.cn/" target="_blank">{$icp_number}</a><br />
-  <!-- 结束ICP 证书{/if} -->
-  {insert name='query_info'}<br />
-  {foreach from=$lang.p_y item=pv}{$pv}{/foreach}{$licensed}<br />
-    {if $stats_code}
-    <div align="left">{$stats_code}</div>
-    {/if}
-    <div align="left"  id="rss"><a href="{$feed_url}"><img src="../images/xml_rss2.gif" alt="rss" /></a></div>
- </div>
-</div>
 
+<div class="footer-top">
+    <div class="left-img"></div>
+    <div class="right">
+        <div>
+            <span class="down-load-btn">免费下载</span>
+            <span class="android-icon"></span>
+            <span class="apple-icon"></span>
+        </div>
+        <div class="tip">
+            <p>
+                随时随地预订服务
+            </p>
+            <p>
+                把家务交给我们，把时间留给自己
+            </p>
+        </div>
+        <div class="bonus-img">
+
+        </div>
+    </div>
+</div>
+<div class="footer">
+
+    <div class="content">
+        <div class="footer_right">
+            <div class="footer_right_items">
+                <span class="footer_right_title">网站支持</span>
+                <ul>
+                    <li>
+                        <a href="http://www.homeking365.com/footer/store">联系我们</a>
+                    </li>
+                    <li><a href="javascript:olark('api.box.expand');">在线反馈</a>
+                    </li>
+                    <li>
+                        <a href="http://www.homeking365.com/footer/store">线下实体店</a>
+                    </li>
+                    <li><a href="javascript:void(0)">常见问题</a></li>
+                    <li><a href="javascript:void(0)">会员</a></li>
+                </ul>
+            </div>
+            <div class="footer_right_items">
+                <span class="footer_right_title">会员</span>
+                <ul>
+                    <li>
+                        <a href="http://www.homeking365.com/user/center/myOrder">查询订单</a>
+                    </li>
+                    <li>
+                        <a href="http://www.homeking365.com/user/center/serviceOrder">服务订单</a>
+                    </li>
+                    <li>
+                        <a href="http://www.homeking365.com/user/center/accountMoney">账户余额</a>
+                    </li>
+                    <li>
+                        <a href="http://www.homeking365.com/user/center/serviceOrder">账户设置</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_right_items">
+                <span class="footer_right_title">关于我们</span>
+                <ul>
+                    <li>
+                        <a href="http://www.homeking365.com/footer/about">关于好慷</a>
+                    </li>
+                    <li>
+                        <a href="http://www.homeking365.com/footer/story">我们的故事</a>
+                    </li>
+                    <li>
+                        <a href="http://www.homeking365.com/footer/report">媒体报道</a>
+                    </li>
+                    <li><a href="http://www.homeking365.com/news/case">每日案例</a>
+                    </li>
+                    <li><a href="http://www.homeking365.com/news/info">家政资讯</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_right_items">
+                <span class="footer_right_title">加入我们</span>
+                <ul>
+                    <li><a href="http://franchisee.homeking365.com/"
+                           target="_blank">申请城市合作</a></li>
+                    <li><a href="http://www.homeking365.com/footer/job">加入我们</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+        <div class="copyright">
+            <img src="./北京星级家·初体验-好慷在线_files/tel.png"
+                 alt="好慷家庭服务电话：4008-954-580"><br> ©2014-2015 好慷（厦门）信息技术有限公司
+            homeking365.com 版权所有<br>
+            <a target="_blank" href="http://www.miitbeian.gov.cn/">闽ICP备10018999号</a>
+
+            <div class="none">
+
+                <script src="./北京星级家·初体验-好慷在线_files/z_stat.php"
+                        language="JavaScript"></script>
+                <script src="./北京星级家·初体验-好慷在线_files/core.php" charset="utf-8"
+                        type="text/javascript"></script>
+                <a href="http://www.cnzz.com/stat/website.php?web_id=1254124211"
+                   target="_blank" title="站长统计">站长统计</a>
+
+                <script src="./北京星级家·初体验-好慷在线_files/z_stat(1).php"
+                        language="JavaScript"></script>
+                <script src="./北京星级家·初体验-好慷在线_files/core(1).php" charset="utf-8"
+                        type="text/javascript"></script>
+                <a href="http://www.cnzz.com/stat/website.php?web_id=1254493238"
+                   target="_blank" title="站长统计">站长统计</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var _gtc = _gtc || [];
+        _gtc.push([ "fnSetAccount", "159" ]);
+        var nGtc = document.createElement("script");
+        nGtc.type = "text/javascript";
+        nGtc.async = true;
+        nGtc.src = ("https:" == document.location.protocol ? "https://sslcdn.istreamsche.com"
+                : "http://ga.istreamsche.com")
+        + "/stat/gtc.js";
+        document.getElementsByTagName("head")[0].appendChild(nGtc);
+    </script>
+</div>
