@@ -89,8 +89,7 @@
         <div class="clearboth"></div>
         <div class="copyright">
             <img src="./北京星级家·初体验-好慷在线_files/tel.png"
-                 alt="好慷家庭服务电话：4008-954-580"><br> ©2014-2015 好慷（厦门）信息技术有限公司
-            homeking365.com 版权所有<br>
+                 alt="好慷家庭服务电话：4008-954-580"><br> ©2014-2015 家务宝信息技术有限公司 版权所有<br>
             <a target="_blank" href="http://www.miitbeian.gov.cn/">闽ICP备10018999号</a>
 
             <div class="none">
