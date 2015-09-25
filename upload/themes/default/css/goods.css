@@ -1,0 +1,10 @@
+ .good-area-r {
+     width: 960px;
+ }
+ .good-left {
+     width: 390px;
+     display: inline-block;
+ }
+ .good-right{
+     display: inline-block;
+ }
