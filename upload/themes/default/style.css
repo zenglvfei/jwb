@@ -83,7 +83,6 @@ h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p{
 .box_1{border:1px solid #c5e4ff; background-color:#fff;}
 .box_2{ overflow:hidden;
 }
-.boxCenterList{padding:8px;}
 /*模块标题*/
 h3{height:33px; line-height:33px; font-size:12px; background:url(images/h3title.gif) repeat-x left top; text-align:right;
     padding:0 12px; font-weight:100;
@@ -287,11 +286,17 @@ h6 span{float:left; padding-left:15px;}
 .RelaArticle a,.alone{background:url(images/bg.gif) no-repeat 0px -170px; padding:0px 0px 0px 10px; color:#3f3f3f; text-decoration:none;}
 .RelaArticle a:hover{background:url(images/bg.gif) no-repeat 0px -170px; padding:0px 0px 0px 10px; color:#ff6600; text-decoration:none;}
 /*浏览历史，收藏*/
-.history h2{height:26px; line-height:26px; padding:0px 10px 0 20px; text-align:center; font-size:12px;
-    background:url(images/bg.gif) no-repeat 0px -466px; float:left; color:#57a7f0;
+.history h2{
+    height:26px;
+    line-height:56px; padding:0px 10px 0 20px; text-align:center; font-size:12px;
+    float:left; color:#57a7f0;
     margin:6px 5px 0 0; border:1px solid #c5e3ff; border-bottom:none; background-color:#FFFFFF;
+    border: 0;
+    color: #000000;
 }
-.history .h2bg{height:26px; line-height:26px; padding:0px 10px 0 20px; text-align:center; font-size:12px;
+.history .h2bg{height:26px;
+    color: #000000;
+    line-height:56px; padding:0px 10px 0 20px; text-align:center; font-size:12px;
     background:url(images/bg.gif) no-repeat 0px -508px; float:left; color:#a0a0a0;
     margin:6px 5px 0 0; border:none;
 }

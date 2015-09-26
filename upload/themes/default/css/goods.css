@@ -4,7 +4,33 @@
  .good-left {
      width: 390px;
      display: inline-block;
+     float:left;
  }
  .good-right{
      display: inline-block;
+     float:right;
+ }
+ #tab_b {
+     width: 580px;
+     height: 80px;
+     background: #01A5E4;
+ }
+ .good-left .history h2{
+     width: 112px;
+     height: 64px;
+     background: url(../images/icons.png) no-repeat -7px -90px;
+     position: relative;
+     top: 15px;
+     font-size: 14px;
+ }
+ .good-left h3 {
+     height: auto;
+     background: none;
+ }
+ .good-left .history .h2bg {
+     background:none ;
+     color: #000000;
+ }
+ .good-left .good-tab {
+     float: right;
  }

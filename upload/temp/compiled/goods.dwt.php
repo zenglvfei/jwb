@@ -256,14 +256,13 @@ function reg(str){
           </div>
       </div>
   </div>
-  <span>
-      black???
-  </span>
   <div class="good-left">
       <h3 style="padding:0 5px;">
           <div id="tab_b" class="history clearfix">
-              <h2>服务介绍</h2>
-              <h2 class="h2bg">用户点评</h2>
+              <div class="good-tab">
+                  <h2>服务介绍</h2>
+                  <h2 class="h2bg">用户点评</h2>
+              </div>
           </div>
       </h3>
       <div id="tab_v" class="boxCenterList RelaArticle"></div>

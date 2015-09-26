@@ -27,10 +27,17 @@
         <?php if ($this->_var['pager']['styleid'] == 0): ?>
         <div id="pager">
           <?php echo $this->_var['lang']['pager_1']; ?><?php echo $this->_var['pager']['record_count']; ?><?php echo $this->_var['lang']['pager_2']; ?><?php echo $this->_var['lang']['pager_3']; ?><?php echo $this->_var['pager']['page_count']; ?><?php echo $this->_var['lang']['pager_4']; ?> <span> <a href="<?php echo $this->_var['pager']['page_first']; ?>"><?php echo $this->_var['lang']['page_first']; ?></a> <a href="<?php echo $this->_var['pager']['page_prev']; ?>"><?php echo $this->_var['lang']['page_prev']; ?></a> <a href="<?php echo $this->_var['pager']['page_next']; ?>"><?php echo $this->_var['lang']['page_next']; ?></a> <a href="<?php echo $this->_var['pager']['page_last']; ?>"><?php echo $this->_var['lang']['page_last']; ?></a> </span>
-            <?php $_from = $this->_var['pager']['search']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item_0_77146700_1443193963');if (count($_from)):
-    foreach ($_from AS $this->_var['key'] => $this->_var['item_0_77146700_1443193963']):
+<<<<<<< Updated upstream
+            <?php $_from = $this->_var['pager']['search']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item_0_99767700_1443279673');if (count($_from)):
+    foreach ($_from AS $this->_var['key'] => $this->_var['item_0_99767700_1443279673']):
 ?>
-            <input type="hidden" name="<?php echo $this->_var['key']; ?>" value="<?php echo $this->_var['item_0_77146700_1443193963']; ?>" />
+            <input type="hidden" name="<?php echo $this->_var['key']; ?>" value="<?php echo $this->_var['item_0_99767700_1443279673']; ?>" />
+=======
+            <?php $_from = $this->_var['pager']['search']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item_0_46777800_1443279487');if (count($_from)):
+    foreach ($_from AS $this->_var['key'] => $this->_var['item_0_46777800_1443279487']):
+?>
+            <input type="hidden" name="<?php echo $this->_var['key']; ?>" value="<?php echo $this->_var['item_0_46777800_1443279487']; ?>" />
+>>>>>>> Stashed changes
             <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
         </div>
         <?php else: ?>
@@ -40,23 +47,39 @@
           <span class="f_l f6" style="margin-right:10px;"><?php echo $this->_var['lang']['total']; ?> <b><?php echo $this->_var['pager']['record_count']; ?></b> <?php echo $this->_var['lang']['user_comment_num']; ?></span>
           <?php if ($this->_var['pager']['page_first']): ?><a href="<?php echo $this->_var['pager']['page_first']; ?>">1 ...</a><?php endif; ?>
           <?php if ($this->_var['pager']['page_prev']): ?><a class="prev" href="<?php echo $this->_var['pager']['page_prev']; ?>"><?php echo $this->_var['lang']['page_prev']; ?></a><?php endif; ?>
-          <?php $_from = $this->_var['pager']['page_number']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item_0_77161700_1443193963');if (count($_from)):
-    foreach ($_from AS $this->_var['key'] => $this->_var['item_0_77161700_1443193963']):
+<<<<<<< Updated upstream
+          <?php $_from = $this->_var['pager']['page_number']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item_0_99781200_1443279673');if (count($_from)):
+    foreach ($_from AS $this->_var['key'] => $this->_var['item_0_99781200_1443279673']):
+=======
+          <?php $_from = $this->_var['pager']['page_number']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item_0_46793100_1443279487');if (count($_from)):
+    foreach ($_from AS $this->_var['key'] => $this->_var['item_0_46793100_1443279487']):
+>>>>>>> Stashed changes
 ?>
                 <?php if ($this->_var['pager']['page'] == $this->_var['key']): ?>
                 <span class="page_now"><?php echo $this->_var['key']; ?></span>
                 <?php else: ?>
-                <a href="<?php echo $this->_var['item_0_77161700_1443193963']; ?>">[<?php echo $this->_var['key']; ?>]</a>
+<<<<<<< Updated upstream
+                <a href="<?php echo $this->_var['item_0_99781200_1443279673']; ?>">[<?php echo $this->_var['key']; ?>]</a>
+=======
+                <a href="<?php echo $this->_var['item_0_46793100_1443279487']; ?>">[<?php echo $this->_var['key']; ?>]</a>
+>>>>>>> Stashed changes
                 <?php endif; ?>
             <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
 
           <?php if ($this->_var['pager']['page_next']): ?><a class="next" href="<?php echo $this->_var['pager']['page_next']; ?>"><?php echo $this->_var['lang']['page_next']; ?></a><?php endif; ?>
           <?php if ($this->_var['pager']['page_last']): ?><a class="last" href="<?php echo $this->_var['pager']['page_last']; ?>">...<?php echo $this->_var['pager']['page_count']; ?></a><?php endif; ?>
           <?php if ($this->_var['pager']['page_kbd']): ?>
-            <?php $_from = $this->_var['pager']['search']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item_0_77180600_1443193963');if (count($_from)):
-    foreach ($_from AS $this->_var['key'] => $this->_var['item_0_77180600_1443193963']):
+<<<<<<< Updated upstream
+            <?php $_from = $this->_var['pager']['search']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item_0_99954000_1443279673');if (count($_from)):
+    foreach ($_from AS $this->_var['key'] => $this->_var['item_0_99954000_1443279673']):
 ?>
-            <input type="hidden" name="<?php echo $this->_var['key']; ?>" value="<?php echo $this->_var['item_0_77180600_1443193963']; ?>" />
+            <input type="hidden" name="<?php echo $this->_var['key']; ?>" value="<?php echo $this->_var['item_0_99954000_1443279673']; ?>" />
+=======
+            <?php $_from = $this->_var['pager']['search']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item_0_46809000_1443279487');if (count($_from)):
+    foreach ($_from AS $this->_var['key'] => $this->_var['item_0_46809000_1443279487']):
+?>
+            <input type="hidden" name="<?php echo $this->_var['key']; ?>" value="<?php echo $this->_var['item_0_46809000_1443279487']; ?>" />
+>>>>>>> Stashed changes
             <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
             <kbd style="float:left; margin-left:8px; position:relative; bottom:3px;"><input type="text" name="page" onkeydown="if(event.keyCode==13)selectPage(this)" size="3" class="B_blue" /></kbd>
             <?php endif; ?>
@@ -132,10 +155,17 @@
   
 <script type="text/javascript">
 //<![CDATA[
-<?php $_from = $this->_var['lang']['cmt_lang']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item_0_77205100_1443193963');if (count($_from)):
-    foreach ($_from AS $this->_var['key'] => $this->_var['item_0_77205100_1443193963']):
+<<<<<<< Updated upstream
+<?php $_from = $this->_var['lang']['cmt_lang']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item_0_99982700_1443279673');if (count($_from)):
+    foreach ($_from AS $this->_var['key'] => $this->_var['item_0_99982700_1443279673']):
 ?>
-var <?php echo $this->_var['key']; ?> = "<?php echo $this->_var['item_0_77205100_1443193963']; ?>";
+var <?php echo $this->_var['key']; ?> = "<?php echo $this->_var['item_0_99982700_1443279673']; ?>";
+=======
+<?php $_from = $this->_var['lang']['cmt_lang']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item_0_46830900_1443279487');if (count($_from)):
+    foreach ($_from AS $this->_var['key'] => $this->_var['item_0_46830900_1443279487']):
+?>
+var <?php echo $this->_var['key']; ?> = "<?php echo $this->_var['item_0_46830900_1443279487']; ?>";
+>>>>>>> Stashed changes
 <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
 
 /**
