@@ -253,7 +253,7 @@ function reg(str){
       <div id="tab_v" class="boxCenterList RelaArticle"></div>
       <div id="tab_h">
           <blockquote>
-              <img src="{$goods.goods_img}" alt="{$goods.goods_name|escape:html}"/>
+              <img src="{$goods.goods_img}"  class="good-img" alt="{$goods.goods_name|escape:html}"/>
               {$goods.goods_desc}
           </blockquote>
           <blockquote>

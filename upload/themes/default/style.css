@@ -647,3 +647,204 @@ display: inline-block;
     margin-bottom: 13px;
     font-size: 14px;
 }
+.banner {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+
+.banner-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.footer-top {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 200px;
+}
+.footer-top .left-img {
+    display: inline-block;
+    background: url(images/mobile-app.jpg) no-repeat -0px -0px;
+    width: 200px;
+    height: 158px;
+
+}
+.footer-top .right {
+    display: inline-block;
+    width: 200px;
+    float: inherit;
+    margin-left: 50px;
+    vertical-align: top;
+
+}
+.footer-top .down-load-btn{
+    background: #eee;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 5px;
+
+}
+.footer-top .android-icon{
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+    background: url(images/icons.png) no-repeat -2px -2px;
+    width: 31px;
+    height: 36px;
+    top: 10px;
+
+}
+.footer-top .apple-icon{
+    top: 12px;
+    position: relative;
+    display: inline-block;
+    background: url(images/icons.png) no-repeat -45px -2px;
+    width: 38px;
+    height: 38px;
+    margin-left: 10px;
+
+}
+
+.footer-top .tip p {
+    line-height: 30px;
+}
+.footer-top .bonus-img{
+
+}
+.search_content .search_btn {
+    background: url(images/icons.png) no-repeat -6px -44px;
+    width: 30px;
+    height: 27px;
+}
+.logo_content .mobile {
+    top: -29px;
+    float: right;
+    background: url(images/mobile.png) no-repeat -0px -0px;
+    width: 400px;
+    height: 42px;
+    position: relative;
+}
+.logo_content .category-ul {
+}
+.logo_content .category-ul li {
+    height: 20px;
+    font-size: 14px;
+    margin-left: 40px;
+    padding-right: 74px;
+    display: inline-block;
+    line-height: 22px;
+    border-right: 1px solid;
+}
+.logo_content .new-category {
+    width: 743px;
+    top: -28px;
+    position: relative;
+    margin-top: 10px;
+}
+/*footer*/
+.footer {
+    height: 347px;
+    color: #fff;
+    background-color: #008cd7;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: underline
+}
+
+.footer_left, .footer_right {
+    height: 202px;
+    float: left;
+}
+
+.footer_left {
+    padding-left: 30px;
+    text-align: center;
+}
+
+.footer_left .p-a {
+    padding-top: 15px;
+}
+
+.footer_left .p-b a {
+    text-decoration: underline;
+}
+
+.footer_left_title {
+    display: block;
+    font-size: 24px;
+    margin: 30px 0 20px 22px;
+}
+
+.footer_left_title+ span {
+    width: 325px;
+    display: block;
+    margin-left: 22px;
+    line-height: 18px;
+}
+
+.footer_right_items {
+    float: left;
+    margin-left: 52px;
+    width: 87px;
+}
+
+.footer_right_title {
+    font-size: 14px;
+    display: block;
+    margin: 30px 0 20px 0;
+    font-weight: bold;
+}
+
+.footer_right_title+ ul {
+    line-height: 24px;
+}
+
+.copyright {
+    height: 144px;
+    text-align: center;
+    line-height: 18px;
+    color: #8dbfe8;
+    border-top: 1px solid #299fde;
+}
+
+.copyright a {
+    color: #8dbfe8;
+}
+/*placeholder*/
+::-moz-placeholder {
+    color: #9c9c9c;
+}
+
+::-webkit-input-placeholder {
+    color: #9c9c9c;
+}
+
+:-ms-input-placeholder {
+    color: #9c9c9c;
+}
+.header, .nav, .slider_body, .footer {
+    min-width: 960px;
+}
+/*样式*/
+.content {
+    width: 960px;
+    margin: 0 auto;
+}
+.clearboth {
+     height: 0;
+     font-size: 0;
+     clear: both;
+     overflow: hidden;
+     float: none !important;
+     border: none !important;
+     padding: 0 !important;
+ }

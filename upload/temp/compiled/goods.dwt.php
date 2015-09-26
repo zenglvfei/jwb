@@ -268,7 +268,7 @@ function reg(str){
       <div id="tab_v" class="boxCenterList RelaArticle"></div>
       <div id="tab_h">
           <blockquote>
-              <img src="<?php echo $this->_var['goods']['goods_img']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?>"/>
+              <img src="<?php echo $this->_var['goods']['goods_img']; ?>"  class="good-img" alt="<?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?>"/>
               <?php echo $this->_var['goods']['goods_desc']; ?>
           </blockquote>
           <blockquote>

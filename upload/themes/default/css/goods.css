@@ -1,5 +1,7 @@
  .good-area-r {
      width: 960px;
+     border: 1px solid;
+     overflow: hidden;
  }
  .good-left {
      width: 390px;
@@ -7,8 +9,13 @@
      float:left;
  }
  .good-right{
+     width: 373px;
+     border: 1px solid red;
      display: inline-block;
-     float:right;
+     float: right;
+     margin-bottom:-3000px;
+     padding-bottom:3000px;
+     background: #EFEFEF;
  }
  #tab_b {
      width: 580px;
@@ -33,4 +40,23 @@
  }
  .good-left .good-tab {
      float: right;
+ }
+ .good-left .good-img {
+     width: 577px;
+     margin: 10px;
+     border: 2px solid #eee;
+     margin-left: 5px;
+     height: 360px;
+ }
+ .good-left  {
+
+ }
+ .good-left  {
+
+ }
+ .good-left  {
+
+ }
+ .good-left  {
+
  }
