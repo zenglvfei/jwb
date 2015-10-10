@@ -19,7 +19,7 @@ $session = "1440";
 
 $db_host   = "localhost:3306";
 $db_pass   = "689812";
-$prefix    = "ecs_";
+$prefix    = "jwb_";
 define('EC_CHARSET','utf-8');
 
 define('ADMIN_PATH','admin');
@@ -28,6 +28,6 @@ define('AUTH_KEY', 'this is a key');
 
 define('OLD_AUTH_KEY', '');
 
-define('API_TIME', '2015-09-26 15:31:57');
+define('API_TIME', '2015-10-10 13:34:11');
 
 ?>

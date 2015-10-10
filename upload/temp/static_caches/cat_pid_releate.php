@@ -36,7 +36,7 @@ $data = array (
     'show_in_nav' => '0',
     'grade' => '0',
     'sort_order' => '50',
-    'has_children' => '2',
+    'has_children' => '6',
     'goods_num' => 0,
   ),
   3 => 
@@ -206,9 +206,48 @@ $data = array (
     'grade' => '0',
     'sort_order' => '50',
     'has_children' => '0',
-    'goods_num' => 0,
+    'goods_num' => '3',
   ),
   16 => 
+  array (
+    'cat_id' => '22',
+    'cat_name' => '工业清洗',
+    'measure_unit' => '',
+    'parent_id' => '16',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  17 => 
+  array (
+    'cat_id' => '19',
+    'cat_name' => '深度清洁',
+    'measure_unit' => '',
+    'parent_id' => '16',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '10',
+  ),
+  18 => 
+  array (
+    'cat_id' => '20',
+    'cat_name' => '家居洗护',
+    'measure_unit' => '',
+    'parent_id' => '16',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '5',
+  ),
+  19 => 
   array (
     'cat_id' => '17',
     'cat_name' => '小时工',
@@ -220,6 +259,19 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => '2',
+  ),
+  20 => 
+  array (
+    'cat_id' => '21',
+    'cat_name' => '家电清洗',
+    'measure_unit' => '',
+    'parent_id' => '16',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
   ),
 );
 ?>

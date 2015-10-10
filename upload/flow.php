@@ -1,4 +1,5 @@
 <?php
+echo phpinfo();
 
 /**
  * ECSHOP 购物流程

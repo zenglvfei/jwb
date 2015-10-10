@@ -40,6 +40,53 @@ function reg(str){
 }
 
 </script>
+
+
+
+    
+    <script type="text/javascript" id="bdshare_js" data="type=tools"></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">
+        //默认分享内容
+        var share = {
+            "title" : '在外这么多年了，终于有让人值得信赖的保洁服务啦！  家务宝-专业家庭服务预定平台 #<?php echo $this->_var['goods']['goods_style_name']; ?># 预订地址&gt;&gt;',
+            "pic" : '<?php echo $this->_var['goods']['goods_img']; ?>',
+            "url" : '<?php echo $this->_var['goods']['url']; ?>'
+        }
+        try{
+            var shareJson = JSON.parse('');
+            if(shareJson){
+                if(shareJson.text){
+                    share.title = shareJson.text;
+                }
+                if(shareJson.pic){
+                    share.pic = shareJson.pic;
+                }
+            }
+        }catch(err){}
+        window._bd_share_config = {
+            "common" : {
+                "bdStyle" : "1",
+                "bdText" : share.title,
+                "bdPic" : share.pic,
+                "bdUrl" : "<?php echo $this->_var['goods']['url']; ?>"
+            },
+            "share" : {
+                "bdSize" : 16
+            }
+        };
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        var servicesId = 209;
+        var cycle = '60';
+        var nowDate = new Date(1443186323246);
+        var dateSelect = '';
+        var limitNum = '10';
+        var serviceDate;
+        var serviceTime;
+    </script>
+    <?php echo $this->smarty_insert_scripts(array('files'=>'share.js')); ?>
+
+
 </head>
 <body>
 <?php echo $this->fetch('library/page_header.lbi'); ?>
@@ -255,10 +302,12 @@ function reg(str){
               </form>
           </div>
       </div>
+      <?php echo $this->fetch('library/service_quality.lbi'); ?>
   </div>
   <div class="good-left">
       <h3 style="padding:0 5px;">
           <div id="tab_b" class="history clearfix">
+              <div class="name"><?php echo $this->_var['goods']['goods_style_name']; ?></div>
               <div class="good-tab">
                   <h2>服务介绍</h2>
                   <h2 class="h2bg">用户点评</h2>
@@ -269,6 +318,17 @@ function reg(str){
       <div id="tab_h">
           <blockquote>
               <img src="<?php echo $this->_var['goods']['goods_img']; ?>"  class="good-img" alt="<?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?>"/>
+              <div class="share_wrap">
+                  <div class="bdsharebuttonbox bdshare-button-style1-16" data-bd-bind="1443186322580">
+                      <a href="<?php echo $this->_var['goods']['url']; ?>" class="bds_more" data-cmd="more">分享到：</a>
+                      <a href="goods.php?id=<?php echo $this->_var['goods']['id']; ?>" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                      <a href="<?php echo $this->_var['goods']['url']; ?>" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                      <a href="goods.php?id=<?php echo $this->_var['goods']['id']; ?>" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                      <a href="goods.php?id=<?php echo $this->_var['goods']['id']; ?>" class="bds_qq" data-cmd="qq" title="分享到QQ"></a>
+                      <a href="goods.php?id=<?php echo $this->_var['goods']['id']; ?>" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+                  </div>
+              </div>
+
               <?php echo $this->_var['goods']['goods_desc']; ?>
           </blockquote>
           <blockquote>
