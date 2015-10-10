@@ -158,6 +158,8 @@ class cls_mysql
                 $this->platform = 'WINDOWS';
             }
 
+            date_default_timezone_set('PRC');
+
             if ($this->platform == 'OTHER' &&
                 ($dbhost != '.' && strtolower($dbhost) != 'localhost:3306' && $dbhost != '127.0.0.1:3306') ||
                 (PHP_VERSION >= '5.1' && date_default_timezone_get() == 'UTC'))

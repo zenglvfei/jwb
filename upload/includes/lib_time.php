@@ -25,6 +25,7 @@ if (!defined('IN_ECS'))
  */
 function gmtime()
 {
+    date_default_timezone_set('PRC');
     return (time() - date('Z'));
 }
 
