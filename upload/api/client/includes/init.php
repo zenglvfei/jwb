@@ -122,6 +122,32 @@ if ($_CFG['shop_closed'] == 1)
     client_show_message(105);
 }
 
+/**
+ * 取得用户信息
+ * @param   int     $user_id    用户id
+ * @return  array   用户信息
+ */
+function user_info($user_id)
+{
+    $sql = "SELECT * FROM " . $GLOBALS['ecs']->table('users') .
+        " WHERE user_id = '$user_id'";
+    $user = $GLOBALS['db']->getRow($sql);
 
+    unset($user['question']);
+    unset($user['answer']);
+
+    /* 格式化帐户余额 */
+    if ($user)
+    {
+//        if ($user['user_money'] < 0)
+//        {
+//            $user['user_money'] = 0;
+//        }
+        $user['formated_user_money'] = price_format($user['user_money'], false);
+        $user['formated_frozen_money'] = price_format($user['frozen_money'], false);
+    }
+
+    return $user;
+}
 
 ?>

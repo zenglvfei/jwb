@@ -283,10 +283,14 @@ function add_bonus($user_id, $bouns_sn)
  * @param   int         $start          列表起始位置
  * @return  array       $order_list     订单列表
  */
-function get_user_orders($user_id, $num = 10, $start = 0)
+function get_user_orders($user_id, $num = 10, $start = 0,$order_id)
 {
     /* 取得订单列表 */
     $arr    = array();
+    $sql_plus ='';
+    if (isset($order_id)) {
+        $sql_plus =' and x.order_id='.$order_id;
+    }
 
     $sql = "SELECT x.order_id, x.order_sn, x.order_status, x.shipping_status, x.pay_status, x.add_time,
     x.province,x.city,x.district,x.address,x.consignee, y.goods_name ," .
@@ -294,7 +298,7 @@ function get_user_orders($user_id, $num = 10, $start = 0)
             r1.region_name as province_name,r2.region_name as city_name,r3.region_name as district_name".
            " FROM " .$GLOBALS['ecs']->table('order_info') . " as x," .$GLOBALS['ecs']->table('order_goods') . " as y,
            " .$GLOBALS['ecs']->table('region')."as r1, ".$GLOBALS['ecs']->table('region')." as r2,".$GLOBALS['ecs']->table('region')." as r3
-            WHERE user_id = '$user_id' and r1.region_id=province and r2.region_id=city and r3.region_id=district  ORDER BY add_time DESC";
+            WHERE user_id = '$user_id' and r1.region_id=province and r2.region_id=city and r3.region_id=district ".$sql_plus." ORDER BY add_time DESC";
     $res = $GLOBALS['db']->SelectLimit($sql, $num, $start);
 
     while ($row = $GLOBALS['db']->fetchRow($res))
@@ -339,6 +343,7 @@ function get_user_orders($user_id, $num = 10, $start = 0)
                        'order_sn'       => $row['order_sn'],
                        'order_time'     => local_date($GLOBALS['_CFG']['time_format'], $row['add_time']),
                        'order_status'   => $row['order_status'],
+            'pay_status'   => $row['pay_status'],
             'province_name'   => $row['province_name'],
             'city_name'   => $row['city_name'],
             'district_name'   => $row['district_name'],
