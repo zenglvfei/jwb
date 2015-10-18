@@ -7,9 +7,9 @@ function dispatch($post)
     $func_arr = array('GetDomain', 'UserLogin', 'UserRegister', 'AddCategory', 'AddBrand', 'AddGoods',
         'GetCategory', 'GetBrand', 'GetGoods', 'DeleteBrand', 'DeleteCategory', 'DeleteGoods',
         'EditBrand', 'EditCategory', 'EditGoods', 'OrderFrame','GetArea','AddAddress','EditAddress','DelAddress',
-        'GetAddress','GetBonus');
+        'GetAddress','GetBonus','OrderList');
 
-    if (in_array($post['Action'], $func_arr) && function_exists('API_' . $post['Action'])) {
+    if (function_exists('API_' . $post['Action'])) {
         return call_user_func('API_' . $post['Action'], $post);
     } else {
         API_Error();

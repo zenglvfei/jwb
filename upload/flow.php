@@ -1325,16 +1325,7 @@ elseif ($_REQUEST['step'] == 'done')
     include_once('includes/lib_payment.php');
 
     /* 取得购物类型 */
-    $flow_type = isset($_SESSION['flow_type']) ? intval($_SESSION['flow_type']) : CART_GENERAL_GOODS;
-
-    /* 检查购物车中是否有商品 */
-    $sql = "SELECT COUNT(*) FROM " . $ecs->table('cart') .
-        " WHERE session_id = '" . SESS_ID . "' " .
-        "AND parent_id = 0 AND is_gift = 0 AND rec_type = '$flow_type'";
-    if ($db->getOne($sql) == 0)
-    {
-        show_message($_LANG['no_goods_in_cart'], '', '', 'warning');
-    }
+    $flow_type =  CART_GENERAL_GOODS;
 
     /* 检查商品库存 */
     /* 如果使用库存，且下订单时减库存，则减少库存 */
@@ -1375,8 +1366,8 @@ elseif ($_REQUEST['step'] == 'done')
     $_POST['how_oos'] = isset($_POST['how_oos']) ? intval($_POST['how_oos']) : 0;
     $_POST['card_message'] = isset($_POST['card_message']) ? compile_str($_POST['card_message']) : '';
     $_POST['inv_type'] = !empty($_POST['inv_type']) ? compile_str($_POST['inv_type']) : '';
-    $_POST['inv_payee'] = isset($_POST['inv_payee']) ? compile_str($_POST['inv_payee']) : '';
-    $_POST['inv_content'] = isset($_POST['inv_content']) ? compile_str($_POST['inv_content']) : '';
+    $_POST['inv_payee'] = isset($_POST['inv_payee']) ? compile_str($_POST['inv_payee']) : '';  // 发票抬头
+    $_POST['inv_content'] = isset($_POST['inv_content']) ? compile_str($_POST['inv_content']) : ''; // 发票内容
     $_POST['postscript'] = isset($_POST['postscript']) ? compile_str($_POST['postscript']) : '';
 
     $order = array(

@@ -15,6 +15,7 @@
 */
 
 error_reporting(7);
+date_default_timezone_set("PRC");
 
 if (!defined('IN_ECS'))
 {
@@ -45,6 +46,7 @@ if (!function_exists('addslashes_deep'))
     require(ROOT_PATH . 'includes/lib_base.php');
 }
 require(CLIENT_PATH . 'includes/lib_api.php');    // API库文件
+require(CLIENT_PATH . 'includes/goods.php');    // API库文件
 require(CLIENT_PATH . 'includes/order.php');    // API库文件
 require(CLIENT_PATH . 'includes/lib_struct.php'); // 结构库文件
 
