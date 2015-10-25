@@ -68,6 +68,8 @@ define('OS_UNCONFIRMED',            0); // 未确认
 define('OS_CONFIRMED',              1); // 已确认
 define('OS_CANCELED',               2); // 已取消
 define('OS_INVALID',                3); // 无效
+
+
 define('OS_RETURNED',               4); // 退货
 define('OS_SPLITED',                5); // 已分单
 define('OS_SPLITING_PART',          6); // 部分分单

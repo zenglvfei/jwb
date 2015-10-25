@@ -25,80 +25,124 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="lib_api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upload/api/ayiapi/includes/lib_api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.041667" vertical-offset="2312" max-vertical-offset="2850">
+              <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="361">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="order.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload/api/client/includes/order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="480">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/api/client/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="195">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flow.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/flow.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="22590" max-vertical-offset="41385">
-              <caret line="1532" column="0" selection-start-line="1532" selection-start-column="0" selection-end-line="1532" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1455">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding>
-                <element signature="e#23#507#0#PHP" expanded="false" />
-                <marker date="1445145396000" expanded="true" signature="6546:6663" placeholder="SELECT COUNT.._ecs_table_cart_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="8565:8650" placeholder="SELECT COUNT.._ecs_table_cart_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="16056:16224" placeholder="SELECT COUNT.._ecs_table_cart_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="18664:18810" placeholder="SELECT count.._ecs_table_cart_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="49148:49263" placeholder="SELECT shipp.._ecs_table_shipping_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="53684:54277" placeholder="INSERT INTO ..." />
-                <marker date="1445145396000" expanded="true" signature="53957:54233" placeholder="SELECT ':_ne.._ecs_table_cart_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="56369:56624" placeholder="SELECT goods.._GLOBALS_ecs_table_cart_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="62644:62718" placeholder="DELETE FROM ..." />
-                <marker date="1445145396000" expanded="true" signature="62941:63048" placeholder="SELECT goods.._ecs_table_cart_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="63083:63204" placeholder="SELECT goods.._ecs_table_collect_goods_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="63295:63458" placeholder="INSERT INTO ..." />
-                <marker date="1445145396000" expanded="true" signature="72787:72948" placeholder="SELECT produ.._GLOBALS_ecs_table_products_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="73787:74165" placeholder="SELECT b.goo.._GLOBALS_ecs_table_cart_ a..." />
-                <marker date="1445145396000" expanded="true" signature="74540:74752" placeholder="DELETE FROM ..." />
-                <marker date="1445145396000" expanded="true" signature="75925:76129" placeholder="DELETE FROM ..." />
-                <marker date="1445145396000" expanded="true" signature="76212:76327" placeholder="DELETE FROM ..." />
-                <marker date="1445145396000" expanded="true" signature="76414:76516" placeholder="DELETE FROM ..." />
-                <marker date="1445145396000" expanded="true" signature="77958:78117" placeholder="SELECT produ.._GLOBALS_ecs_table_products_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="78962:79033" placeholder="SELECT * FRO.._GLOBALS_ecs_table_cart_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="79198:79357" placeholder="DELETE FROM ..." />
-                <marker date="1445145396000" expanded="true" signature="79539:80054" placeholder="SELECT c.rec.._GLOBALS_ecs_table_cart_ AS..." />
-                <marker date="1445145396000" expanded="true" signature="80376:80584" placeholder="DELETE FROM ..." />
-                <marker date="1445145396000" expanded="true" signature="80669:80828" placeholder="DELETE FROM ..." />
-                <marker date="1445145396000" expanded="true" signature="81061:81524" placeholder="SELECT c.rec.._GLOBALS_ecs_table_cart_ AS..." />
-                <marker date="1445145396000" expanded="true" signature="81795:81972" placeholder="SELECT DISTI.._GLOBALS_ecs_table_cart_&#10;            WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="82622:82760" placeholder="DELETE FROM ..." />
-                <marker date="1445145396000" expanded="true" signature="84688:84785" placeholder="SELECT COUNT.._GLOBALS_ecs_table_goods_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="86246:86340" placeholder="SELECT brand.._GLOBALS_ecs_table_brand_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="86526:86619" placeholder="SELECT cat_n.._GLOBALS_ecs_table_category_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="86802:86896" placeholder="SELECT goods.._GLOBALS_ecs_table_goods_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="88315:88865" placeholder="INSERT INTO ..." />
-                <marker date="1445145396000" expanded="true" signature="88574:88857" placeholder="SELECT ':__S.._GLOBALS_ecs_table_goods_ WHERE..." />
-                <marker date="1445145396000" expanded="true" signature="89123:89551" placeholder="INSERT INTO ..." />
+                <marker date="1445171259000" expanded="true" signature="1193:1379" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/api/client/includes/init.php">
+      <file leaf-file-name="lib_transaction.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upload/includes/lib_transaction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5" vertical-offset="1596" max-vertical-offset="2190">
-              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4695" max-vertical-offset="17040">
+              <caret line="348" column="44" selection-start-line="348" selection-start-column="44" selection-end-line="348" selection-end-column="44" />
               <folding>
-                <marker date="1445155922000" expanded="true" signature="3398:3486" placeholder="SELECT * FRO.._GLOBALS_ecs_table_users_ WHERE..." />
+                <marker date="1445170282000" expanded="true" signature="983:1088" placeholder="SELECT user_.._GLOBALS_ecs_table_users_ WHERE..." />
+                <marker date="1445170282000" expanded="true" signature="3350:3483" placeholder="SELECT rank_.._GLOBALS_ecs_table_user_rank_ WHERE..." />
+                <marker date="1445170282000" expanded="true" signature="5966:6466" placeholder="SELECT addre..GLOBALS_ecs_table_user_address_..." />
+                <marker date="1445170282000" expanded="true" signature="6889:7027" placeholder="SELECT bonus.._GLOBALS_ecs_table_user_bonus_ WHERE..." />
+                <marker date="1445170282000" expanded="false" signature="10755:10764" placeholder="..." />
+                <marker date="1445170282000" expanded="false" signature="11402:11411" placeholder="..." />
+                <marker date="1445170282000" expanded="true" signature="12842:13028" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
+                <marker date="1445170282000" expanded="true" signature="15117:15261" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
+                <marker date="1445170282000" expanded="true" signature="17474:17564" placeholder="SELECT user_.._GLOBALS_ecs_table_user_address_ WHERE..." />
+                <marker date="1445170282000" expanded="true" signature="17712:17794" placeholder="DELETE FROM ..." />
+                <marker date="1445170282000" expanded="true" signature="19631:19738" placeholder="SELECT shipp.._GLOBALS_ecs_table_shipping_ WHERE..." />
+                <marker date="1445170282000" expanded="true" signature="22637:22907" placeholder="SELECT g.goo.._GLOBALS_ecs_table_package_goods_ AS..." />
+                <marker date="1445170282000" expanded="true" signature="24777:24998" placeholder="SELECT order.._GLOBALS_ecs_table_order_info_ WHERE..." />
+                <marker date="1445170282000" expanded="true" signature="25524:25634" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
+                <marker date="1445170282000" expanded="true" signature="27606:27713" placeholder="SELECT produ.._GLOBALS_ecs_table_products_where product_id..." />
+                <marker date="1445170282000" expanded="true" signature="32657:32772" placeholder="DELETE FROM ..." />
+                <marker date="1445170282000" expanded="true" signature="33898:34020" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cls_mysql.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upload/includes/cls_mysql.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="6750" max-vertical-offset="13710">
+              <caret line="485" column="23" selection-start-line="485" selection-start-column="23" selection-end-line="485" selection-end-column="23" />
+              <folding>
+                <marker date="1444486882000" expanded="true" signature="16965:17064" placeholder="INSERT INTO ..." />
+                <marker date="1444486882000" expanded="true" signature="19028:19127" placeholder="INSERT INTO ..." />
+                <marker date="1444486882000" expanded="true" signature="19317:19416" placeholder="INSERT INTO ..." />
+                <marker date="1444486882000" expanded="true" signature="20388:20422" placeholder="SELECT COUNT.._table WHERE..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_superglobals.php" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_superglobals.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="3480">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lib_time.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upload/includes/lib_time.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="2640">
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goods.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upload/api/client/includes/goods.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="8775" max-vertical-offset="9315">
+              <caret line="565" column="41" selection-start-line="565" selection-start-column="41" selection-end-line="565" selection-end-column="41" />
+              <folding>
+                <marker date="1445527466000" expanded="true" signature="25214:25318" placeholder="SELECT * FRO.._GLOBALS_ecs_table_payment_ WHERE..." />
+                <marker date="1445527466000" expanded="true" signature="27632:27737" placeholder="select goods.._GLOBALS_ecs_table_goods_where goods_sn..." />
+                <marker date="1445527466000" expanded="true" signature="27918:27995" placeholder="select paren.._GLOBALS_ecs_table_category_where cat_id..." />
+                <marker date="1445527466000" expanded="true" signature="28082:29023" placeholder="insert into ..." />
+                <marker date="1445527466000" expanded="true" signature="29073:29182" placeholder="select order.._GLOBALS_ecs_table_order_info_ where..." />
+                <marker date="1445527466000" expanded="true" signature="29246:29652" placeholder="insert into ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inc_constant.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upload/includes/inc_constant.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.5" vertical-offset="420" max-vertical-offset="3555">
+              <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,8 +150,8 @@
       <file leaf-file-name="lib_api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload/api/client/includes/lib_api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-409.16666" vertical-offset="9005" max-vertical-offset="20580">
-              <caret line="1255" column="5" selection-start-line="1255" selection-start-column="5" selection-end-line="1255" selection-end-column="5" />
+            <state vertical-scroll-proportion="-8.125" vertical-offset="6435" max-vertical-offset="20580">
+              <caret line="442" column="24" selection-start-line="442" selection-start-column="24" selection-end-line="442" selection-end-column="24" />
               <folding>
                 <marker date="1445005801000" expanded="true" signature="1723:1876" placeholder="SELECT COUNT.._GLOBALS_ecs_table_category_ WHERE..." />
                 <marker date="1445005801000" expanded="true" signature="7391:7477" placeholder="SELECT max(v.._GLOBALS_ecs_table_nav_ WHERE..." />
@@ -140,162 +184,6 @@
                 <marker date="1445005801000" expanded="true" signature="41271:41468" placeholder="INSERT INTO ..." />
                 <marker date="1445005801000" expanded="true" signature="45807:46028" placeholder="insert into ..." />
                 <marker date="1445005801000" expanded="true" signature="50498:50595" placeholder="SELECT addre.._GLOBALS_ecs_table_users_ WHERE..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lib_transaction.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/upload/includes/lib_transaction.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4848485" vertical-offset="5232" max-vertical-offset="17625">
-              <caret line="379" column="0" selection-start-line="379" selection-start-column="0" selection-end-line="379" selection-end-column="0" />
-              <folding>
-                <marker date="1445157523000" expanded="true" signature="983:1088" placeholder="SELECT user_.._GLOBALS_ecs_table_users_ WHERE..." />
-                <marker date="1445157523000" expanded="true" signature="3350:3483" placeholder="SELECT rank_.._GLOBALS_ecs_table_user_rank_ WHERE..." />
-                <marker date="1445157523000" expanded="true" signature="5966:6466" placeholder="SELECT addre..GLOBALS_ecs_table_user_address_..." />
-                <marker date="1445157523000" expanded="true" signature="6889:7027" placeholder="SELECT bonus.._GLOBALS_ecs_table_user_bonus_ WHERE..." />
-                <marker date="1445157523000" expanded="false" signature="10755:10764" placeholder="..." />
-                <marker date="1445157523000" expanded="false" signature="11402:11411" placeholder="..." />
-                <marker date="1445157523000" expanded="true" signature="12842:13028" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
-                <marker date="1445157523000" expanded="true" signature="16093:16237" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
-                <marker date="1445157523000" expanded="true" signature="18450:18540" placeholder="SELECT user_.._GLOBALS_ecs_table_user_address_ WHERE..." />
-                <marker date="1445157523000" expanded="true" signature="18688:18770" placeholder="DELETE FROM ..." />
-                <marker date="1445157523000" expanded="true" signature="20607:20714" placeholder="SELECT shipp.._GLOBALS_ecs_table_shipping_ WHERE..." />
-                <marker date="1445157523000" expanded="true" signature="23613:23883" placeholder="SELECT g.goo.._GLOBALS_ecs_table_package_goods_ AS..." />
-                <marker date="1445157523000" expanded="true" signature="25753:25974" placeholder="SELECT order.._GLOBALS_ecs_table_order_info_ WHERE..." />
-                <marker date="1445157523000" expanded="true" signature="26500:26610" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
-                <marker date="1445157523000" expanded="true" signature="28582:28689" placeholder="SELECT produ.._GLOBALS_ecs_table_products_where product_id..." />
-                <marker date="1445157523000" expanded="true" signature="33633:33748" placeholder="DELETE FROM ..." />
-                <marker date="1445157523000" expanded="true" signature="34874:34996" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inc_constant.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/includes/inc_constant.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625" vertical-offset="825" max-vertical-offset="3525">
-              <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/user.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="13110" max-vertical-offset="41250">
-              <caret line="900" column="11" selection-start-line="900" selection-start-column="11" selection-end-line="900" selection-end-column="11" />
-              <folding>
-                <marker date="1418194820000" expanded="true" signature="2805:2872" placeholder="SELECT value.._ecs_table_shop_config_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="4313:4414" placeholder="SELECT * FRO.._ecs_table_reg_fields_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="7566:7668" placeholder="SELECT id FR.._ecs_table_reg_fields_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="8483:8578" placeholder="INSERT INTO ..." />
-                <marker date="1418194820000" expanded="true" signature="9992:10071" placeholder="SELECT user_.._ecs_table_users_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="15753:15854" placeholder="SELECT * FRO.._ecs_table_reg_fields_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="18185:18287" placeholder="SELECT id FR.._ecs_table_reg_fields_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="18730:18840" placeholder="SELECT * FRO.._ecs_table_reg_extend_info_  WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="19146:19289" placeholder="INSERT INTO ..." />
-                <marker date="1418194820000" expanded="true" signature="22511:22641" placeholder="SELECT user_.._ecs_table_users_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="28493:28572" placeholder="SELECT COUNT.._ecs_table_order_info_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="33475:33549" placeholder="SELECT addre.._ecs_table_users_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="36582:36717" placeholder="SELECT COUNT.._ecs_table_collect_goods_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="37555:37655" placeholder="DELETE FROM ..." />
-                <marker date="1418194820000" expanded="true" signature="38726:38864" placeholder="SELECT COUNT.._ecs_table_feedback_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="38902:39003" placeholder="SELECT * FRO.._ecs_table_order_info_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="39124:39294" placeholder="SELECT COUNT.._ecs_table_feedback_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="40005:40110" placeholder="SELECT COUNT.._ecs_table_comment_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="46861:46991" placeholder="SELECT COUNT.._ecs_table_account_log_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="47320:47483" placeholder="SELECT * FRO.._ecs_table_account_log_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="48657:48783" placeholder="SELECT COUNT.._ecs_table_user_account_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="55084:55168" placeholder="SELECT order.._ecs_table_pay_log_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="57753:57894" placeholder="SELECT COUNT.._GLOBALS_ecs_table_collect_goods_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="58182:58345" placeholder="INSERT INTO ..." />
-                <marker date="1418194820000" expanded="true" signature="59015:59106" placeholder="SELECT user_.._ecs_table_feedback_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="59410:59493" placeholder="DELETE FROM ..." />
-                <marker date="1418194820000" expanded="true" signature="59769:59859" placeholder="DELETE FROM ..." />
-                <marker date="1418194820000" expanded="true" signature="61276:61356" placeholder="SELECT user_.._ecs_table_order_info_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="68503:68582" placeholder="SELECT COUNT.._ecs_table_user_bonus_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="70068:70144" placeholder="SELECT user_.._ecs_table_users_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="70904:71256" placeholder="SELECT count.._ecs_table_order_info_ o..." />
-                <marker date="1418194820000" expanded="true" signature="71280:71785" placeholder="SELECT o.*, .._ecs_table_order_info_ o..." />
-                <marker date="1418194820000" expanded="true" signature="72630:73017" placeholder="SELECT count.._ecs_table_order_info_ o..." />
-                <marker date="1418194820000" expanded="true" signature="73042:73575" placeholder="SELECT o.*, .._ecs_table_order_info_ o..." />
-                <marker date="1418194820000" expanded="true" signature="77744:77814" placeholder="SELECT * FRO.._ecs_table_email_list_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="77949:78044" placeholder="INSERT INTO ..." />
-                <marker date="1418194820000" expanded="true" signature="80875:80942" placeholder="DELETE FROM ..." />
-                <marker date="1418194820000" expanded="true" signature="82300:82466" placeholder="SELECT order.._ecs_table_order_info_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="84830:84927" placeholder="SELECT shipp.._ecs_table_shipping_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="86390:86500" placeholder="SELECT user_.._ecs_table_users_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="90225:90334" placeholder="SELECT user_.._ecs_table_users_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="93337:93447" placeholder="SELECT user_.._ecs_table_users_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="95250:95492" placeholder="INSERT INTO ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="goods.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/api/client/includes/goods.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9230769" vertical-offset="8295" max-vertical-offset="9210">
-              <caret line="563" column="48" selection-start-line="563" selection-start-column="48" selection-end-line="563" selection-end-column="48" />
-              <folding>
-                <marker date="1445156404000" expanded="true" signature="24502:24606" placeholder="SELECT * FRO.._GLOBALS_ecs_table_payment_ WHERE..." />
-                <marker date="1445156404000" expanded="true" signature="26886:27618" placeholder="insert into ..." />
-                <marker date="1445156404000" expanded="true" signature="26886:27640" placeholder="insert into ..." />
-                <marker date="1445156404000" expanded="true" signature="26886:27741" placeholder="insert into ..." />
-                <marker date="1445156404000" expanded="true" signature="27791:27900" placeholder="select order.._GLOBALS_ecs_table_order_info_ where..." />
-                <marker date="1445156404000" expanded="true" signature="27963:28061" placeholder="select goods.._GLOBALS_ecs_table_goods_where goods_sn..." />
-                <marker date="1445156404000" expanded="true" signature="28240:28638" placeholder="insert into ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lib_order.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/includes/lib_order.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.125" vertical-offset="19497" max-vertical-offset="44865">
-              <caret line="1319" column="0" selection-start-line="1319" selection-start-column="0" selection-end-line="1319" selection-end-column="0" />
-              <folding>
-                <marker date="1418194820000" expanded="true" signature="1394:1530" placeholder="SELECT * FRO.._GLOBALS_ecs_table_shipping_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="5971:6079" placeholder="SELECT * FRO.._GLOBALS_ecs_table_payment_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="8047:8061" placeholder="SELECT * FRO..GLOBALS_ecs_table_pack_..." />
-                <marker date="1418194820000" expanded="true" signature="8540:8631" placeholder="SELECT * FRO.._GLOBALS_ecs_table_pack_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="9112:9126" placeholder="SELECT * FRO..GLOBALS_ecs_table_card_..." />
-                <marker date="1418194820000" expanded="true" signature="9605:9696" placeholder="SELECT * FRO.._GLOBALS_ecs_table_card_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="19435:19593" placeholder="SELECT count.._GLOBALS_ecs_table_cart_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="27510:27760" placeholder="SELECT COUNT.._GLOBALS_ecs_table_cart_WHERE session_id..." />
-                <marker date="1418194820000" expanded="true" signature="28158:28316" placeholder="SELECT goods.._GLOBALS_ecs_table_cart_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="28557:28843" placeholder="SELECT count.._GLOBALS_ecs_table_package_goods_ AS..." />
-                <marker date="1418194820000" expanded="true" signature="32329:32498" placeholder="SELECT COUNT.._GLOBALS_ecs_table_cart_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="33114:33208" placeholder="SELECT * FRO.._GLOBALS_ecs_table_products_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="38234:38580" placeholder="SELECT goods.._GLOBALS_ecs_table_cart_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="40240:40344" placeholder="DELETE FROM ..." />
-                <marker date="1418194820000" expanded="true" signature="40518:40640" placeholder="DELETE FROM ..." />
-                <marker date="1418194820000" expanded="true" signature="41780:41872" placeholder="SELECT * FRO.._GLOBALS_ecs_table_users_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="42711:42810" placeholder="SELECT * FRO.._GLOBALS_ecs_table_user_address_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="42986:43091" placeholder="SELECT * FRO.._GLOBALS_ecs_table_user_address_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="44702:44808" placeholder="SELECT order.._GLOBALS_ecs_table_user_bonus_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="49667:49755" placeholder="SELECT attr_.._GLOBALS_ecs_table_goods_attr_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="50242:50345" placeholder="SELECT `good..." />
-                <marker date="1418194820000" expanded="true" signature="52295:52472" placeholder="SELECT COUNT.._GLOBALS_ecs_table_cart_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="52512:52639" placeholder="SELECT COUNT.._GLOBALS_ecs_table_order_goods_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="64410:64494" placeholder="DELETE FROM ..." />
-                <marker date="1418194820000" expanded="true" signature="64633:64714" placeholder="DELETE FROM ..." />
-                <marker date="1418194820000" expanded="true" signature="66637:66874" placeholder="SELECT goods.._GLOBALS_ecs_table_order_goods_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="66930:67168" placeholder="SELECT goods.._GLOBALS_ecs_table_order_goods_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="70129:70148" placeholder="SELECT pay_i..GLOBALS_ecs_table_payment_..." />
-                <marker date="1418194820000" expanded="true" signature="79853:80003" placeholder="INSERT INTO ..." />
-                <marker date="1418194820000" expanded="true" signature="81426:81643" placeholder="DELETE FROM ..." />
-                <marker date="1418194820000" expanded="true" signature="88770:89059" placeholder="SELECT goods.._GLOBALS_ecs_table_cart_ WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="90049:90153" placeholder="DELETE FROM ..." />
-                <marker date="1418194820000" expanded="true" signature="90539:90698" placeholder="SELECT goods.._GLOBALS_ecs_table_package_goods_&#10;            WHERE..." />
-                <marker date="1418194820000" expanded="true" signature="91196:91589" placeholder="SELECT p.pro.._GLOBALS_ecs_table_products_ AS..." />
-                <marker date="1418194820000" expanded="true" signature="91790:92176" placeholder="SELECT g.goo.._GLOBALS_ecs_table_goods_AS g..." />
               </folding>
             </state>
           </provider>
@@ -335,21 +223,28 @@
         <option value="$PROJECT_DIR$/upload/data/config.php" />
         <option value="$PROJECT_DIR$/upload/includes/lib_time.php" />
         <option value="$PROJECT_DIR$/upload/includes/cls_mysql.php" />
-        <option value="$PROJECT_DIR$/upload/api/client/includes/lib_api.php" />
         <option value="$PROJECT_DIR$/upload/user.php" />
         <option value="$PROJECT_DIR$/upload/includes/modules/payment/alipay.php" />
-        <option value="$PROJECT_DIR$/upload/flow.php" />
-        <option value="$PROJECT_DIR$/upload/api/client/includes/init.php" />
-        <option value="$PROJECT_DIR$/upload/api/client/includes/goods.php" />
-        <option value="$PROJECT_DIR$/upload/api/client/includes/order.php" />
         <option value="$PROJECT_DIR$/upload/includes/lib_transaction.php" />
+        <option value="$PROJECT_DIR$/upload/includes/inc_constant.php" />
+        <option value="$PROJECT_DIR$/upload/api/client/includes/order.php" />
+        <option value="$PROJECT_DIR$/upload/api/client/includes/lib_api.php" />
+        <option value="$PROJECT_DIR$/upload/flow.php" />
+        <option value="$PROJECT_DIR$/upload/api/ayi/includes/lib_api.php" />
+        <option value="$PROJECT_DIR$/upload/api/client/includes/init.php" />
+        <option value="$PROJECT_DIR$/upload/api/ayi/includes/init.php" />
+        <option value="$PROJECT_DIR$/upload/api/ayiapi/includes/init.php" />
+        <option value="$PROJECT_DIR$/upload/admin/account_log.php" />
+        <option value="$PROJECT_DIR$/upload/api/client/includes/goods.php" />
+        <option value="$PROJECT_DIR$/upload/api/ayiapi/includes/lib_api.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="705" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -377,7 +272,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -395,89 +289,10 @@
               <option name="myItemId" value="ECShop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -486,12 +301,12 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/lf/haokang" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/upload/api/client/includes" />
       <recent name="$PROJECT_DIR$/upload/api" />
+      <recent name="$PROJECT_DIR$/upload/api/client/includes" />
       <recent name="$PROJECT_DIR$/upload/js" />
       <recent name="$PROJECT_DIR$/upload/themes/default/library" />
       <recent name="$PROJECT_DIR$/upload/themes/default/images" />
@@ -515,15 +330,15 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -542,22 +357,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="705" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.083561644" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32789558" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1631664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13974153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.026101142" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.052202284" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -587,48 +402,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/upload/themes/default/library/recommend_hot.lbi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/js/share.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="603">
-          <caret line="0" column="43" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/themes/default/goods.dwt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6043956" vertical-offset="4440" max-vertical-offset="5850">
-          <caret line="307" column="44" selection-start-line="307" selection-start-column="44" selection-end-line="307" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/themes/default/library/page_header1.lbi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3956044" vertical-offset="477" max-vertical-offset="1155">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/themes/default/index.dwt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="2355">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/goods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.541667" vertical-offset="6239" max-vertical-offset="9285">
-          <caret line="447" column="19" selection-start-line="447" selection-start-column="19" selection-end-line="447" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/goods_script.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.916667" vertical-offset="1829" max-vertical-offset="2295">
@@ -643,13 +416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_superglobals.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="3480">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/upgrade/packages/v2.1.0/structure.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.06" vertical-offset="2527" max-vertical-offset="4320">
@@ -661,7 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-75.625" vertical-offset="0" max-vertical-offset="1965">
           <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,23 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="570">
           <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/includes/lib_time.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2640">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/includes/cls_mysql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="13710">
-          <caret line="166" column="89" selection-start-line="166" selection-start-column="89" selection-end-line="166" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,26 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="10288" max-vertical-offset="30990">
           <caret line="635" column="9" selection-start-line="635" selection-start-column="9" selection-end-line="635" selection-end-column="9" />
-          <folding>
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT speci.._GLOBALS_ecs_table_user_rank_where rank_id..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT rank_.._GLOBALS_ecs_table_user_rank_ WHERE..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT rank_.._GLOBALS_ecs_table_user_rank_ WHERE..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..GLOBALS_ecs_table_category_..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT id, n.._GLOBALS_ecs_table_template_ WHERE..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT cat_n.._GLOBALS_ecs_table_article_cat_ WHERE..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT SUM(o.._GLOBALS_ecs_table_vote_option_ WHERE..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT.._GLOBALS_ecs_table_comment_ WHERE..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO.._GLOBALS_ecs_table_comment_ WHERE..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO.._GLOBALS_ecs_table_comment_ WHERE..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT user_.._GLOBALS_ecs_table_users_WHERE user_id..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT paren.._GLOBALS_ecs_table_article_cat_ WHERE..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT count.._GLOBALS_ecs_table_article_cat_ WHERE..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..GLOBALS_ecs_table_article_cat_..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT libra.._GLOBALS_ecs_table_template_ WHERE..." />
-            <marker date="1440936296000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO.._GLOBALS_ecs_table_nav_&#10;            WHERE..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,7 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="1050">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,15 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="245" max-vertical-offset="2775">
           <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-          <folding>
-            <marker date="1334114180000" expanded="true" signature="-1:-1" placeholder="SELECT `valu..." />
-            <marker date="1334114180000" expanded="true" signature="-1:-1" placeholder="SELECT `good..." />
-            <marker date="1334114180000" expanded="true" signature="-1:-1" placeholder="SELECT `valu..." />
-            <marker date="1334114180000" expanded="true" signature="-1:-1" placeholder="SELECT `valu..." />
-            <marker date="1334114180000" expanded="true" signature="-1:-1" placeholder="SELECT r.reg.._ecs_table_region_ AS..." />
-            <marker date="1334114180000" expanded="true" signature="-1:-1" placeholder="SELECT `ship..." />
-            <marker date="1334114180000" expanded="true" signature="-1:-1" placeholder="SELECT t2.at.._ecs_table_goods_attr_ AS..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,7 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4109" max-vertical-offset="15300">
           <caret line="271" column="9" selection-start-line="271" selection-start-column="9" selection-end-line="271" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,9 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2370">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1334114184000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,7 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -819,11 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4545">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1334114184000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1334114184000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1334114184000" expanded="true" signature="-1:-1" placeholder="SELECT order.._GLOBALS_ecs_table_order_info_WHERE order_id..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,7 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3435">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,10 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3540">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1334114184000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1334114184000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -850,10 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3765">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1334114184000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1334114184000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -861,10 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3345">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1334114184000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1334114184000" expanded="true" signature="-1:-1" placeholder="SELECT order.._GLOBALS_ecs_table_pay_log_ WHERE..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -872,7 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3495">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,9 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="82.083336" vertical-offset="1970" max-vertical-offset="2625">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1334114184000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -890,7 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1470">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="1425">
           <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,7 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.416667" vertical-offset="11234" max-vertical-offset="19380">
           <caret line="775" column="9" selection-start-line="775" selection-start-column="9" selection-end-line="775" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,7 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.416667" vertical-offset="2624" max-vertical-offset="16890">
           <caret line="190" column="9" selection-start-line="190" selection-start-column="9" selection-end-line="190" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.416667" vertical-offset="779" max-vertical-offset="2025">
           <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,9 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45801526" vertical-offset="60" max-vertical-offset="3450">
           <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-          <folding>
-            <marker date="1418194820000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -940,127 +623,171 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.6666665" vertical-offset="27539" max-vertical-offset="41640">
           <caret line="1856" column="9" selection-start-line="1856" selection-start-column="9" selection-end-line="1856" selection-end-column="9" />
-          <folding>
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT regio.._GLOBALS_ecs_table_region_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT confi.._GLOBALS_ecs_table_shipping_area_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT code,.._GLOBALS_ecs_table_shop_config_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT brand.._GLOBALS_ecs_table_brand_ ORDER..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT act_i.._GLOBALS_ecs_table_goods_activity_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT act_i.._GLOBALS_ecs_table_favourable_activity_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT cat_i.._GLOBALS_ecs_table_goods_WHERE goods_id..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT templ.._GLOBALS_ecs_table_mail_templates_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT order.._GLOBALS_ecs_table_order_info_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT goods.._GLOBALS_ecs_table_order_goods_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT goods.._GLOBALS_ecs_table_order_goods_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT.._GLOBALS_ecs_table_virtual_card_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT card_.._GLOBALS_ecs_table_virtual_card_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT order.._GLOBALS_ecs_table_order_info_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT card_.._GLOBALS_ecs_table_virtual_card_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT ext_i..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT a.att.._GLOBALS_ecs_table_attribute_ AS..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT a.att.._GLOBALS_ecs_table_attribute_ AS..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT pg.go.._GLOBALS_ecs_table_package_goods_ AS..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT goods.._GLOBALS_ecs_table_goods_attr_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO.._GLOBALS_ecs_table_products_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT goods.._GLOBALS_ecs_table_goods_attr_ WHERE..." />
-            <marker date="1334114182000" expanded="true" signature="-1:-1" placeholder="SELECT ga.go.._GLOBALS_ecs_table_goods_attr_ AS..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/flow.php">
+    <entry file="file://$PROJECT_DIR$/upload/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="22590" max-vertical-offset="41385">
-          <caret line="1532" column="0" selection-start-line="1532" selection-start-column="0" selection-end-line="1532" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#507#0#PHP" expanded="false" />
-            <marker date="1445145396000" expanded="true" signature="6546:6663" placeholder="SELECT COUNT.._ecs_table_cart_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="8565:8650" placeholder="SELECT COUNT.._ecs_table_cart_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="16056:16224" placeholder="SELECT COUNT.._ecs_table_cart_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="18664:18810" placeholder="SELECT count.._ecs_table_cart_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="49148:49263" placeholder="SELECT shipp.._ecs_table_shipping_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="53684:54277" placeholder="INSERT INTO ..." />
-            <marker date="1445145396000" expanded="true" signature="53957:54233" placeholder="SELECT ':_ne.._ecs_table_cart_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="56369:56624" placeholder="SELECT goods.._GLOBALS_ecs_table_cart_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="62644:62718" placeholder="DELETE FROM ..." />
-            <marker date="1445145396000" expanded="true" signature="62941:63048" placeholder="SELECT goods.._ecs_table_cart_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="63083:63204" placeholder="SELECT goods.._ecs_table_collect_goods_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="63295:63458" placeholder="INSERT INTO ..." />
-            <marker date="1445145396000" expanded="true" signature="72787:72948" placeholder="SELECT produ.._GLOBALS_ecs_table_products_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="73787:74165" placeholder="SELECT b.goo.._GLOBALS_ecs_table_cart_ a..." />
-            <marker date="1445145396000" expanded="true" signature="74540:74752" placeholder="DELETE FROM ..." />
-            <marker date="1445145396000" expanded="true" signature="75925:76129" placeholder="DELETE FROM ..." />
-            <marker date="1445145396000" expanded="true" signature="76212:76327" placeholder="DELETE FROM ..." />
-            <marker date="1445145396000" expanded="true" signature="76414:76516" placeholder="DELETE FROM ..." />
-            <marker date="1445145396000" expanded="true" signature="77958:78117" placeholder="SELECT produ.._GLOBALS_ecs_table_products_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="78962:79033" placeholder="SELECT * FRO.._GLOBALS_ecs_table_cart_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="79198:79357" placeholder="DELETE FROM ..." />
-            <marker date="1445145396000" expanded="true" signature="79539:80054" placeholder="SELECT c.rec.._GLOBALS_ecs_table_cart_ AS..." />
-            <marker date="1445145396000" expanded="true" signature="80376:80584" placeholder="DELETE FROM ..." />
-            <marker date="1445145396000" expanded="true" signature="80669:80828" placeholder="DELETE FROM ..." />
-            <marker date="1445145396000" expanded="true" signature="81061:81524" placeholder="SELECT c.rec.._GLOBALS_ecs_table_cart_ AS..." />
-            <marker date="1445145396000" expanded="true" signature="81795:81972" placeholder="SELECT DISTI.._GLOBALS_ecs_table_cart_&#10;            WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="82622:82760" placeholder="DELETE FROM ..." />
-            <marker date="1445145396000" expanded="true" signature="84688:84785" placeholder="SELECT COUNT.._GLOBALS_ecs_table_goods_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="86246:86340" placeholder="SELECT brand.._GLOBALS_ecs_table_brand_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="86526:86619" placeholder="SELECT cat_n.._GLOBALS_ecs_table_category_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="86802:86896" placeholder="SELECT goods.._GLOBALS_ecs_table_goods_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="88315:88865" placeholder="INSERT INTO ..." />
-            <marker date="1445145396000" expanded="true" signature="88574:88857" placeholder="SELECT ':__S.._GLOBALS_ecs_table_goods_ WHERE..." />
-            <marker date="1445145396000" expanded="true" signature="89123:89551" placeholder="INSERT INTO ..." />
-          </folding>
+        <state vertical-scroll-proportion="-9.375" vertical-offset="13110" max-vertical-offset="41250">
+          <caret line="900" column="11" selection-start-line="900" selection-start-column="11" selection-end-line="900" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload/includes/lib_order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.125" vertical-offset="19497" max-vertical-offset="44865">
-          <caret line="1319" column="0" selection-start-line="1319" selection-start-column="0" selection-end-line="1319" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.5833333" vertical-offset="12193" max-vertical-offset="44865">
+          <caret line="828" column="0" selection-start-line="828" selection-start-column="0" selection-end-line="828" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/api/client/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="195">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/api/ayiapi/includes/lib_struct.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/api/client/includes/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1913" max-vertical-offset="2370">
+          <caret line="161" column="29" selection-start-line="161" selection-start-column="29" selection-end-line="161" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/flow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="24060" max-vertical-offset="41385">
+          <caret line="1631" column="24" selection-start-line="1631" selection-start-column="24" selection-end-line="1631" selection-end-column="24" />
           <folding>
-            <marker date="1418194820000" expanded="true" signature="1394:1530" placeholder="SELECT * FRO.._GLOBALS_ecs_table_shipping_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="5971:6079" placeholder="SELECT * FRO.._GLOBALS_ecs_table_payment_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="8047:8061" placeholder="SELECT * FRO..GLOBALS_ecs_table_pack_..." />
-            <marker date="1418194820000" expanded="true" signature="8540:8631" placeholder="SELECT * FRO.._GLOBALS_ecs_table_pack_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="9112:9126" placeholder="SELECT * FRO..GLOBALS_ecs_table_card_..." />
-            <marker date="1418194820000" expanded="true" signature="9605:9696" placeholder="SELECT * FRO.._GLOBALS_ecs_table_card_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="19435:19593" placeholder="SELECT count.._GLOBALS_ecs_table_cart_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="27510:27760" placeholder="SELECT COUNT.._GLOBALS_ecs_table_cart_WHERE session_id..." />
-            <marker date="1418194820000" expanded="true" signature="28158:28316" placeholder="SELECT goods.._GLOBALS_ecs_table_cart_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="28557:28843" placeholder="SELECT count.._GLOBALS_ecs_table_package_goods_ AS..." />
-            <marker date="1418194820000" expanded="true" signature="32329:32498" placeholder="SELECT COUNT.._GLOBALS_ecs_table_cart_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="33114:33208" placeholder="SELECT * FRO.._GLOBALS_ecs_table_products_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="38234:38580" placeholder="SELECT goods.._GLOBALS_ecs_table_cart_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="40240:40344" placeholder="DELETE FROM ..." />
-            <marker date="1418194820000" expanded="true" signature="40518:40640" placeholder="DELETE FROM ..." />
-            <marker date="1418194820000" expanded="true" signature="41780:41872" placeholder="SELECT * FRO.._GLOBALS_ecs_table_users_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="42711:42810" placeholder="SELECT * FRO.._GLOBALS_ecs_table_user_address_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="42986:43091" placeholder="SELECT * FRO.._GLOBALS_ecs_table_user_address_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="44702:44808" placeholder="SELECT order.._GLOBALS_ecs_table_user_bonus_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="49667:49755" placeholder="SELECT attr_.._GLOBALS_ecs_table_goods_attr_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="50242:50345" placeholder="SELECT `good..." />
-            <marker date="1418194820000" expanded="true" signature="52295:52472" placeholder="SELECT COUNT.._GLOBALS_ecs_table_cart_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="52512:52639" placeholder="SELECT COUNT.._GLOBALS_ecs_table_order_goods_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="64410:64494" placeholder="DELETE FROM ..." />
-            <marker date="1418194820000" expanded="true" signature="64633:64714" placeholder="DELETE FROM ..." />
-            <marker date="1418194820000" expanded="true" signature="66637:66874" placeholder="SELECT goods.._GLOBALS_ecs_table_order_goods_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="66930:67168" placeholder="SELECT goods.._GLOBALS_ecs_table_order_goods_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="70129:70148" placeholder="SELECT pay_i..GLOBALS_ecs_table_payment_..." />
-            <marker date="1418194820000" expanded="true" signature="79853:80003" placeholder="INSERT INTO ..." />
-            <marker date="1418194820000" expanded="true" signature="81426:81643" placeholder="DELETE FROM ..." />
-            <marker date="1418194820000" expanded="true" signature="88770:89059" placeholder="SELECT goods.._GLOBALS_ecs_table_cart_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="90049:90153" placeholder="DELETE FROM ..." />
-            <marker date="1418194820000" expanded="true" signature="90539:90698" placeholder="SELECT goods.._GLOBALS_ecs_table_package_goods_&#10;            WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="91196:91589" placeholder="SELECT p.pro.._GLOBALS_ecs_table_products_ AS..." />
-            <marker date="1418194820000" expanded="true" signature="91790:92176" placeholder="SELECT g.goo.._GLOBALS_ecs_table_goods_AS g..." />
+            <element signature="e#23#507#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/api/ayiapi/includes/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="2340">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/api/ayiapi/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="195">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/includes/lib_time.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="2640">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_superglobals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="3480">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/admin/account_log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7255217" vertical-offset="2563" max-vertical-offset="3225">
+          <caret line="212" column="4" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/includes/cls_mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6750" max-vertical-offset="13710">
+          <caret line="485" column="23" selection-start-line="485" selection-start-column="23" selection-end-line="485" selection-end-column="23" />
+          <folding>
+            <marker date="1444486882000" expanded="true" signature="16965:17064" placeholder="INSERT INTO ..." />
+            <marker date="1444486882000" expanded="true" signature="19028:19127" placeholder="INSERT INTO ..." />
+            <marker date="1444486882000" expanded="true" signature="19317:19416" placeholder="INSERT INTO ..." />
+            <marker date="1444486882000" expanded="true" signature="20388:20422" placeholder="SELECT COUNT.._table WHERE..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/includes/lib_transaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4695" max-vertical-offset="17040">
+          <caret line="348" column="44" selection-start-line="348" selection-start-column="44" selection-end-line="348" selection-end-column="44" />
+          <folding>
+            <marker date="1445170282000" expanded="true" signature="983:1088" placeholder="SELECT user_.._GLOBALS_ecs_table_users_ WHERE..." />
+            <marker date="1445170282000" expanded="true" signature="3350:3483" placeholder="SELECT rank_.._GLOBALS_ecs_table_user_rank_ WHERE..." />
+            <marker date="1445170282000" expanded="true" signature="5966:6466" placeholder="SELECT addre..GLOBALS_ecs_table_user_address_..." />
+            <marker date="1445170282000" expanded="true" signature="6889:7027" placeholder="SELECT bonus.._GLOBALS_ecs_table_user_bonus_ WHERE..." />
+            <marker date="1445170282000" expanded="false" signature="10755:10764" placeholder="..." />
+            <marker date="1445170282000" expanded="false" signature="11402:11411" placeholder="..." />
+            <marker date="1445170282000" expanded="true" signature="12842:13028" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
+            <marker date="1445170282000" expanded="true" signature="15117:15261" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
+            <marker date="1445170282000" expanded="true" signature="17474:17564" placeholder="SELECT user_.._GLOBALS_ecs_table_user_address_ WHERE..." />
+            <marker date="1445170282000" expanded="true" signature="17712:17794" placeholder="DELETE FROM ..." />
+            <marker date="1445170282000" expanded="true" signature="19631:19738" placeholder="SELECT shipp.._GLOBALS_ecs_table_shipping_ WHERE..." />
+            <marker date="1445170282000" expanded="true" signature="22637:22907" placeholder="SELECT g.goo.._GLOBALS_ecs_table_package_goods_ AS..." />
+            <marker date="1445170282000" expanded="true" signature="24777:24998" placeholder="SELECT order.._GLOBALS_ecs_table_order_info_ WHERE..." />
+            <marker date="1445170282000" expanded="true" signature="25524:25634" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
+            <marker date="1445170282000" expanded="true" signature="27606:27713" placeholder="SELECT produ.._GLOBALS_ecs_table_products_where product_id..." />
+            <marker date="1445170282000" expanded="true" signature="32657:32772" placeholder="DELETE FROM ..." />
+            <marker date="1445170282000" expanded="true" signature="33898:34020" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/api/client/includes/goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8775" max-vertical-offset="9315">
+          <caret line="565" column="41" selection-start-line="565" selection-start-column="41" selection-end-line="565" selection-end-column="41" />
+          <folding>
+            <marker date="1445527466000" expanded="true" signature="25214:25318" placeholder="SELECT * FRO.._GLOBALS_ecs_table_payment_ WHERE..." />
+            <marker date="1445527466000" expanded="true" signature="27632:27737" placeholder="select goods.._GLOBALS_ecs_table_goods_where goods_sn..." />
+            <marker date="1445527466000" expanded="true" signature="27918:27995" placeholder="select paren.._GLOBALS_ecs_table_category_where cat_id..." />
+            <marker date="1445527466000" expanded="true" signature="28082:29023" placeholder="insert into ..." />
+            <marker date="1445527466000" expanded="true" signature="29073:29182" placeholder="select order.._GLOBALS_ecs_table_order_info_ where..." />
+            <marker date="1445527466000" expanded="true" signature="29246:29652" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/api/client/includes/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1455">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <marker date="1445171259000" expanded="true" signature="1193:1379" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/includes/inc_constant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.5" vertical-offset="420" max-vertical-offset="3555">
+          <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload/api/client/includes/lib_api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-409.16666" vertical-offset="9005" max-vertical-offset="20580">
-          <caret line="1255" column="5" selection-start-line="1255" selection-start-column="5" selection-end-line="1255" selection-end-column="5" />
+        <state vertical-scroll-proportion="-8.125" vertical-offset="6435" max-vertical-offset="20580">
+          <caret line="442" column="24" selection-start-line="442" selection-start-column="24" selection-end-line="442" selection-end-column="24" />
           <folding>
             <marker date="1445005801000" expanded="true" signature="1723:1876" placeholder="SELECT COUNT.._GLOBALS_ecs_table_category_ WHERE..." />
             <marker date="1445005801000" expanded="true" signature="7391:7477" placeholder="SELECT max(v.._GLOBALS_ecs_table_nav_ WHERE..." />
@@ -1097,131 +824,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/api/client/api.php">
+    <entry file="file://$PROJECT_DIR$/upload/api/ayiapi/includes/lib_api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="195">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state vertical-scroll-proportion="-13.041667" vertical-offset="2312" max-vertical-offset="2850">
+          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/api/client/includes/init.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5" vertical-offset="1596" max-vertical-offset="2190">
-          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding>
-            <marker date="1445155922000" expanded="true" signature="3398:3486" placeholder="SELECT * FRO.._GLOBALS_ecs_table_users_ WHERE..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/api/client/includes/order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="480">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="361">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/includes/inc_constant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="825" max-vertical-offset="3525">
-          <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/api/client/includes/goods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9230769" vertical-offset="8295" max-vertical-offset="9210">
-          <caret line="563" column="48" selection-start-line="563" selection-start-column="48" selection-end-line="563" selection-end-column="48" />
-          <folding>
-            <marker date="1445156404000" expanded="true" signature="24502:24606" placeholder="SELECT * FRO.._GLOBALS_ecs_table_payment_ WHERE..." />
-            <marker date="1445156404000" expanded="true" signature="26886:27618" placeholder="insert into ..." />
-            <marker date="1445156404000" expanded="true" signature="26886:27640" placeholder="insert into ..." />
-            <marker date="1445156404000" expanded="true" signature="26886:27741" placeholder="insert into ..." />
-            <marker date="1445156404000" expanded="true" signature="27791:27900" placeholder="select order.._GLOBALS_ecs_table_order_info_ where..." />
-            <marker date="1445156404000" expanded="true" signature="27963:28061" placeholder="select goods.._GLOBALS_ecs_table_goods_where goods_sn..." />
-            <marker date="1445156404000" expanded="true" signature="28240:28638" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="13110" max-vertical-offset="41250">
-          <caret line="900" column="11" selection-start-line="900" selection-start-column="11" selection-end-line="900" selection-end-column="11" />
-          <folding>
-            <marker date="1418194820000" expanded="true" signature="2805:2872" placeholder="SELECT value.._ecs_table_shop_config_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="4313:4414" placeholder="SELECT * FRO.._ecs_table_reg_fields_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="7566:7668" placeholder="SELECT id FR.._ecs_table_reg_fields_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="8483:8578" placeholder="INSERT INTO ..." />
-            <marker date="1418194820000" expanded="true" signature="9992:10071" placeholder="SELECT user_.._ecs_table_users_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="15753:15854" placeholder="SELECT * FRO.._ecs_table_reg_fields_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="18185:18287" placeholder="SELECT id FR.._ecs_table_reg_fields_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="18730:18840" placeholder="SELECT * FRO.._ecs_table_reg_extend_info_  WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="19146:19289" placeholder="INSERT INTO ..." />
-            <marker date="1418194820000" expanded="true" signature="22511:22641" placeholder="SELECT user_.._ecs_table_users_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="28493:28572" placeholder="SELECT COUNT.._ecs_table_order_info_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="33475:33549" placeholder="SELECT addre.._ecs_table_users_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="36582:36717" placeholder="SELECT COUNT.._ecs_table_collect_goods_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="37555:37655" placeholder="DELETE FROM ..." />
-            <marker date="1418194820000" expanded="true" signature="38726:38864" placeholder="SELECT COUNT.._ecs_table_feedback_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="38902:39003" placeholder="SELECT * FRO.._ecs_table_order_info_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="39124:39294" placeholder="SELECT COUNT.._ecs_table_feedback_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="40005:40110" placeholder="SELECT COUNT.._ecs_table_comment_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="46861:46991" placeholder="SELECT COUNT.._ecs_table_account_log_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="47320:47483" placeholder="SELECT * FRO.._ecs_table_account_log_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="48657:48783" placeholder="SELECT COUNT.._ecs_table_user_account_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="55084:55168" placeholder="SELECT order.._ecs_table_pay_log_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="57753:57894" placeholder="SELECT COUNT.._GLOBALS_ecs_table_collect_goods_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="58182:58345" placeholder="INSERT INTO ..." />
-            <marker date="1418194820000" expanded="true" signature="59015:59106" placeholder="SELECT user_.._ecs_table_feedback_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="59410:59493" placeholder="DELETE FROM ..." />
-            <marker date="1418194820000" expanded="true" signature="59769:59859" placeholder="DELETE FROM ..." />
-            <marker date="1418194820000" expanded="true" signature="61276:61356" placeholder="SELECT user_.._ecs_table_order_info_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="68503:68582" placeholder="SELECT COUNT.._ecs_table_user_bonus_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="70068:70144" placeholder="SELECT user_.._ecs_table_users_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="70904:71256" placeholder="SELECT count.._ecs_table_order_info_ o..." />
-            <marker date="1418194820000" expanded="true" signature="71280:71785" placeholder="SELECT o.*, .._ecs_table_order_info_ o..." />
-            <marker date="1418194820000" expanded="true" signature="72630:73017" placeholder="SELECT count.._ecs_table_order_info_ o..." />
-            <marker date="1418194820000" expanded="true" signature="73042:73575" placeholder="SELECT o.*, .._ecs_table_order_info_ o..." />
-            <marker date="1418194820000" expanded="true" signature="77744:77814" placeholder="SELECT * FRO.._ecs_table_email_list_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="77949:78044" placeholder="INSERT INTO ..." />
-            <marker date="1418194820000" expanded="true" signature="80875:80942" placeholder="DELETE FROM ..." />
-            <marker date="1418194820000" expanded="true" signature="82300:82466" placeholder="SELECT order.._ecs_table_order_info_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="84830:84927" placeholder="SELECT shipp.._ecs_table_shipping_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="86390:86500" placeholder="SELECT user_.._ecs_table_users_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="90225:90334" placeholder="SELECT user_.._ecs_table_users_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="93337:93447" placeholder="SELECT user_.._ecs_table_users_ WHERE..." />
-            <marker date="1418194820000" expanded="true" signature="95250:95492" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/includes/lib_transaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4848485" vertical-offset="5232" max-vertical-offset="17625">
-          <caret line="379" column="0" selection-start-line="379" selection-start-column="0" selection-end-line="379" selection-end-column="0" />
-          <folding>
-            <marker date="1445157523000" expanded="true" signature="983:1088" placeholder="SELECT user_.._GLOBALS_ecs_table_users_ WHERE..." />
-            <marker date="1445157523000" expanded="true" signature="3350:3483" placeholder="SELECT rank_.._GLOBALS_ecs_table_user_rank_ WHERE..." />
-            <marker date="1445157523000" expanded="true" signature="5966:6466" placeholder="SELECT addre..GLOBALS_ecs_table_user_address_..." />
-            <marker date="1445157523000" expanded="true" signature="6889:7027" placeholder="SELECT bonus.._GLOBALS_ecs_table_user_bonus_ WHERE..." />
-            <marker date="1445157523000" expanded="false" signature="10755:10764" placeholder="..." />
-            <marker date="1445157523000" expanded="false" signature="11402:11411" placeholder="..." />
-            <marker date="1445157523000" expanded="true" signature="12842:13028" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
-            <marker date="1445157523000" expanded="true" signature="16093:16237" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
-            <marker date="1445157523000" expanded="true" signature="18450:18540" placeholder="SELECT user_.._GLOBALS_ecs_table_user_address_ WHERE..." />
-            <marker date="1445157523000" expanded="true" signature="18688:18770" placeholder="DELETE FROM ..." />
-            <marker date="1445157523000" expanded="true" signature="20607:20714" placeholder="SELECT shipp.._GLOBALS_ecs_table_shipping_ WHERE..." />
-            <marker date="1445157523000" expanded="true" signature="23613:23883" placeholder="SELECT g.goo.._GLOBALS_ecs_table_package_goods_ AS..." />
-            <marker date="1445157523000" expanded="true" signature="25753:25974" placeholder="SELECT order.._GLOBALS_ecs_table_order_info_ WHERE..." />
-            <marker date="1445157523000" expanded="true" signature="26500:26610" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
-            <marker date="1445157523000" expanded="true" signature="28582:28689" placeholder="SELECT produ.._GLOBALS_ecs_table_products_where product_id..." />
-            <marker date="1445157523000" expanded="true" signature="33633:33748" placeholder="DELETE FROM ..." />
-            <marker date="1445157523000" expanded="true" signature="34874:34996" placeholder="SELECT user_.._GLOBALS_ecs_table_order_info_ WHERE..." />
-          </folding>
         </state>
       </provider>
     </entry>

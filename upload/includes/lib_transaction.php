@@ -378,45 +378,6 @@ function cancel_order($order_id, $user_id = 0)
         return false;
     }
 
-    // 如果用户ID大于0，检查订单是否属于该用户
-    if ($user_id > 0 && $order['user_id'] != $user_id)
-    {
-        $GLOBALS['err'] ->add($GLOBALS['_LANG']['no_priv']);
-
-        return false;
-    }
-
-    // 订单状态只能是“未确认”或“已确认”
-    if ($order['order_status'] != OS_UNCONFIRMED && $order['order_status'] != OS_CONFIRMED)
-    {
-        $GLOBALS['err']->add($GLOBALS['_LANG']['current_os_not_unconfirmed']);
-
-        return false;
-    }
-
-    //订单一旦确认，不允许用户取消
-    if ( $order['order_status'] == OS_CONFIRMED)
-    {
-        $GLOBALS['err']->add($GLOBALS['_LANG']['current_os_already_confirmed']);
-
-        return false;
-    }
-
-    // 发货状态只能是“未发货”
-    if ($order['shipping_status'] != SS_UNSHIPPED)
-    {
-        $GLOBALS['err']->add($GLOBALS['_LANG']['current_ss_not_cancel']);
-
-        return false;
-    }
-
-    // 如果付款状态是“已付款”、“付款中”，不允许取消，要取消和商家联系
-    if ($order['pay_status'] != PS_UNPAYED)
-    {
-        $GLOBALS['err']->add($GLOBALS['_LANG']['current_ps_not_cancel']);
-
-        return false;
-    }
 
     //将用户订单设置为取消
     $sql = "UPDATE ".$GLOBALS['ecs']->table('order_info') ." SET order_status = '".OS_CANCELED."' WHERE order_id = '$order_id'";
