@@ -56,7 +56,7 @@ else
 
 if (defined('DEBUG_MODE') == false)
 {
-    define('DEBUG_MODE', 0);
+    define('DEBUG_MODE', 1);
 }
 
 if (PHP_VERSION >= '5.1' && !empty($timezone))

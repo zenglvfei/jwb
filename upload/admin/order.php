@@ -2521,16 +2521,33 @@ elseif ($_REQUEST['act'] == 'operate')
     }
     $batch          = isset($_REQUEST['batch']); // 是否批处理
     $action_note    = isset($_REQUEST['action_note']) ? trim($_REQUEST['action_note']) : '';
-
-    /* 确认 */
+    $status =1;
     if (isset($_POST['confirm']))
     {
+        $status =4;
         $require_note   = false;
         $action         = $_LANG['op_confirm'];
         $operation      = 'confirm';
+    } else if (isset($_POST['invalid'])) {
+
+        $status =5;
+    }else if (isset($_POST['broadcast'])) {
+
+        $status =8;
+    }else if (isset($_POST['cancelBroadcast'])) {
+
+        $status =5;
     }
+    $sql = "update ".$ecs->table('order_info'). " set order_status = ".$status." WHERE order_id= $order_id";
+
+     $db->query($sql );
+    return;
+
+
+
+
     /* 付款 */
-    elseif (isset($_POST['pay']))
+   if (isset($_POST['pay']))
     {
         /* 检查权限 */
         admin_priv('order_ps_edit');
@@ -2743,13 +2760,6 @@ elseif ($_REQUEST['act'] == 'operate')
         }
         $anonymous      = $order['user_id'] == 0;
     }
-    /* 无效 */
-    elseif (isset($_POST['invalid']))
-    {
-        $require_note   = $_CFG['order_invalid_note'] == 1;
-        $action         = $_LANG['op_invalid'];
-        $operation      = 'invalid';
-    }
     /* 售后 */
     elseif (isset($_POST['after_service']))
     {
@@ -2771,49 +2781,7 @@ elseif ($_REQUEST['act'] == 'operate')
         $operation      = 'return';
 
     }
-    /* 指派 */
-    elseif (isset($_POST['assign']))
-    {
-        /* 取得参数 */
-        $new_agency_id  = isset($_POST['agency_id']) ? intval($_POST['agency_id']) : 0;
-        if ($new_agency_id == 0)
-        {
-            sys_msg($_LANG['js_languages']['pls_select_agency']);
-        }
 
-        /* 查询订单信息 */
-        $order = order_info($order_id);
-
-        /* 如果管理员属于某个办事处，检查该订单是否也属于这个办事处 */
-        $sql = "SELECT agency_id FROM " . $ecs->table('admin_user') . " WHERE user_id = '$_SESSION[admin_id]'";
-        $admin_agency_id = $db->getOne($sql);
-        if ($admin_agency_id > 0)
-        {
-            if ($order['agency_id'] != $admin_agency_id)
-            {
-                sys_msg($_LANG['priv_error']);
-            }
-        }
-
-        /* 修改订单相关所属的办事处 */
-        if ($new_agency_id != $order['agency_id'])
-        {
-            $query_array = array('order_info', // 更改订单表的供货商ID
-                                 'delivery_order', // 更改订单的发货单供货商ID
-                                 'back_order'// 更改订单的退货单供货商ID
-            );
-            foreach ($query_array as $value)
-            {
-                $db->query("UPDATE " . $ecs->table($value) . " SET agency_id = '$new_agency_id' " .
-                    "WHERE order_id = '$order_id'");
-
-            }
-        }
-
-        /* 操作成功 */
-        $links[] = array('href' => 'order.php?act=list&' . list_link_postfix(), 'text' => $_LANG['02_order_list']);
-        sys_msg($_LANG['act_ok'], 0, $links);
-    }
     /* 订单删除 */
     elseif (isset($_POST['remove']))
     {
@@ -2900,153 +2868,7 @@ elseif ($_REQUEST['act'] == 'operate')
         /* 返回 */
         sys_msg($_LANG['tips_back_del'], 0, array(array('href'=>'order.php?act=back_list' , 'text' => $_LANG['return_list'])));
     }
-    /* 批量打印订单 */
-    elseif (isset($_POST['print']))
-    {
-        if (empty($_POST['order_id']))
-        {
-            sys_msg($_LANG['pls_select_order']);
-        }
 
-        /* 赋值公用信息 */
-        $smarty->assign('shop_name',    $_CFG['shop_name']);
-        $smarty->assign('shop_url',     $ecs->url());
-        $smarty->assign('shop_address', $_CFG['shop_address']);
-        $smarty->assign('service_phone',$_CFG['service_phone']);
-        $smarty->assign('print_time',   local_date($_CFG['time_format']));
-        $smarty->assign('action_user',  $_SESSION['admin_name']);
-
-        $html = '';
-        $order_sn_list = explode(',', $_POST['order_id']);
-        foreach ($order_sn_list as $order_sn)
-        {
-            /* 取得订单信息 */
-            $order = order_info(0, $order_sn);
-            if (empty($order))
-            {
-                continue;
-            }
-
-            /* 根据订单是否完成检查权限 */
-            if (order_finished($order))
-            {
-                if (!admin_priv('order_view_finished', '', false))
-                {
-                    continue;
-                }
-            }
-            else
-            {
-                if (!admin_priv('order_view', '', false))
-                {
-                    continue;
-                }
-            }
-
-            /* 如果管理员属于某个办事处，检查该订单是否也属于这个办事处 */
-            $sql = "SELECT agency_id FROM " . $ecs->table('admin_user') . " WHERE user_id = '$_SESSION[admin_id]'";
-            $agency_id = $db->getOne($sql);
-            if ($agency_id > 0)
-            {
-                if ($order['agency_id'] != $agency_id)
-                {
-                    continue;
-                }
-            }
-
-            /* 取得用户名 */
-            if ($order['user_id'] > 0)
-            {
-                $user = user_info($order['user_id']);
-                if (!empty($user))
-                {
-                    $order['user_name'] = $user['user_name'];
-                }
-            }
-
-            /* 取得区域名 */
-            $sql = "SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), " .
-                        "'  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region " .
-                    "FROM " . $ecs->table('order_info') . " AS o " .
-                        "LEFT JOIN " . $ecs->table('region') . " AS c ON o.country = c.region_id " .
-                        "LEFT JOIN " . $ecs->table('region') . " AS p ON o.province = p.region_id " .
-                        "LEFT JOIN " . $ecs->table('region') . " AS t ON o.city = t.region_id " .
-                        "LEFT JOIN " . $ecs->table('region') . " AS d ON o.district = d.region_id " .
-                    "WHERE o.order_id = '$order[order_id]'";
-            $order['region'] = $db->getOne($sql);
-
-            /* 其他处理 */
-            $order['order_time']    = local_date($_CFG['time_format'], $order['add_time']);
-            $order['pay_time']      = $order['pay_time'] > 0 ?
-                local_date($_CFG['time_format'], $order['pay_time']) : $_LANG['ps'][PS_UNPAYED];
-            $order['shipping_time'] = $order['shipping_time'] > 0 ?
-                local_date($_CFG['time_format'], $order['shipping_time']) : $_LANG['ss'][SS_UNSHIPPED];
-            $order['status']        = $_LANG['os'][$order['order_status']] . ',' . $_LANG['ps'][$order['pay_status']] . ',' . $_LANG['ss'][$order['shipping_status']];
-            $order['invoice_no']    = $order['shipping_status'] == SS_UNSHIPPED || $order['shipping_status'] == SS_PREPARING ? $_LANG['ss'][SS_UNSHIPPED] : $order['invoice_no'];
-
-            /* 此订单的发货备注(此订单的最后一条操作记录) */
-            $sql = "SELECT action_note FROM " . $ecs->table('order_action').
-                   " WHERE order_id = '$order[order_id]' AND shipping_status = 1 ORDER BY log_time DESC";
-            $order['invoice_note'] = $db->getOne($sql);
-
-            /* 参数赋值：订单 */
-            $smarty->assign('order', $order);
-
-            /* 取得订单商品 */
-            $goods_list = array();
-            $goods_attr = array();
-            $sql = "SELECT o.*, g.goods_number AS storage, o.goods_attr, IFNULL(b.brand_name, '') AS brand_name " .
-                    "FROM " . $ecs->table('order_goods') . " AS o ".
-                    "LEFT JOIN " . $ecs->table('goods') . " AS g ON o.goods_id = g.goods_id " .
-                    "LEFT JOIN " . $ecs->table('brand') . " AS b ON g.brand_id = b.brand_id " .
-                    "WHERE o.order_id = '$order[order_id]' ";
-            $res = $db->query($sql);
-            while ($row = $db->fetchRow($res))
-            {
-                /* 虚拟商品支持 */
-                if ($row['is_real'] == 0)
-                {
-                    /* 取得语言项 */
-                    $filename = ROOT_PATH . 'plugins/' . $row['extension_code'] . '/languages/common_' . $_CFG['lang'] . '.php';
-                    if (file_exists($filename))
-                    {
-                        include_once($filename);
-                        if (!empty($_LANG[$row['extension_code'].'_link']))
-                        {
-                            $row['goods_name'] = $row['goods_name'] . sprintf($_LANG[$row['extension_code'].'_link'], $row['goods_id'], $order['order_sn']);
-                        }
-                    }
-                }
-
-                $row['formated_subtotal']       = price_format($row['goods_price'] * $row['goods_number']);
-                $row['formated_goods_price']    = price_format($row['goods_price']);
-
-                $goods_attr[] = explode(' ', trim($row['goods_attr'])); //将商品属性拆分为一个数组
-                $goods_list[] = $row;
-            }
-
-            $attr = array();
-            $arr  = array();
-            foreach ($goods_attr AS $index => $array_val)
-            {
-                foreach ($array_val AS $value)
-                {
-                    $arr = explode(':', $value);//以 : 号将属性拆开
-                    $attr[$index][] =  @array('name' => $arr[0], 'value' => $arr[1]);
-                }
-            }
-
-            $smarty->assign('goods_attr', $attr);
-            $smarty->assign('goods_list', $goods_list);
-
-            $smarty->template_dir = '../' . DATA_DIR;
-            $html .= $smarty->fetch('order_print.html') .
-                '<div style="PAGE-BREAK-AFTER:always"></div>';
-        }
-
-        echo $html;
-        exit;
-    }
     /* 去发货 */
     elseif (isset($_POST['to_delivery']))
     {
@@ -4564,6 +4386,33 @@ function operable_list($order)
 {
     /* 取得订单状态、发货状态、付款状态 */
     $os = $order['order_status'];
+    /* 根据状态返回可执行操作 */
+    $list = array();
+    if ($os == 1) {
+        $list['confirm']    = true; // 确认
+        $list['invalid']    = true; // 无效
+        $list['broadcast']    = true; // 派单
+    }
+    // 无效状态
+    else if($os == 5) {
+        $list['confirm']    = true; // 确认
+    }
+    // 确认状态
+    else if($os == 4) {
+        $list['asign']    = true; // 分配
+        $list['broadcast']    = true; // 派单
+    }
+    // 派单中状态
+    else if($os == 8) {
+        $list['cancelBroadcast']    = true;
+    }
+    return $list;
+
+
+
+
+
+
     $ss = $order['shipping_status'];
     $ps = $order['pay_status'];
     /* 取得订单操作权限 */
@@ -5040,11 +4889,13 @@ function order_list()
 
         /* 查询 */
         $sql = "SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid," .
-                    "o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, " .
+                    "o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id,g.goods_name, " .
                     "(" . order_amount_field('o.') . ") AS total_fee, " .
                     "IFNULL(u.user_name, '" .$GLOBALS['_LANG']['anonymous']. "') AS buyer ".
                 " FROM " . $GLOBALS['ecs']->table('order_info') . " AS o " .
-                " LEFT JOIN " .$GLOBALS['ecs']->table('users'). " AS u ON u.user_id=o.user_id ". $where .
+                " LEFT JOIN " .$GLOBALS['ecs']->table('users'). " AS u ON u.user_id=o.user_id
+                 LEFT JOIN " .$GLOBALS['ecs']->table('order_goods'). " AS g ON g.order_id=o.order_id "
+                . $where .
                 " ORDER BY $filter[sort_by] $filter[sort_order] ".
                 " LIMIT " . ($filter['page'] - 1) * $filter['page_size'] . ",$filter[page_size]";
 

@@ -17,10 +17,18 @@ function API_OrderDetail($post) {
     $user_id = $post['user_id'];
     $order_id= $post['order_id'];
 
-    $res = array();
-    $res['MessageCode'] = 200;
-    $res['list'] = get_user_orders($user_id, 1, 0, $order_id);
-    show_json($GLOBALS['json'], $res, true);
+    $sql = "SELECT distinct x.order_id, x.order_sn, x.order_status,  x.add_time,
+    x.province,x.city,x.district,x.address,x.consignee, y.goods_name, y.goods_number, r1.region_name as province_name,x.first_service_time,
+    r2.region_name as city_name,r3.region_name as district_name,goods_amount".
+        " FROM " .$GLOBALS['ecs']->table('order_info') . " as x," .$GLOBALS['ecs']->table('order_goods') . " as y,
+           " .$GLOBALS['ecs']->table('region')."as r1, ".$GLOBALS['ecs']->table('region')." as r2,".$GLOBALS['ecs']->table('region')." as r3
+            WHERE r1.region_id=province and r2.region_id=city and r3.region_id=district
+              and y.order_id = x.order_id and user_id=".$user_id." and x.order_id=".$order_id." ORDER BY add_time DESC";
+    $res= $GLOBALS['db']->getRow($sql);
+    $result = array();
+    $result['MessageCode'] = 200;
+    $result['data'] = $res;
+    show_json($GLOBALS['json'], $result, true);
 }
 
 /**取消订单
@@ -87,5 +95,67 @@ function API_OrderStatusMod($post) {
     );
     update_order($post['order_id'], $arr);
     client_show_message(200, true, "修改订单成功", 0, true, EC_CHARSET);
+}
+
+
+
+function API_GetAyiList($post) {
+    $sqlPlus = '';
+    if (isset($post['work_prefer'])) {
+        $sqlPlus = ' and work_prefer='.$post['work_prefer'];
+    }
+    $order_field =isset($post['order_field'])?$post['order_field']:'add_time';
+
+    $sql = "SELECT `user_id`,`user_name`,`birthday`,`sex`,`home_town`,`province`,`city`,`district`,`detail_address`,
+        `work_type`,`work_prefer`,`real_name`,`id_card_num`,`mobile`  FROM " .$GLOBALS['ecs']->table('ayi_users') . " as x
+          WHERE validate_status=1 ".$sqlPlus." ORDER BY birthday DESC";
+
+    $res= $GLOBALS['db']->getAll($sql);
+    $result = array();
+    $result['MessageCode'] = 200;
+    $result['list'] = $res;
+    show_json($GLOBALS['json'], $result, true);
+}
+
+
+function API_GetCurOrder($post) {
+    $sqlPlus = '';
+    if (!(isset($post['user_id']))) {
+        client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
+    }
+    $sqlPlus = ' and (order_status!=64 and order_status!=70  and order_status!=80 )';
+    $sql = "SELECT distinct x.order_id, x.order_sn, x.order_status,  x.add_time,
+    x.province,x.city,x.district,x.address,x.consignee, y.goods_name , r1.region_name as province_name,x.first_service_time,
+    r2.region_name as city_name,r3.region_name as district_name,goods_amount".
+        " FROM " .$GLOBALS['ecs']->table('order_info') . " as x," .$GLOBALS['ecs']->table('order_goods') . " as y,
+           " .$GLOBALS['ecs']->table('region')."as r1, ".$GLOBALS['ecs']->table('region')." as r2,".$GLOBALS['ecs']->table('region')." as r3
+            WHERE r1.region_id=province and r2.region_id=city and r3.region_id=district
+              and y.order_id = x.order_id and user_id=".$post['user_id'].$sqlPlus." ORDER BY add_time DESC";
+
+    $res= $GLOBALS['db']->getAll($sql);
+    $result = array();
+    $result['MessageCode'] = 200;
+    $result['list'] = $res;
+    show_json($GLOBALS['json'], $result, true);
+}
+function API_GetHistoryOrder($post) {
+    $sqlPlus = '';
+    if (!(isset($post['user_id']))) {
+        client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
+    }
+    $sqlPlus = ' and (order_status=64 or order_status=70  or order_status =80 )';
+    $sql = "SELECT distinct x.order_id, x.order_sn, x.order_status, x.add_time,
+    x.province,x.city,x.district,x.address,x.consignee, y.goods_name , r1.region_name as province_name,x.first_service_time,
+    r2.region_name as city_name,r3.region_name as district_name,goods_amount".
+        " FROM " .$GLOBALS['ecs']->table('order_info') . " as x," .$GLOBALS['ecs']->table('order_goods') . " as y,
+           " .$GLOBALS['ecs']->table('region')."as r1, ".$GLOBALS['ecs']->table('region')." as r2,".$GLOBALS['ecs']->table('region')." as r3
+            WHERE r1.region_id=province and r2.region_id=city and r3.region_id=district
+              and y.order_id = x.order_id and user_id=".$post['user_id'].$sqlPlus." ORDER BY add_time DESC";
+
+    $res= $GLOBALS['db']->getAll($sql);
+    $result = array();
+    $result['MessageCode'] = 200;
+    $result['list'] = $res;
+    show_json($GLOBALS['json'], $result, true);
 }
 ?>

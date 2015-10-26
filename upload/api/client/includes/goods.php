@@ -31,7 +31,7 @@ function API_OrderFrame($post) {
 
             doOrder($goods_sn, $serviceTime, $common['province'], $common['city'], $common['district'], $common['detailAddress'], $good_attr_id,
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
 
         //小时工 40
@@ -56,7 +56,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $serviceTime, $common['province'], $common['city'], $common['district'], $common['detailAddress'], $tip,
                 '', $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
 
         case '010201':
@@ -72,7 +72,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, 1, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
 
         // 深度清洁-二居1卫
@@ -83,7 +83,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, 1, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 深度清洁-二居2卫
         case '010303':
@@ -93,7 +93,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, 1, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 深度清洁-三居1卫
         case '010304':
@@ -103,7 +103,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, 1, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 深度清洁-三居2卫
         case '010311':
@@ -113,7 +113,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, 1, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 深度清洁-4居3卫
         case '010306':
@@ -123,7 +123,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, 1, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 深度清洁-4居以上
         case '010309':
@@ -134,7 +134,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 深度清洁-新居开荒
         case '010312':
@@ -145,7 +145,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 单独卫生间
         case '010307':
@@ -155,7 +155,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, 1, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 单独厨房
         case '010308':
@@ -165,7 +165,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, 1, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
 
 
@@ -184,7 +184,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],$price,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],$price,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
 
         // 石材抛光
@@ -197,7 +197,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
 
         // 清除甲醛
@@ -210,7 +210,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 除螨加香
         case '010406':
@@ -222,7 +222,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 皮沙发护理
         case '010407':
@@ -244,7 +244,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], $good_attr_id,
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 洗玻璃
         case '010410':
@@ -256,7 +256,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
 
 
@@ -280,7 +280,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], $good_attr_id,
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 冰箱除臭
         case '010502':
@@ -292,7 +292,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         //灯具清洗
         case '010503':
@@ -304,7 +304,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         //微波炉清洗
         case '010504':
@@ -316,7 +316,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         //电烤箱清洗
         case '010506':
@@ -328,7 +328,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         //油烟机清洗
         case '010507':
@@ -350,7 +350,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], $good_attr_id,
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
 
 
@@ -365,7 +365,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 大型拓荒
         case '010602':
@@ -377,7 +377,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 保洁托管
         case '010603':
@@ -402,7 +402,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], $good_attr_id,
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 绿化养护
         case '010604':
@@ -414,7 +414,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 化粪池处理
         case '010605':
@@ -426,7 +426,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 油烟管道
         case '010606':
@@ -438,7 +438,7 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
         // 中央空调
         case '010607':
@@ -450,7 +450,60 @@ function API_OrderFrame($post) {
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
+            break;
+
+        // 
+        case '020001':
+            $common = getCommonOrderInfo($post);
+            $good_attr_name = '';
+            $goodNum= isset($post['goodNum']) ? intval($post['goodNum']) : 1;
+            $goods_amount = 0;
+            $order_amount = $goods_amount;
+            doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
+                $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],
+                $common['pay_type'],$common['plan_ayi']);
+            break;
+        case '020002':
+            $common = getCommonOrderInfo($post);
+            $good_attr_name = '';
+            $goodNum= isset($post['goodNum']) ? intval($post['goodNum']) : 1;
+            $goods_amount = 0;
+            $order_amount = $goods_amount;
+            doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
+                $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
+            break;
+        case '020003':
+            $common = getCommonOrderInfo($post);
+            $good_attr_name = '';
+            $goodNum= isset($post['goodNum']) ? intval($post['goodNum']) : 1;
+            $goods_amount = 0;
+            $order_amount = $goods_amount;
+            doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
+                $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
+            break;
+        case '020004':
+            $common = getCommonOrderInfo($post);
+            $good_attr_name = '';
+            $goodNum= isset($post['goodNum']) ? intval($post['goodNum']) : 1;
+            $goods_amount = 0;
+            $order_amount = $goods_amount;
+            doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
+                $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
+            break;
+        case '020005':
+            $common = getCommonOrderInfo($post);
+            $good_attr_name = '';
+            $goodNum= isset($post['goodNum']) ? intval($post['goodNum']) : 1;
+            $goods_amount = 0;
+            $order_amount = $goods_amount;
+            doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
+                $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
     }
 
@@ -470,6 +523,7 @@ function getCommonOrderInfo($post,$goodType=1) {
     $res['firstServiceTime']= isset($post['firstServiceTime']) ? trim($post['firstServiceTime']) : '';
     $res['pay_id']= isset($post['pay_id']) ? trim($post['pay_id']) : '1';
     $res['pay_type']= isset($post['pay_type']) ? trim($post['pay_type']) : '1';
+    $res['plan_ayi']= isset($post['plan_ayi']) ? trim($post['plan_ayi']) : '';
     return $res;
 }
 
@@ -520,7 +574,7 @@ function payment_info($pay_id)
 
 function doOrder($goods_sn, $serviceTime, $province, $city, $district, $detailAddress, $good_attr_id,
                        $good_attr_name, $leaveword,$firstServiceTime, $user_id,$goods_amount,$order_amount,$consignee,$mobile,$price=-1,
-      $pay_id,$pay_type
+      $pay_id,$pay_type,$plan_ayi
 )
 {
     $order['order_sn'] = get_order_sn();
@@ -588,13 +642,13 @@ function doOrder($goods_sn, $serviceTime, $province, $city, $district, $detailAd
     $sql = "insert into " . $GLOBALS['ecs']->table('order_info') .
         "(order_sn,user_id,province,city,district,address,order_status,pay_status,postscript,country,
         first_service_time,add_time,goods_amount,order_amount,shipping_id,shipping_name,pay_id,pay_name,
-        referer,consignee,mobile,surplus,pay_type,cat_id) values('" .
+        referer,consignee,mobile,surplus,pay_type,cat_id,plan_ayi) values('" .
         $order['order_sn'] . "'," . $order['user_id'] . "," . $order['province'] . "," . $order['city'] . "," . $order['district']
         . ",'" . $order['detailAddress'] . "'," .
         $order['order_status'] . "," . $order['pay_status'] . ",'" . $order['leaveword'] . "',1,"
         . $order['firstServiceTime'] . "," . $order['addTime'] . "," . $order['goods_amount'] . "," . $order['order_amount']
         . ",8,'上门服务',".$order['pay_id'].",'".$order['pay_name']."','app','".$order['consignee']."','".$order['mobile']
-        ."',".$order['surplus'].",".$order['pay_type']."," . $catrow['parent_id'] . ")";
+        ."',".$order['surplus'].",".$order['pay_type']."," . $catrow['parent_id'] . ",'".$plan_ayi."')";
 
     $GLOBALS['db']->query($sql);
 

@@ -1284,6 +1284,7 @@ function read_static_cache($cache_name)
  */
 function write_static_cache($cache_name, $caches)
 {
+     return false;
     if ((DEBUG_MODE & 2) == 2)
     {
         return false;

@@ -144,6 +144,32 @@ function API_GetOrder($post) {
     show_json($GLOBALS['json'], $result, true);
 }
 
+/**
+ * @param $post 我的订单
+ */
+function API_GetMyOrder($post) {
+    $sqlPlus = '';
+    if (!(isset($post['user_id']))) {
+        client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
+    }
+    if (isset($post['status'])) {
+        $sqlPlus = ' and order_status='.$post['status'];
+    }
+    $sql = "SELECT distinct x.order_id, x.order_sn, x.order_status, x.shipping_status, x.pay_status, x.add_time,
+    x.province,x.city,x.district,x.address,x.consignee, y.goods_name , r1.region_name as province_name,x.first_service_time,
+    r2.region_name as city_name,r3.region_name as district_name,goods_amount".
+        " FROM " .$GLOBALS['ecs']->table('order_info') . " as x," .$GLOBALS['ecs']->table('order_goods') . " as y,
+           " .$GLOBALS['ecs']->table('region')."as r1, ".$GLOBALS['ecs']->table('region')." as r2,".$GLOBALS['ecs']->table('region')." as r3
+            WHERE r1.region_id=province and r2.region_id=city and r3.region_id=district
+              and y.order_id = x.order_id and ayi_id=".$post['user_id'].$sqlPlus." ORDER BY add_time DESC";
+
+    $res= $GLOBALS['db']->getAll($sql);
+    $result = array();
+    $result['MessageCode'] = 200;
+    $result['list'] = $res;
+    show_json($GLOBALS['json'], $result, true);
+}
+
 function API_OrderStatusMod($post) {
     if (!(isset($post['order_id']) && isset($post['order_status']))) {
         client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
@@ -155,6 +181,73 @@ function API_OrderStatusMod($post) {
     client_show_message(200, true, "修改订单成功", 0, true, EC_CHARSET);
 }
 
+/**阿姨认证状态获取
+ * @param $post
+ */
+function API_GetAyiStatus($post) {
+    if (!isset($post['user_id'])) {
+        client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
+    }
+    $sql = "SELECT validate_status" .
+        " FROM " . $GLOBALS['ecs']->table('ayi_users') .
+        " WHERE user_id= '" . $post['user_id'] . "'";
+
+    $row = $GLOBALS['db']->getRow($sql);
+    $result = array();
+    $result['MessageCode'] = 200;
+    $result['data'] = $row['validate_status'];
+    show_json($GLOBALS['json'], $result, true);
+}
+
+/**订单详情
+ * @param $post
+ */
+function API_OrderDetail($post) {
+    if (!(isset($post['order_id']))) {
+        client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
+    }
+    $order_id= $post['order_id'];
+    $res = array();
+    $res['MessageCode'] = 200;
+    $res['data'] = get_orders_detail($order_id);
+    show_json($GLOBALS['json'], $res, true);
+}
+
+/**
+ * 抢单
+ */
+function API_RobOrder($post) {
+    if (!(isset($post['order_id']) && isset($post['user_id']))) {
+        client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
+    }
+    $sql = "select ayi_id from " .$GLOBALS['ecs']->table('order_info') . " as x where x.order_id=".$post['order_id'];
+    $row = $GLOBALS['db']->getRow($sql);
+    if ($row['ayi_id']!=0) {
+        client_show_message(402, true, "该订单已被抢走", 0, true, EC_CHARSET);
+    }
+    $sql = "update " .$GLOBALS['ecs']->table('order_info') . " as x set order_status=16,ayi_id =".$post['user_id']."
+    where x.order_id=".$post['order_id'];
+    $GLOBALS['db']->query($sql);
+    client_show_message(200, true, "抢单成功", 0, true, EC_CHARSET);
+}
+
+function get_orders_detail($order_id) {
+        /* 取得订单列表 */
+        $arr    = array();
+        $sql_plus ='';
+        if (isset($order_id)) {
+            $sql_plus =' and x.order_id='.$order_id;
+        }
+
+        $sql = "SELECT x.order_id, x.order_sn, x.order_status , x.add_time,
+    x.province,x.city,x.district,x.address,x.consignee, y.goods_name ,y.goods_number,x.goods_amount ,mobile,postscript as leaveword,
+    first_service_time,pay_type,r1.region_name as province_name,r2.region_name as city_name,r3.region_name as district_name".
+            " FROM " .$GLOBALS['ecs']->table('order_info') . " as x," .$GLOBALS['ecs']->table('order_goods') . " as y,
+           " .$GLOBALS['ecs']->table('region')."as r1, ".$GLOBALS['ecs']->table('region')." as r2,".$GLOBALS['ecs']->table('region')." as r3
+            WHERE  r1.region_id=province and r2.region_id=city and r3.region_id=district ".$sql_plus;
+        $row = $GLOBALS['db']->getRow($sql);
+        return $row;
+}
 /**
  * 出错函数
  *
