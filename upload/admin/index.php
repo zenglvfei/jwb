@@ -89,26 +89,35 @@ elseif ($_REQUEST['act'] == 'menu')
         {
             foreach ($val AS $k => $v)
             {
-                if ( isset($purview[$k]))
-                {
-                    if (is_array($purview[$k]))
-                    {
-                        $boole = false;
-                        foreach ($purview[$k] as $action)
-                        {
-                             $boole = $boole || admin_priv($action, '', false);
-                        }
-                        if (!$boole)
-                        {
-                            continue;
-                        }
 
-                    }
-                    else
-                    {
-                        if (! admin_priv($purview[$k], '', false))
+
+                if ($k == '20_ayi_manage') {
+                    $menus[$key]['children'][$k]['label']  ='阿姨管理' ;
+                    $menus[$key]['children'][$k]['action'] = $v;
+                    continue;
+
+                } else {
+
+                    if ( isset($purview[$k])) {
+                        if (is_array($purview[$k]))
                         {
-                            continue;
+                            $boole = false;
+                            foreach ($purview[$k] as $action)
+                            {
+                                $boole = $boole || admin_priv($action, '', false);
+                            }
+                            if (!$boole)
+                            {
+                                continue;
+                            }
+
+                        }
+                        else
+                        {
+                            if (! admin_priv($purview[$k], '', false))
+                            {
+                                continue;
+                            }
                         }
                     }
                 }

@@ -151,6 +151,7 @@ $_LANG['02_goods_add'] = '添加新商品';
 $_LANG['03_category_list'] = '商品分类';
 $_LANG['04_category_add'] = '添加分类';
 $_LANG['05_comment_manage'] = '用户评论';
+$_LANG['20_comment_manage'] = '阿姨管理';
 $_LANG['06_goods_brand_list'] = '商品品牌';
 $_LANG['07_brand_add'] = '添加品牌';
 $_LANG['08_goods_type'] = '商品类型';

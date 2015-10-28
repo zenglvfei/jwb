@@ -104,7 +104,6 @@ function API_UserRegister($post)
         $row = $GLOBALS['db']->getRow($sql);
         client_show_message(200, true, "注册成功", $row['user_id'], true, EC_CHARSET);
     }
-    echo 'API_UserRegisterend';
 }
 
 /**
@@ -131,7 +130,7 @@ function API_GetOrder($post) {
         $sqlPlus = ' and cat_id='.$cat;
     }
     $sql = "SELECT distinct x.order_id, x.order_sn, x.order_status, x.shipping_status, x.pay_status, x.add_time,
-    x.province,x.city,x.district,x.address,x.consignee, y.goods_name , r1.region_name as province_name,
+    x.province,x.city,x.district,x.address,x.consignee, y.goods_name , r1.region_name as province_name,first_service_time,
     r2.region_name as city_name,r3.region_name as district_name,goods_amount".
         " FROM " .$GLOBALS['ecs']->table('order_info') . " as x," .$GLOBALS['ecs']->table('order_goods') . " as y,
            " .$GLOBALS['ecs']->table('region')."as r1, ".$GLOBALS['ecs']->table('region')." as r2,".$GLOBALS['ecs']->table('region')." as r3
