@@ -618,8 +618,9 @@ display: inline-block;
     float:right;
 }
 .goodsItem .content {
-    width: 267px;
-    height: 58px;
+    padding: 3px;
+    width: 261px;
+    height: 51px;
     border: 1px solid #C0C1C0;
     border-top: 0px;
     margin: 0;
@@ -665,12 +666,24 @@ display: inline-block;
     width: 960px;
     margin: 0 auto;
     padding-left: 200px;
+    margin-top: 20px;
 }
 .footer-top .left-img {
     display: inline-block;
     background: url(images/mobile-app.jpg) no-repeat -0px -0px;
     width: 200px;
     height: 158px;
+    top: 5px;
+    position: relative;
+}
+.footer-top .hongbao{
+    right: 170px;
+    top: -23px;
+    display: inline-block;
+    background: url(images/hongbao.png) no-repeat -0px -0px;
+    width: 176px;
+    height: 286px;
+    position: absolute;
 
 }
 .footer-top .right {
@@ -747,9 +760,8 @@ display: inline-block;
 }
 /*footer*/
 .footer {
-    height: 347px;
     color: #fff;
-    background-color: #008cd7;
+    background-color: #01A5E4;
 }
 
 .footer a {
@@ -809,7 +821,6 @@ display: inline-block;
 }
 
 .copyright {
-    height: 144px;
     text-align: center;
     line-height: 18px;
     color: #8dbfe8;
@@ -848,3 +859,16 @@ display: inline-block;
      border: none !important;
      padding: 0 !important;
  }
+.btn{
+    display: inline-block;
+    background: #3AAAD2;
+    color: #ffffff;
+    height: 25px;
+    line-height: 25px;
+    padding: 2px 5px;
+    margin-right: 10px;
+    float: right;
+}
+.btn-blue {
+    background: #3AAAD2;
+}
