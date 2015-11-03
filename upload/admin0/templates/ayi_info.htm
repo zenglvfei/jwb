@@ -1,0 +1,217 @@
+<!-- $Id: order_info.htm 17060 2010-03-25 03:44:42Z liuhui $ -->
+
+{include file="pageheader.htm"}
+{insert_scripts files="topbar.js,../js/utils.js,listtable.js,selectzone.js,../js/common.js"}
+<div id="topbar">
+  <div align="right"><a href="" onclick="closebar(); return false"><img src="images/close.gif" border="0" /></a></div>
+  <table width="100%" border="0">
+    <caption><strong> {$lang.buyer_info} </strong></caption>
+    <tr>
+      <td> {$lang.email} </td>
+      <td> <a href="mailto:{$user.email}">{$user.email}</a> </td>
+    </tr>
+    <tr>
+      <td> {$lang.user_money} </td>
+      <td> {$user.formated_user_money} </td>
+    </tr>
+    <tr>
+      <td> {$lang.pay_points} </td>
+      <td> {$user.pay_points} </td>
+    </tr>
+    <tr>
+      <td> {$lang.rank_points} </td>
+      <td> {$user.rank_points} </td>
+    </tr>
+    <tr>
+      <td> {$lang.rank_name} </td>
+      <td> {$user.rank_name} </td>
+    </tr>
+    <tr>
+      <td> {$lang.bonus_count} </td>
+      <td> {$user.bonus_count} </td>
+    </tr>
+  </table>
+
+</div>
+
+<form action="ayi_manage.php?act=operate" method="post" name="theForm">
+
+<div class="list-div" style="margin-bottom: 5px">
+<table cellpadding="3" cellspacing="1">
+  <tr>
+    <th colspan="6">阿姨信息</th>
+  </tr>
+  <tr>
+    <td>
+        <div align="right"><strong>用户名</strong></div>
+    </td>
+      <td>
+         {$ayiInfo.user_name}
+      </td>
+      <td>
+          <div align="right"><strong>年龄</strong></div>
+      </td>
+      <td>
+          {$ayiInfo.age}
+      </td>
+  <tr>
+
+
+
+    <tr>
+        <td>
+            <div align="right"><strong>性别</strong></div>
+        </td>
+        <td>
+            {$ayiInfo.sex_value}
+        </td>
+        <td>
+            <div align="right"><strong>籍贯</strong></div>
+        </td>
+        <td>
+            {$ayiInfo.home_town}
+        </td>
+    <tr>
+
+    <tr>
+        <td>
+            <div align="right"><strong>地址</strong></div>
+        </td>
+        <td colspan="3">
+            {$ayiInfo.province_name} {$ayiInfo.city_name}{$ayiInfo.district_name}{$ayiInfo.detail_address}
+        </td>
+    <tr>
+
+
+    <tr>
+        <td>
+            <div align="right"><strong>工作意向</strong></div>
+        </td>
+        <td>
+            {$ayiInfo.work_prefer_value}
+        </td>
+        <td>
+            <div align="right"><strong>工作类型</strong></div>
+        </td>
+        <td>
+            {$ayiInfo.work_type_value}
+        </td>
+    <tr>
+
+    <tr>
+        <td>
+            <div align="right"><strong>真实姓名</strong></div>
+        </td>
+        <td>
+            {$ayiInfo.real_name}
+        </td>
+        <td>
+            <div align="right"><strong>身份证号码</strong></div>
+        </td>
+        <td>
+            {$ayiInfo.id_card_num}
+        </td>
+    <tr>
+
+
+    <tr>
+        <td>
+            <div align="right"><strong>认证</strong></div>
+        </td>
+        <td>
+            {$ayiInfo.auth_type}
+        </td>
+        <td>
+            <div align="right"><strong>保证金</strong></div>
+        </td>
+        <td>
+            {$ayiInfo.cash_deposit_value}
+        </td>
+    <tr>
+
+    <tr>
+        <td>
+            <div align="right"><strong>注册时间</strong></div>
+        </td>
+        <td>
+            {$ayiInfo.reg_time}
+        </td>
+        <td>
+            <div align="right"><strong>手机号</strong></div>
+        </td>
+        <td>
+            {$ayiInfo.mobile}
+        </td>
+    <tr>
+    <tr>
+        <td>
+            <div align="right"><strong>认证状态</strong></div>
+        </td>
+        <td>
+            {$ayiInfo.validate_status_value}
+        </td>
+    <tr>
+
+    </table>
+    </div>
+
+
+    <div class="list-div" style="margin-bottom: 5px">
+        <table cellpadding="3" cellspacing="1">
+            <input name="user_id" type="hidden" value="{$ayiInfo.user_id}" />
+            <tr>
+                <th colspan="6">{$lang.action_info}</th>
+            </tr>
+<!--            <tr>
+                <td><div align="right"><strong>{$lang.label_action_note}</strong></div></td>
+                <td colspan="5"><textarea name="action_note" cols="80" rows="3"></textarea></td>
+            </tr>-->
+            <tr>
+                <td><div align="right"></div>
+                    <div align="right"><strong>{$lang.label_operable_act}</strong> </div></td>
+                <td colspan="5">
+                    {if $operable_list.pass}
+                    <input name="pass" type="submit" value="通过" class="button" />
+                    {/if}
+                    {if $operable_list.refuse}
+                    <input name="refuse" type="submit" value="不通过" class="button" />
+                    {/if}
+                   </td>
+            </tr>
+        </table>
+    </div>
+
+</form>
+{literal}
+<script language="JavaScript">
+{/literal}
+  var oldAgencyId = {$order.agency_id|default:0};
+{literal}
+  onload = function()
+  {
+    // 开始检查订单
+    startCheckOrder();
+  }
+
+  /**
+   * 把订单指派给某办事处
+   * @param int agencyId
+   */
+  function assignTo(agencyId)
+  {
+    if (agencyId == 0)
+    {
+      alert(pls_select_agency);
+      return false;
+    }
+    if (oldAgencyId != 0 && agencyId == oldAgencyId)
+    {
+      alert(pls_select_other_agency);
+      return false;
+    }
+    return true;
+  }
+</script>
+{/literal}
+
+{include file="pagefooter.htm"}

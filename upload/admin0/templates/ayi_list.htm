@@ -1,0 +1,107 @@
+<!-- $Id: ayi_list.htm 14216 2008-03-10 02:27:21Z testyang $ -->
+
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+<div class="form-div">
+  <form action="javascript:searchComment()" name="searchForm">
+    <img src="images/icon_search.gif" width="26" height="22" border="0" alt="SEARCH" />
+    {$lang.search_ayi} <input type="text" name="keyword" /> <input type="submit" class="Button" value="{$lang.button_search}" />
+  </form>
+</div>
+
+<form method="POST" action="ayi_manage.php?act=batch_drop" name="listForm" onsubmit="return confirm_bath()">
+
+<!-- start ayi list -->
+<div class="list-div" id="listDiv">
+{/if}
+
+<table cellpadding="3" cellspacing="1">
+  <tr>
+    <th>
+      <input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox">
+      <a href="javascript:listTable.sort('user_id'); ">编号</a> {$sort_user_id}</th>
+      <th>
+          <a href="javascript:listTable.sort('real_name'); ">真实姓名</a> {$sort_real_name}</th>
+    <th><a href="javascript:listTable.sort('mobile'); ">电话</a>{$sort_mobile}</th>
+    <th><a href="javascript:listTable.sort('age'); ">年龄</a>{$sort_age}</th>
+    <th><a href="javascript:listTable.sort('sex'); ">性别</a>{$sort_sex}</th>
+    <th><a href="javascript:listTable.sort('home_town'); ">籍贯</a>{$sort_home_town}</th>
+    <th><a href="javascript:listTable.sort('reg_time'); ">注册时间</a>{$sort_reg_time}</th>
+    <th><a href="javascript:listTable.sort('validate_status'); ">是否审核通过</a>{$sort_validate_status}</th>
+    <th>{$lang.handler}</th>
+  </tr>
+  {foreach from=$ayi_list item=ayi}
+  <tr>
+    <td><input value="{$ayi.ayi_id}" name="checkboxes[]" type="checkbox">{$ayi.user_id}</td>
+    <td>{$ayi.real_name}</td>
+    <td>{$ayi.mobile}</td>
+      <td>{$ayi.age}</td>
+      <td>{if $ayi.sex eq 1}男{else}女{/if}</td>
+      <td>{$ayi.home_town}</td>
+      <td>{$ayi.reg_time}</td>
+      <td>{$ayi.validate_status_value}</td>
+    <td align="center">
+        <a href="ayi_manage.php?act=info&id={$ayi.user_id}">详情</a>
+    </td>
+  </tr>
+    {foreachelse}
+    <tr><td class="no-records" colspan="10">{$lang.no_records}</td></tr>
+    {/foreach}
+  </table>
+
+
+{if $full_page}
+</div>
+<!-- end ayi list -->
+
+</form>
+<script type="text/javascript" language="JavaScript">
+<!--
+  listTable.recordCount = {$record_count};
+  listTable.pageCount = {$page_count};
+  cfm = new Object();
+  cfm['allow'] = '{$lang.cfm_allow}';
+  cfm['remove'] = '{$lang.cfm_remove}';
+  cfm['deny'] = '{$lang.cfm_deny}';
+
+  {foreach from=$filter item=item key=key}
+  listTable.filter.{$key} = '{$item}';
+  {/foreach}
+
+  {literal}
+  onload = function()
+  {
+      document.forms['searchForm'].elements['keyword'].focus();
+      // 开始检查订单
+      startCheckOrder();
+  }
+  /**
+   * 搜索评论
+   */
+  function searchComment()
+  {
+      var keyword = Utils.trim(document.forms['searchForm'].elements['keyword'].value);
+      if (keyword.length > 0)
+      {
+        listTable.filter['keywords'] = keyword;
+        listTable.filter.page = 1;
+        listTable.loadList();
+      }
+      else
+      {
+          document.forms['searchForm'].elements['keyword'].focus();
+      }
+  }
+  {/literal}
+
+  function confirm_bath()
+  {
+    var action = document.forms['listForm'].elements['sel_action'].value;
+
+    return confirm(cfm[action]);
+  }
+//-->
+</script>
+{include file="pagefooter.htm"}
+{/if}
