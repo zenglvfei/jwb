@@ -93,25 +93,18 @@ function register(str){
                       </li>
                       <!-- {* 开始循环所有可选属性 *} -->
                       <!-- {foreach from=$specification item=spec key=spec_key} -->
-                      <li class="padd loop">
-                          <strong>{$spec.name}:</strong><br />
+                      <li class="padd loop loop-attr">
+                          <strong>{$spec.name}:</strong>
                           <!-- {* 判断属性是复选还是单选 *} -->
                           <!-- {if $spec.attr_type eq 1} -->
-                          <!-- {if $cfg.goodsattr_style eq 1} -->
                           <!-- {foreach from=$spec.values item=value key=key} -->
-                          <label for="spec_value_{$value.id}">
-                              <input type="radio" name="spec_{$spec_key}" value="{$value.id}" id="spec_value_{$value.id}" {if $key eq 0}checked{/if} onclick="changePrice()" />
-                              {$value.label} [{if $value.price gt 0}{$lang.plus}{elseif $value.price lt 0}{$lang.minus}{/if} {$value.format_price|abs}] </label><br />
+                          <span class="select-single {if $key eq 0}selected{/if}" for="spec_value_{$value.id}"
+                                name="spec_{$spec_key}" value="{$value.id}"
+                                onclick="changePrice();">
+                              {$value.label}  {$value.format_price|abs}
+                                </span>
                           <!-- {/foreach} -->
                           <input type="hidden" name="spec_list" value="{$key}" />
-                          <!-- {else} -->
-                          <select name="spec_{$spec_key}" onchange="changePrice()">
-                              <!-- {foreach from=$spec.values item=value key=key} -->
-                              <option label="{$value.label}" value="{$value.id}">{$value.label} {if $value.price gt 0}{$lang.plus}{elseif $value.price lt 0}{$lang.minus}{/if}{if $value.price neq 0}{$value.format_price}{/if}</option>
-                              <!-- {/foreach} -->
-                          </select>
-                          <input type="hidden" name="spec_list" value="{$key}" />
-                          <!-- {/if} -->
                           <!-- {else} -->
                           <!-- {foreach from=$spec.values item=value key=key} -->
                           <label for="spec_value_{$value.id}">
@@ -125,10 +118,6 @@ function register(str){
                       <!-- {* 结束循环可选属性 *} -->
                       <li class="padd">
                           <a href="javascript:addToCart({$goods.goods_id})"><img src="images/bnt_cat.gif" /></a>
-                          <a href="javascript:collect({$goods.goods_id})"><img src="images/bnt_colles.gif" /></a>
-                          <!-- {if $affiliate.on} -->
-                          <a href="user.php?act=affiliate&goodsid={$goods.goods_id}"><img src='images/bnt_recommend.gif'></a>
-                          <!-- {/if} -->
                       </li>
                   </ul>
               </form>
@@ -199,10 +188,19 @@ var now_time = {$now_time};
 onload = function(){
   changePrice();
   fixpng();
+
+    $('.select-single').click(function() {
+        var parent = $(this).closest(".loop-attr");
+        parent.find('.select-single').removeClass('selected');
+        $(this).addClass('selected');
+        changePrice();
+    });
+
   try { onload_leftTime(); }
   catch (e) {}
     register("tab");
 }
+
 
 /**
  * 点选可选属性或改变数量时修改商品价格的函数

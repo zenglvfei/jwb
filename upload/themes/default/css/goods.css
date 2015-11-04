@@ -125,3 +125,15 @@
      margin-top: 8px;
  }
 
+#goodsInfo .select-single{
+    border: 1px solid gray;
+    padding: 9px;
+    display: inline-block;
+    border-radius: 3px;
+    cursor: pointer;
+}
+ #goodsInfo .selected{
+     background:#01A5E4 ;
+     border: 0;
+     color: white;
+ }

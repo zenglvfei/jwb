@@ -310,7 +310,6 @@ h6 span{float:left; padding-left:15px;}
 #goodsInfo{background:#f2f2f2; padding:8px; _height:1%;}
 #goodsInfo .imgInfo{width:230px; float:left; margin-right:10px; overflow:hidden;}
 #goodsInfo .imgInfo .thumb{width:230px; height:230px; display:block;}/*商品详情图片*/
-#goodsInfo span{width:4px; height:48px; background:url(images/bg.gif) no-repeat 0 -527px; float:left;}
 #goodsInfo span.spanR{width:4px; height:48px; background:url(images/bg.gif) no-repeat -5px -527px; float:right;}
 #goodsInfo .gallery{width:204px; float:left; margin-left:10px; _margin-left:5px; overflow:hidden;}
 #goodsInfo .gallery ul{width:auto;}

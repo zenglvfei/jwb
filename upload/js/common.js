@@ -41,6 +41,18 @@ function getSelectedAttributes(formBuy)
 {
   var spec_arr = new Array();
   var j = 0;
+    var single = $('.select-single');
+
+    for (i = 0; i <single.length; i ++ )
+    {
+        var item = $(single[i]);
+        if (item.hasClass('selected')) {
+         spec_arr.push(item.attr('value'));
+        }
+    }
+    console.log(spec_arr);
+
+/*
 
   for (i = 0; i < formBuy.elements.length; i ++ )
   {
@@ -53,7 +65,7 @@ function getSelectedAttributes(formBuy)
       spec_arr[j] = formBuy.elements[i].value;
       j++ ;
     }
-  }
+  }*/
 
   return spec_arr;
 }
