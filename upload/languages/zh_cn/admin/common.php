@@ -13,9 +13,9 @@
  * $Id: common.php 17217 2011-01-19 06:29:08Z liubo $
 */
 
-$_LANG['app_name'] = 'ECSHOP';
-$_LANG['cp_home'] = 'ECSHOP 管理中心';
-$_LANG['copyright'] = '版权所有 &copy; 2005-2012 上海商派网络科技有限公司，并保留所有权利。';
+$_LANG['app_name'] = '家务宝';
+$_LANG['cp_home'] = '家务宝 管理中心';
+$_LANG['copyright'] = '版权所有 &copy; 2012-2022 家务宝';
 $_LANG['query_info'] = '共执行 %d 个查询，用时 %s 秒';
 $_LANG['memory_info'] = '，内存占用 %0.3f MB';
 $_LANG['gzip_enabled'] = '，Gzip 已启用';
@@ -129,7 +129,7 @@ $_LANG['gram'] = '克';
 $_LANG['kilogram'] = '千克';
 
 /* 菜单分类部分 */
-$_LANG['02_cat_and_goods'] = '商品管理';
+$_LANG['02_cat_and_goods'] = '服务管理';
 $_LANG['03_promotion'] = '促销管理';
 $_LANG['04_order'] = '订单管理';
 $_LANG['05_banner'] = '广告管理';
@@ -146,33 +146,32 @@ $_LANG['15_rec'] = '推荐管理';
 $_LANG['16_email_manage'] = '邮件群发管理';
 
 /* 商品管理 */
-$_LANG['01_goods_list'] = '商品列表';
-$_LANG['02_goods_add'] = '添加新商品';
-$_LANG['03_category_list'] = '商品分类';
+$_LANG['01_goods_list'] = '服务列表';
+$_LANG['02_goods_add'] = '添加新服务';
+$_LANG['03_category_list'] = '服务分类';
 $_LANG['04_category_add'] = '添加分类';
 $_LANG['05_comment_manage'] = '用户评论';
-$_LANG['20_comment_manage'] = '阿姨管理';
-$_LANG['06_goods_brand_list'] = '商品品牌';
+$_LANG['06_goods_brand_list'] = '服务品牌';
 $_LANG['07_brand_add'] = '添加品牌';
-$_LANG['08_goods_type'] = '商品类型';
-$_LANG['09_attribute_list'] = '商品属性';
+$_LANG['08_goods_type'] = '服务类型';
+$_LANG['09_attribute_list'] = '服务属性';
 $_LANG['10_attribute_add'] = '添加属性';
-$_LANG['11_goods_trash'] = '商品回收站';
+$_LANG['11_goods_trash'] = '服务回收站';
 $_LANG['12_batch_pic'] = '图片批量处理';
-$_LANG['13_batch_add'] = '商品批量上传';
-$_LANG['15_batch_edit'] = '商品批量修改';
-$_LANG['16_goods_script'] = '生成商品代码';
+$_LANG['13_batch_add'] = '服务批量上传';
+$_LANG['15_batch_edit'] = '服务批量修改';
+$_LANG['16_goods_script'] = '生成服务代码';
 $_LANG['17_tag_manage'] = '标签管理';
 $_LANG['18_product_list'] = '货品列表';
 $_LANG['52_attribute_add'] = '编辑属性';
-$_LANG['53_suppliers_goods'] = '供货商商品管理';
+$_LANG['53_suppliers_goods'] = '供货商服务管理';
 
-$_LANG['14_goods_export'] = '商品批量导出';
+$_LANG['14_goods_export'] = '服务批量导出';
 
-$_LANG['50_virtual_card_list'] = '虚拟商品列表';
-$_LANG['51_virtual_card_add'] = '添加虚拟商品';
+$_LANG['50_virtual_card_list'] = '虚拟服务列表';
+$_LANG['51_virtual_card_add'] = '添加虚拟服务';
 $_LANG['52_virtual_card_change'] = '更改加密串';
-$_LANG['goods_auto'] = '商品自动上下架';
+$_LANG['goods_auto'] = '服务自动上下架';
 $_LANG['article_auto'] = '文章自动发布';
 $_LANG['navigator'] = '自定义导航栏';
 
@@ -294,9 +293,6 @@ $_LANG['04_sms_charge'] = '账户充值';
 $_LANG['05_sms_send_history'] = '发送记录';
 $_LANG['06_sms_charge_history'] = '充值记录';
 
-
-
-
 $_LANG['affiliate'] = '推荐设置';
 $_LANG['affiliate_ck'] = '分成管理';
 $_LANG['flashplay'] = '首页主广告管理';
@@ -346,10 +342,4 @@ $_LANG['brand_name_exist'] = '已存在相同的品牌名称!';
 
 $_LANG['alipay_login'] = '<a href="https://www.alipay.com/user/login.htm?goto=https%3A%2F%2Fwww.alipay.com%2Fhimalayas%2Fpracticality_profile_edit.htm%3Fmarket_type%3Dfrom_agent_contract%26customer_external_id%3D%2BC4335319945672464113" target="_blank">立即免费申请支付接口权限</a>';
 $_LANG['alipay_look'] = '<a href=\"https://www.alipay.com/himalayas/practicality.htm\" target=\"_blank\">请申请成功后登录支付宝账户查看</a>';
-
-
-
-$_LANG['04_sms_sign'] = '短信签名';
-
-
 ?>

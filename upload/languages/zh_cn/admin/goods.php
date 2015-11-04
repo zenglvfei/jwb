@@ -13,33 +13,33 @@
  * $Id: goods.php 17217 2011-01-19 06:29:08Z liubo $
 */
 
-$_LANG['edit_goods'] = '编辑商品信息';
-$_LANG['copy_goods'] = '复制商品信息';
-$_LANG['continue_add_goods'] = '继续添加新商品';
-$_LANG['back_goods_list'] = '返回商品列表';
-$_LANG['add_goods_ok'] = '添加商品成功。';
-$_LANG['edit_goods_ok'] = '编辑商品成功。';
-$_LANG['trash_goods_ok'] = '把商品放入回收站成功。';
-$_LANG['restore_goods_ok'] = '还原商品成功。';
-$_LANG['drop_goods_ok'] = '删除商品成功。';
+$_LANG['edit_goods'] = '编辑服务信息';
+$_LANG['copy_goods'] = '复制服务信息';
+$_LANG['continue_add_goods'] = '继续添加新服务';
+$_LANG['back_goods_list'] = '返回服务列表';
+$_LANG['add_goods_ok'] = '添加服务成功。';
+$_LANG['edit_goods_ok'] = '编辑服务成功。';
+$_LANG['trash_goods_ok'] = '把服务放入回收站成功。';
+$_LANG['restore_goods_ok'] = '还原服务成功。';
+$_LANG['drop_goods_ok'] = '删除服务成功。';
 $_LANG['batch_handle_ok'] = '批量操作成功。';
-$_LANG['drop_goods_confirm'] = '您确实要删除该商品吗？';
-$_LANG['batch_drop_confirm'] = '彻底删除商品将删除与该商品有关的所有信息。\n您确实要删除选中的商品吗？';
-$_LANG['trash_goods_confirm'] = '您确实要把该商品放入回收站吗？';
-$_LANG['trash_product_confirm'] = '您确实要把该货品删除吗？';
-$_LANG['batch_trash_confirm'] = '您确实要把选中的商品放入回收站吗？';
-$_LANG['restore_goods_confirm'] = '您确实要把该商品还原吗？';
-$_LANG['batch_restore_confirm'] = '您确实要把选中的商品还原吗？';
-$_LANG['batch_on_sale_confirm'] = '您确实要把选中的商品上架吗？';
-$_LANG['batch_not_on_sale_confirm'] = '您确实要把选中的商品下架吗？';
-$_LANG['batch_best_confirm'] = '您确实要把选中的商品设为精品吗？';
-$_LANG['batch_not_best_confirm'] = '您确实要把选中的商品取消精品吗？';
-$_LANG['batch_new_confirm'] = '您确实要把选中的商品设为新品吗？';
-$_LANG['batch_not_new_confirm'] = '您确实要把选中的商品取消新品吗？';
-$_LANG['batch_hot_confirm'] = '您确实要把选中的商品设为热销吗？';
-$_LANG['batch_not_hot_confirm'] = '您确实要把选中的商品取消热销吗？';
-$_LANG['cannot_found_goods'] = '找不到指定的商品。';
-$_LANG['sel_goods_type'] = '请选择商品类型';
+$_LANG['drop_goods_confirm'] = '您确实要删除该服务吗？';
+$_LANG['batch_drop_confirm'] = '彻底删除服务将删除与该服务有关的所有信息。\n您确实要删除选中的服务吗？';
+$_LANG['trash_goods_confirm'] = '您确实要把该服务放入回收站吗？';
+$_LANG['trash_product_confirm'] = '您确实要把该服务删除吗？';
+$_LANG['batch_trash_confirm'] = '您确实要把选中的服务放入回收站吗？';
+$_LANG['restore_goods_confirm'] = '您确实要把该服务还原吗？';
+$_LANG['batch_restore_confirm'] = '您确实要把选中的服务还原吗？';
+$_LANG['batch_on_sale_confirm'] = '您确实要把选中的服务上架吗？';
+$_LANG['batch_not_on_sale_confirm'] = '您确实要把选中的服务下架吗？';
+$_LANG['batch_best_confirm'] = '您确实要把选中的服务设为精品吗？';
+$_LANG['batch_not_best_confirm'] = '您确实要把选中的服务取消精品吗？';
+$_LANG['batch_new_confirm'] = '您确实要把选中的服务设为新服务吗？';
+$_LANG['batch_not_new_confirm'] = '您确实要把选中的服务取消新服务吗？';
+$_LANG['batch_hot_confirm'] = '您确实要把选中的服务设为热销吗？';
+$_LANG['batch_not_hot_confirm'] = '您确实要把选中的服务取消热销吗？';
+$_LANG['cannot_found_goods'] = '找不到指定的服务。';
+$_LANG['sel_goods_type'] = '请选择服务类型';
 $_LANG['sel_goods_suppliers'] = '请选择供货商';
 /*------------------------------------------------------ */
 //-- 图片处理相关提示信息
@@ -86,7 +86,7 @@ $_LANG['not_hot'] = '取消热销';
 $_LANG['move_to'] = '转移到分类';
 
 // ajax
-$_LANG['goods_name_null'] = '请输入商品名称';
+$_LANG['goods_name_null'] = '请输入服务名称';
 $_LANG['goods_sn_null'] = '请输入货号';
 $_LANG['shop_price_not_number'] = '价格不是数字';
 $_LANG['shop_price_invalid'] = '您输入了一个非法的市场价格。';
@@ -98,36 +98,36 @@ $_LANG['goods_sn_exists'] = '您输入的货号已存在，请换一个';
 $_LANG['tab_general'] = '通用信息';
 $_LANG['tab_detail'] = '详细描述';
 $_LANG['tab_mix'] = '其他信息';
-$_LANG['tab_properties'] = '商品属性';
-$_LANG['tab_gallery'] = '商品相册';
-$_LANG['tab_linkgoods'] = '关联商品';
+$_LANG['tab_properties'] = '服务属性';
+$_LANG['tab_gallery'] = '相册';
+$_LANG['tab_linkgoods'] = '关联服务';
 $_LANG['tab_groupgoods'] = '配件';
 $_LANG['tab_article'] = '关联文章';
 
-$_LANG['lab_goods_name'] = '商品名称：';
-$_LANG['lab_goods_sn'] = '商品货号：';
-$_LANG['lab_goods_cat'] = '商品分类：';
+$_LANG['lab_goods_name'] = '服务名称：';
+$_LANG['lab_goods_sn'] = '服务货号：';
+$_LANG['lab_goods_cat'] = '服务分类：';
 $_LANG['lab_other_cat'] = '扩展分类：';
-$_LANG['lab_goods_brand'] = '商品品牌：';
+$_LANG['lab_goods_brand'] = '服务品牌：';
 $_LANG['lab_shop_price'] = '本店售价：';
 $_LANG['lab_market_price'] = '市场售价：';
 $_LANG['lab_user_price'] = '会员价格：';
 $_LANG['lab_promote_price'] = '促销价：';
 $_LANG['lab_promote_date'] = '促销日期：';
-$_LANG['lab_picture'] = '上传商品图片：';
-$_LANG['lab_thumb'] = '上传商品缩略图：';
-$_LANG['auto_thumb'] = '自动生成商品缩略图';
-$_LANG['lab_keywords'] = '商品关键词：';
-$_LANG['lab_goods_brief'] = '商品简单描述：';
+$_LANG['lab_picture'] = '上传服务图片：';
+$_LANG['lab_thumb'] = '上传服务缩略图：';
+$_LANG['auto_thumb'] = '自动生成服务缩略图';
+$_LANG['lab_keywords'] = '服务关键词：';
+$_LANG['lab_goods_brief'] = '服务简单描述：';
 $_LANG['lab_seller_note'] = '商家备注：';
-$_LANG['lab_goods_type'] = '商品类型：';
-$_LANG['lab_picture_url'] = '商品图片外部URL';
-$_LANG['lab_thumb_url'] = '商品缩略图外部URL';
+$_LANG['lab_goods_type'] = '服务类型：';
+$_LANG['lab_picture_url'] = '服务图片外部URL';
+$_LANG['lab_thumb_url'] = '服务缩略图外部URL';
 
-$_LANG['lab_goods_weight'] = '商品重量：';
+$_LANG['lab_goods_weight'] = '服务重量：';
 $_LANG['unit_g'] = '克';
 $_LANG['unit_kg'] = '千克';
-$_LANG['lab_goods_number'] = '商品库存数量：';
+$_LANG['lab_goods_number'] = '服务库存数量：';
 $_LANG['lab_warn_number'] = '库存警告数量：';
 $_LANG['lab_integral'] = '积分购买金额：';
 $_LANG['lab_give_integral'] = '赠送消费积分数：';
@@ -139,27 +139,27 @@ $_LANG['lab_is_free_shipping'] = '是否为免运费商品';
 
 $_LANG['compute_by_mp'] = '按市场价计算';
 
-$_LANG['notice_goods_sn'] = '如果您不输入商品货号，系统将自动生成一个唯一的货号。';
-$_LANG['notice_integral'] = '(此处需填写金额)购买该商品时最多可以使用积分的金额';
-$_LANG['notice_give_integral'] = '购买该商品时赠送消费积分数,-1表示按商品价格赠送';
-$_LANG['notice_rank_integral'] = '购买该商品时赠送等级积分数,-1表示按商品价格赠送';
+$_LANG['notice_goods_sn'] = '如果您不输入服务货号，系统将自动生成一个唯一的货号。';
+$_LANG['notice_integral'] = '(此处需填写金额)购买该服务时最多可以使用积分的金额';
+$_LANG['notice_give_integral'] = '购买该服务时赠送消费积分数,-1表示按服务价格赠送';
+$_LANG['notice_rank_integral'] = '购买该服务时赠送等级积分数,-1表示按服务价格赠送';
 $_LANG['notice_seller_note'] = '仅供商家自己看的信息';
-$_LANG['notice_storage'] = '库存在商品为虚货或商品存在货品时为不可编辑状态，库存数值取决于其虚货数量或货品数量';
+$_LANG['notice_storage'] = '库存在服务为虚货或商品存在货品时为不可编辑状态，库存数值取决于其虚货数量或货品数量';
 $_LANG['notice_keywords'] = '用空格分隔';
 $_LANG['notice_user_price'] = '会员价格为-1时表示会员价格按会员等级折扣率计算。你也可以为每个等级指定一个固定价格';
-$_LANG['notice_goods_type'] = '请选择商品的所属类型，进而完善此商品的属性';
+$_LANG['notice_goods_type'] = '请选择服务的所属类型，进而完善此服务的属性';
 
 $_LANG['on_sale_desc'] = '打勾表示允许销售，否则不允许销售。';
-$_LANG['alone_sale'] = '打勾表示能作为普通商品销售，否则只能作为配件或赠品销售。';
-$_LANG['free_shipping'] = '打勾表示此商品不会产生运费花销，否则按照正常运费计算。';
+$_LANG['alone_sale'] = '打勾表示能作为普通服务销售，否则只能作为配件或赠品销售。';
+$_LANG['free_shipping'] = '打勾表示此服务不会产生运费花销，否则按照正常运费计算。';
 
-$_LANG['invalid_goods_img'] = '商品图片格式不正确！';
-$_LANG['invalid_goods_thumb'] = '商品缩略图格式不正确！';
-$_LANG['invalid_img_url'] = '商品相册中第%s个图片格式不正确!';
+$_LANG['invalid_goods_img'] = '服务图片格式不正确！';
+$_LANG['invalid_goods_thumb'] = '服务缩略图格式不正确！';
+$_LANG['invalid_img_url'] = '服务相册中第%s个图片格式不正确!';
 
-$_LANG['goods_img_too_big'] = '商品图片文件太大了（最大值：%s），无法上传。';
-$_LANG['goods_thumb_too_big'] = '商品缩略图文件太大了（最大值：%s），无法上传。';
-$_LANG['img_url_too_big'] = '商品相册中第%s个图片文件太大了（最大值：%s），无法上传。';
+$_LANG['goods_img_too_big'] = '服务图片文件太大了（最大值：%s），无法上传。';
+$_LANG['goods_thumb_too_big'] = '服务缩略图文件太大了（最大值：%s），无法上传。';
+$_LANG['img_url_too_big'] = '服务相册中第%s个图片文件太大了（最大值：%s），无法上传。';
 
 $_LANG['integral_market_price'] = '取整数';
 $_LANG['upload_images'] = '上传图片';
@@ -175,14 +175,14 @@ $_LANG['category_manage'] = '分类管理';
 $_LANG['brand_manage'] = '品牌管理';
 $_LANG['hide'] = '隐藏';
 
-$_LANG['lab_volume_price']         = '商品优惠价格：';
+$_LANG['lab_volume_price']         = '服务优惠价格：';
 $_LANG['volume_number']            = '优惠数量';
 $_LANG['volume_price']             = '优惠价格';
 $_LANG['notice_volume_price']      = '购买数量达到优惠数量时享受的优惠价格';
 $_LANG['volume_number_continuous'] = '优惠数量重复！';
 
 $_LANG['label_suppliers']          = '选择供货商：';
-$_LANG['suppliers_no']             = '不指定供货商属于本店商品';
+$_LANG['suppliers_no']             = '不指定供货商属于本店服务';
 $_LANG['suppliers_move_to']        = '转移到供货商';
 $_LANG['lab_to_shopex']         = '转移到网店';
 

@@ -124,42 +124,4 @@
      line-height: 24px;
      margin-top: 8px;
  }
- .share_wrap {
-     border: 1px solid #d8d8d8;
-     width: 544px;
-     height: 36px;
-     padding: 8px 0 0 10px
- }
 
- .share_wrap>label {
-     line-height: 28px
- }
-
- .share_wrap>* {
-     float: left;
- }
-  .bdsharebuttonbox a{
-     display: inline-block;
-     width: 35px;
-     height: 35px;
-     background: url(../images/share.png) no-repeat -0px -0px;
-     margin-right: 10px;
- }
-.share_wrap .bds_tsina{
-    background-position:  -67px -7px;
-}
- .share_wrap .bds_qzone {
-     background-position:  -113px -7px;
- }
- .share_wrap .bds_renren{
-     background-position:  -113px -7px;
-
- }
- .share_wrap .bds_qq{
-     background-position:  -160px -7px;
-
- }
- .share_wrap .bds_weixin{
-     background-position:  -252px -7px;
-
- }

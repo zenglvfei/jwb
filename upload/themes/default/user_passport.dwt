@@ -89,7 +89,7 @@
     <!-- {else} -->
     {insert_scripts files='utils.js'}
 <div class="usBox">
-  <div class="usBox_2 clearfix">
+   <div class="usBox_1 f_l">
    <div class="logtitle">注册新用户</div>
     <form action="user.php" method="post" name="formUser" onsubmit="return register();">
       <table width="100%"  border="0" align="left" cellpadding="5" cellspacing="3" class="login-table">
@@ -130,7 +130,7 @@
           <td align="right">{$lang.label_confirm_password}</td>
           <td>
           <input name="confirm_password" type="password" id="conform_password"
-                 onblur="check_conform_password(this.value);"  class="inputBg" style="width:179px;"/>
+                 onblur="check_conform_password(this.value);" />
             <span style="color:#FF0000" id="conform_password_notice"> *</span>
           </td>
         </tr>
@@ -170,30 +170,34 @@
         <tr>
           <td>&nbsp;</td>
           <td><label>
-            <input name="agreement" type="checkbox" value="1" checked="checked" />
-            {$lang.agreement}</label></td>
+            <input name="agreement" type="checkbox" value="1" checked="checked" style=" width: 20px;
+              vertical-align: middle;"/>
+              {$lang.agreement}
+            </label></td>
         </tr>
         <tr>
           <td>&nbsp;</td>
           <td align="left">
           <input name="act" type="hidden" value="act_register" >
           <input type="hidden" name="back_act" value="{$back_act}" />
-          <input name="Submit" type="submit" value="" class="us_Submit_reg">
+          <input name="Submit" type="submit" value="注册" class="us_Submit">
           </td>
         </tr>
         <tr>
           <td colspan="2">&nbsp;</td>
         </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td class="actionSub">
-          <a href="user.php?act=login">{$lang.want_login}</a><br />
-          <a href="user.php?act=get_password">{$lang.forgot_password}</a>
-          </td>
-        </tr>
       </table>
     </form>
   </div>
+    <div class="usTxt">
+        <p>已经有账号，请直接登录</p>
+        <p>
+            <a href="user.php?act=login" class="reg btn-gray">登录</a>
+        </p>
+        <img src="images/reg.png">
+    </div>
+
+
 </div>
 <!--{/if}-->
 <!--{/if}-->

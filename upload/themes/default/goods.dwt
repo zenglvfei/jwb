@@ -12,82 +12,34 @@
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
 <link href="themes/default/css/base.css" rel="stylesheet" type="text/css" />
     <link href="themes/default/css/goods.css" rel="stylesheet" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 {* 包含脚本文件 *}
 {insert_scripts files='common.js'}
 <script type="text/javascript">
 function $id(element) {
   return document.getElementById(element);
 }
-//切屏--是按钮，_v是内容平台，_h是内容库
-function reg(str){
-  var bt=$id(str+"_b").getElementsByTagName("h2");
-  for(var i=0;i<bt.length;i++){
-    bt[i].subj=str;
-    bt[i].pai=i;
-    bt[i].style.cursor="pointer";
-    bt[i].onclick=function(){
-      $id(this.subj+"_v").innerHTML=$id(this.subj+"_h").getElementsByTagName("blockquote")[this.pai].innerHTML;
-      for(var j=0;j<$id(this.subj+"_b").getElementsByTagName("h2").length;j++){
-        var _bt=$id(this.subj+"_b").getElementsByTagName("h2")[j];
-        var ison=j==this.pai;
-        _bt.className=(ison?"":"h2bg");
-      }
-    }
-  }
-  $id(str+"_h").className="none";
-  $id(str+"_v").innerHTML=$id(str+"_h").getElementsByTagName("blockquote")[0].innerHTML;
+
+
+function register(str){
+    $('#tab_b .title').click(function () {
+        var index = $('#tab_b .title').index(this);
+        $('#tab_b .title').addClass('h2bg');
+        $('.boxCenterList').addClass('hide');
+        $('#tab_b .title').eq(index).removeClass('h2bg');
+        $('.boxCenterList').eq(index).removeClass('hide');
+    });
 }
 
 </script>
 
 
 
-    <!-- Baidu Button -->
-    <script type="text/javascript" id="bdshare_js" data="type=tools"></script>
-    <script type="text/javascript" id="bdshell_js"></script>
-    <script type="text/javascript">
-        //默认分享内容
-        var share = {
-            "title" : '在外这么多年了，终于有让人值得信赖的保洁服务啦！  家务宝-专业家庭服务预定平台 #{$goods.goods_style_name}# 预订地址&gt;&gt;',
-            "pic" : '{$goods.goods_img}',
-            "url" : '{$goods.url}'
-        }
-        try{
-            var shareJson = JSON.parse('');
-            if(shareJson){
-                if(shareJson.text){
-                    share.title = shareJson.text;
-                }
-                if(shareJson.pic){
-                    share.pic = shareJson.pic;
-                }
-            }
-        }catch(err){}
-        window._bd_share_config = {
-            "common" : {
-                "bdStyle" : "1",
-                "bdText" : share.title,
-                "bdPic" : share.pic,
-                "bdUrl" : "{$goods.url}"
-            },
-            "share" : {
-                "bdSize" : 16
-            }
-        };
-        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        var servicesId = 209;
-        var cycle = '60';
-        var nowDate = new Date(1443186323246);
-        var dateSelect = '';
-        var limitNum = '10';
-        var serviceDate;
-        var serviceTime;
-    </script>
-    {insert_scripts files='share.js'}
 
 
 </head>
 <body>
+
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 <!-- #BeginLibraryItem "/library/sub_page_header.lbi" --><!-- #EndLibraryItem -->
 <!--当前位置 start-->
@@ -102,88 +54,11 @@ function reg(str){
               <form action="javascript:addToCart({$goods.goods_id})" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY" >
                   <div class="clearfix">
                       <p class="f_l">{$goods.goods_style_name}</p>
-                      <p class="f_r">
-                          {if $prev_good}
-                          <a href="{$prev_good.url}"><img alt="prev" src="./images/up.gif" /></a>
-                          {/if}
-                          {if $next_good}
-                          <a href="{$next_good.url}"><img alt="next" src="./images/down.gif" /></a>
-                          {/if}
-                      </p>
                   </div>
                   <ul>
-                      <!-- {if $promotion} -->
-                      <li class="padd">
-                          <!-- {foreach from=$promotion item=item key=key} 优惠活动-->
-                          {$lang.activity}
-                          <!-- {if $item.type eq "snatch"} -->
-                          <a href="snatch.php" title="{$lang.snatch}" style="font-weight:100; color:#006bcd; text-decoration:none;">[{$lang.snatch}]</a>
-                          <!-- {elseif $item.type eq "group_buy"} -->
-                          <a href="group_buy.php" title="{$lang.group_buy}" style="font-weight:100; color:#006bcd; text-decoration:none;">[{$lang.group_buy}]</a>
-                          <!-- {elseif $item.type eq "auction"} -->
-                          <a href="auction.php" title="{$lang.auction}" style="font-weight:100; color:#006bcd; text-decoration:none;">[{$lang.auction}]</a>
-                          <!-- {elseif $item.type eq "favourable"} -->
-                          <a href="activity.php" title="{$lang.favourable}" style="font-weight:100; color:#006bcd; text-decoration:none;">[{$lang.favourable}]</a>
-                          <!-- {/if} -->
-                          <a href="{$item.url}" title="{$lang.$item.type} {$item.act_name}{$item.time}" style="font-weight:100; color:#006bcd;">{$item.act_name}</a><br />
-                          <!-- {/foreach} -->
-                      </li>
-                      <!-- {/if} -->
                       <li class="clearfix">
                           <dd>
-                              <!-- {if $cfg.show_goodssn} 显示商品货号-->
-                              <strong>{$lang.goods_sn}</strong>{$goods.goods_sn}
-                              <!-- {/if} -->
-                          </dd>
-                          <dd class="ddR">
-                              <!-- {if $goods.goods_number neq "" and $cfg.show_goodsnumber} 商品库存-->
-                              <!-- {if $goods.goods_number eq 0} -->
-                              <strong>{$lang.goods_number}</strong>
-                              <font color='red'>{$lang.stock_up}</font>
-                              <!-- {else} -->
-                              <strong>{$lang.goods_number}</strong>
-                              {$goods.goods_number} {$goods.measure_unit}
-                              <!-- {/if} -->
-                              <!-- {/if} -->
-                          </dd>
-                      </li>
-                      <li class="clearfix">
-                          <dd>
-                              <!-- {if $goods.goods_brand neq "" and $cfg.show_brand} 显示商品品牌-->
-                              <strong>{$lang.goods_brand}</strong><a href="{$goods.goods_brand_url}" >{$goods.goods_brand}</a>
-                              <!--{/if}-->
-                          </dd>
-                          <dd class="ddR">
-                              <!-- {if $cfg.show_goodsweight} 商品重量-->
-                              <strong>{$lang.goods_weight}</strong>{$goods.goods_weight}
-                              <!-- {/if} -->
-                          </dd>
-                      </li>
-                      <li class="clearfix">
-                          <dd>
-                              <!-- {if $cfg.show_addtime} 上架时间-->
-                              <strong>{$lang.add_time}</strong>{$goods.add_time}
-                              <!-- {/if} -->
-                          </dd>
-                          <dd class="ddR">
-                              <!--点击数-->
-                              <strong>{$lang.goods_click_count}：</strong>{$goods.click_count}
-                          </dd>
-                      </li>
-                      <li class="clearfix">
-                          <dd class="ddL">
-                              <!-- {if $cfg.show_marketprice} 市场价格-->
-                              <strong>{$lang.market_price}</strong><font class="market">{$goods.market_price}</font><br />
-                              <!-- {/if} -->
-                              <!--本店售价-->
-                              <strong>{$lang.shop_price}</strong><font class="shop" id="ECS_SHOPPRICE">{$goods.shop_price_formated}</font><br />
-                              <!-- {foreach from=$rank_prices item=rank_price key=key} 会员等级对应的价格-->
-                              <strong>{$rank_price.rank_name}：</strong><font class="shop" id="ECS_RANKPRICE_{$key}">{$rank_price.price}</font><br />
-                              <!--{/foreach}-->
-                          </dd>
-                          <dd style="width:48%; padding-left:7px;">
-                              <strong>{$lang.goods_rank}</strong>
-                              <img src="images/stars{$goods.comment_rank}.gif" alt="comment rank {$goods.comment_rank}" />
+                              <strong>价格：</strong><font id="ECS_GOODS_AMOUNT" class="shop"></font>
                           </dd>
                       </li>
 
@@ -205,24 +80,6 @@ function reg(str){
                       </li>
                       <!--{/if}-->
 
-                      <!--{if $goods.is_promote and $goods.gmt_end_time } 促销-->
-                      {insert_scripts files='lefttime.js'}
-                      <li class="padd loop" style="margin-bottom:5px; border-bottom:1px dashed #ccc;">
-                          <strong>{$lang.promote_price}</strong><font class="shop">{$goods.promote_price}</font><br />
-                          <strong>{$lang.residual_time}</strong>
-                          <font class="f4" id="leftTime">{$lang.please_waiting}</font><br />
-                      </li>
-                      <!--{/if}-->
-                      <li class="clearfix">
-                          <dd>
-                              <strong>{$lang.amount}：</strong><font id="ECS_GOODS_AMOUNT" class="shop"></font>
-                          </dd>
-                          <dd class="ddR">
-                              <!-- {if $goods.give_integral > 0} 购买此商品赠送积分-->
-                              <strong>{$lang.goods_give_integral}</strong><font class="f4">{$goods.give_integral} {$points_name}</font>
-                              <!-- {/if} -->
-                          </dd>
-                      </li>
                       <!-- {if $goods.bonus_money} 红包-->
                       <li class="padd loop" style="margin-bottom:5px; border-bottom:1px dashed #ccc;">
                           <strong>{$lang.goods_bonus}</strong><font class="shop">{$goods.bonus_money}</font><br />
@@ -233,17 +90,7 @@ function reg(str){
                               <strong>{$lang.number}：</strong>
                               <input name="number" type="text" id="number" value="1" size="4" onblur="changePrice()" style="border:1px solid #ccc; "/>
                           </dd>
-                          <dd class="ddR">
-                              <!-- {if $cfg.use_integral} 购买此商品可使用积分-->
-                              <strong>{$lang.goods_integral}</strong><font class="f4">{$goods.integral} {$points_name}</font>
-                              <!-- {/if} -->
-                          </dd>
                       </li>
-                      <!-- {if $goods.is_shipping} 为免运费商品则显示-->
-                      <li style="height:30px;padding-top:4px;">
-                          {$lang.goods_free_shipping}<br />
-                      </li>
-                      <!-- {/if} -->
                       <!-- {* 开始循环所有可选属性 *} -->
                       <!-- {foreach from=$specification item=spec key=spec_key} -->
                       <li class="padd loop">
@@ -294,32 +141,38 @@ function reg(str){
           <div id="tab_b" class="history clearfix">
               <div class="name">{$goods.goods_style_name}</div>
               <div class="good-tab">
-                  <h2>服务介绍</h2>
-                  <h2 class="h2bg">用户点评</h2>
+                  <h2 class="title">服务介绍</h2>
+                  <h2 class="h2bg title">用户点评</h2>
               </div>
           </div>
       </h3>
-      <div id="tab_v" class="boxCenterList RelaArticle"></div>
-      <div id="tab_h">
-          <blockquote>
+      <div id="" class="boxCenterList">
+          <div class="blockquote" >
               <img src="{$goods.goods_img}"  class="good-img" alt="{$goods.goods_name|escape:html}"/>
               <div class="share_wrap">
-                  <div class="bdsharebuttonbox bdshare-button-style1-16" data-bd-bind="1443186322580">
-                      <a href="{$goods.url}" class="bds_more" data-cmd="more">分享到：</a>
-                      <a href="goods.php?id={$goods.id}" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-                      <a href="{$goods.url}" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-                      <a href="goods.php?id={$goods.id}" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
-                      <a href="goods.php?id={$goods.id}" class="bds_qq" data-cmd="qq" title="分享到QQ"></a>
-                      <a href="goods.php?id={$goods.id}" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
-                  </div>
-              </div>
 
+
+              <div class="bdsharebuttonbox">
+                  <a href="#" class="bds_more" data-cmd="more"></a>
+                  <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间1"></a>
+                  <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                  <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                  <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                  <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+              </div>
+              </div>
+              <script>
+                  window._bd_share_config={"common":{"bdSnsKey":{},
+                      "bdText":"在外这么多年了，终于有让人值得信赖的保洁服务啦！  家务宝-专业家庭服务预定平台",
+                      "bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
               {$goods.goods_desc}
-          </blockquote>
-          <blockquote>
+          </div>
+      </div>
+      <div id="tab_v" class="hide boxCenterList">
+          <div class="blockquote">
               <!-- #EndLibraryItem -->
               <!-- #BeginLibraryItem "/library/comments.lbi" -->
-          </blockquote>
+          </div>
       </div>
   </div>
 
@@ -348,7 +201,7 @@ onload = function(){
   fixpng();
   try { onload_leftTime(); }
   catch (e) {}
-    reg("tab");
+    register("tab");
 }
 
 /**

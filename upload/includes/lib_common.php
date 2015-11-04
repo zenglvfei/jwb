@@ -2272,7 +2272,6 @@ function get_final_price($goods_id, $goods_num = '1', $is_spec_price = false, $s
 
     //取得商品优惠价格列表
     $price_list   = get_volume_price_list($goods_id, '1');
-    print_r($price_list);
 
     if (!empty($price_list))
     {
@@ -2308,10 +2307,6 @@ function get_final_price($goods_id, $goods_num = '1', $is_spec_price = false, $s
 
     //取得商品会员价格列表
     $user_price    = $goods['shop_price'];
-    echo 'user_price';
-    echo $user_price;
-    echo 'volume_price';
-    echo $volume_price;
 
     //比较商品的促销价格，会员价格，优惠价格
     if (empty($volume_price) && empty($promote_price))
