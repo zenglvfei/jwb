@@ -11,15 +11,17 @@
 <!-- TemplateEndEditable -->
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
-<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="themes/default/style.css" rel="stylesheet" type="text/css" />
+<link href="themes/default/index.less" rel="stylesheet/less"/>
 <link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 {* 包含脚本文件 *}
 {insert_scripts files='common.js,index.js'}
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-<div class="block clearfix">
-    <div class="header-img">
+<div class="header-img">
+    <div class="block">
         <div class="logo"></div>
         <div class="char">
             <p class="big">3000+</p>
@@ -30,38 +32,53 @@
             <p class="small">超过10000人享受了我们精细化的贴心服务</p>
         </div>
     </div>
-    <div class="service-phone">
-        <span class="small">24h服务/</span>
-        <span class="big">400-066-1010</span>
-    </div>
-
-    <div>
-        <ul class="service-slogan">
-            <li>
-                <div class="img training"></div>
-                <p class="tip">全部人员专业培训</p>
-            </li>
-            <li>
-                <div class="img heart"></div>
-                <p class="tip">最贴心的服务标准</p>
-            </li>
-            <li>
-                <div class="img quality"></div>
-                <p class="tip">100%品质保证</p>
-            </li>
-            <li>
-                <div class="img safe"></div>
-                <p class="tip">100%安全保障</p>
-            </li>
-        </ul>
-    </div>
+</div>
+<div class="service-phone">
+    <span class="small">24h服务/</span>
+    <span class="big">400-066-1010</span>
+</div>
+<div>
+    <ul class="service-slogan block" id="service-slogan">
+        <li>
+            <div class="img training"></div>
+            <p class="tip">全部人员专业培训</p>
+            <div class="arrow"></div>
+        </li>
+        <li>
+            <div class="img heart"></div>
+            <p class="tip">最贴心的服务标准</p>
+            <div class="arrow hide"></div>
+        </li>
+        <li>
+            <div class="img quality"></div>
+            <p class="tip">100%品质保证</p>
+            <div class="arrow hide"></div>
+        </li>
+        <li>
+            <div class="img safe"></div>
+            <p class="tip">100%安全保障</p>
+            <div class="arrow hide"></div>
+        </li>
+    </ul>
     <div class="slogan-content">
+        <div class="block">
+            <div id="slogan-content1" class="slogan-content-block">全部人员专业培训</div>
+            <div id="slogan-content2" class="slogan-content-block hide">最贴心的服务标准</div>
+            <div id="slogan-content3" class="slogan-content-block hide">100%品质保证</div>
+            <div id="slogan-content4" class="slogan-content-block hide">100%安全保障</div>
+        </div>
     </div>
-
+</div>
+<div class="tehui-bg">
     <div class="index-gooder-header">
-        <div class="img"></div>
-        <span>特惠商城</span>
     </div>
+    <div class="index-gooder-header-right">
+    </div>
+    <div class="img"></div>
+</div>
+
+<div class="block clearfix" >
+
     <!-- {if $best_goods} -->
 <!-- {if $cat_rec_sign neq 1} -->
 <div class="box">
@@ -71,7 +88,7 @@
   <!--{foreach from=$best_goods item=goods}-->
   <div class="goodsItem">
 <!--      <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="goodsimg" /></a>-->
-           <a href=""><img src="{$goods.original_img}" alt="{$goods.name|escape:html}" class="goodsimg" /></a>
+           <a href="{$goods.url}"><img src="{$goods.original_img}" alt="{$goods.name|escape:html}" class="goodsimg" /></a>
       <div class="content">
           <p><a href="" title="{$goods.name|escape:html}">{$goods.name}</a></p>
           <font class="f1">
@@ -152,5 +169,17 @@
 <div class="blank5"></div>
 <div class="blank"></div>
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<script src="js/less.min.js"></script>
+
+<script type="text/javascript">
+    $('#service-slogan .img').click(function(e) {
+    var index = $('#service-slogan .img').index(this);
+    $('#service-slogan .arrow').addClass('hide');
+    $('.slogan-content-block').addClass('hide');
+    $('.slogan-content-block').eq(index).removeClass('hide');
+    $('#service-slogan .arrow').eq(index).removeClass('hide');
+   });
+
+</script>
 </body>
 </html>

@@ -10,32 +10,33 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="themes/default/user.less" rel="stylesheet/less"/>
 {* 包含脚本文件 *}
 {insert_scripts files='common.js,user.js,transport.js'}
 
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-<!--当前位置 start-->
-<div class="block box">
- <div id="ur_here">
-  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+<div class="user-header">
+  <div class="block">
+     <img class="logo" src="images/slogo.png"/>
+      <span class="title">
+          <!-- {if $action eq 'login'} -->欢迎登录 <!--{/if}-->
+          <!-- {if $action eq 'register'} -->欢迎注册<!--{/if}-->
+      </span>
   </div>
 </div>
-<!--当前位置 end-->
-<div class="blank"></div>
-<!--#登录界面 start-->
 <!-- {if $action eq 'login'} -->
 <div class="usBox clearfix">
   <div class="usBox_1 f_l">
-   <div class="logtitle"></div>
+   <div class="logtitle">欢迎登录</div>
    <form name="formLogin" action="user.php" method="post" onSubmit="return userLogin()">
-        <table width="100%" border="0" align="left" cellpadding="3" cellspacing="5">
+        <table width="100%" border="0" align="left" cellpadding="3" cellspacing="5" class="login-table">
           <tr>
-            <td width="15%" align="right">{$lang.label_username}</td>
+            <td width="15%" align="right">{$lang.label_username}:</td>
             <td width="85%"><input name="username" type="text" size="25" class="inputBg" /></td>
           </tr>
           <tr>
-            <td align="right">{$lang.label_password}</td>
+            <td align="right">{$lang.label_password}:</td>
             <td>
             <input name="password" type="password" size="15"  class="inputBg"/>
             </td>
@@ -47,7 +48,7 @@
             <img src="captcha.php?is_login=1&{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?is_login=1&'+Math.random()" /> </td>
           </tr>
           <!--{/if}-->
-          <tr>
+          <tr style="display: none">
             <td colspan="2"><input type="checkbox" value="1" name="remember" id="remember" /><label for="remember">{$lang.remember}</label></td>
           </tr>
           <tr>
@@ -55,28 +56,23 @@
             <td align="left">
             <input type="hidden" name="act" value="act_login" />
             <input type="hidden" name="back_act" value="{$back_act}" />
-            <input type="submit" name="submit" value="" class="us_Submit" />
+            <input type="submit" name="submit" value="登录" class="us_Submit" />
             </td>
           </tr>
-	  <tr><td></td><td><a href="user.php?act=qpassword_name" class="f3">{$lang.get_password_by_question}</a>&nbsp;&nbsp;&nbsp;<a href="user.php?act=get_password" class="f3">{$lang.get_password_by_mail}</a></td></tr>
+	  <tr style="display: none">
+          <td></td>
+          <td><a href="user.php?act=qpassword_name" class="f3">{$lang.get_password_by_question}</a>&nbsp;&nbsp;&nbsp;<a href="user.php?act=get_password" class="f3">{$lang.get_password_by_mail}</a>
+          </td>
+      </tr>
       </table>
     </form>
   </div>
   <div class="usTxt">
-    <strong>{$lang.user_reg_info[0]}</strong>  <br />
-    <strong class="f4">{$lang.user_reg_info[1]}：</strong><br />
-    <!-- {if $car_off eq 1} -->
-    {$lang.user_reg_info[2]}<br />
-    <!--{/if}-->
-    <!-- {if $car_off eq 0} -->
-    {$lang.user_reg_info[8]}<br />
-    <!--{/if}-->
-    {$lang.user_reg_info[3]}：<br />
-    1. {$lang.user_reg_info[4]}<br />
-    2. {$lang.user_reg_info[5]}<br />
-    3. {$lang.user_reg_info[6]}<br />
-    4. {$lang.user_reg_info[7]}  <br />
-    <a href="user.php?act=register"><img src="images/bnt_ur_reg.gif" /></a>
+      <p>还没有账号,快来注册</p>
+      <p>
+          <a href="user.php?act=register" class="reg btn-gray">注册</a>
+      </p>
+      <img src="images/reg.png">
   </div>
 </div>
 <!--{/if}-->
@@ -94,9 +90,9 @@
     {insert_scripts files='utils.js'}
 <div class="usBox">
   <div class="usBox_2 clearfix">
-   <div class="regtitle"></div>
+   <div class="logtitle">注册新用户</div>
     <form action="user.php" method="post" name="formUser" onsubmit="return register();">
-      <table width="100%"  border="0" align="left" cellpadding="5" cellspacing="3">
+      <table width="100%"  border="0" align="left" cellpadding="5" cellspacing="3" class="login-table">
         <tr>
           <td width="13%" align="right">{$lang.label_username}</td>
           <td width="87%">
@@ -114,11 +110,11 @@
         <tr>
           <td align="right">{$lang.label_password}</td>
           <td>
-          <input name="password" type="password" id="password1" onblur="check_password(this.value);" onkeyup="checkIntensity(this.value)" class="inputBg" style="width:179px;" />
+          <input name="password" type="password" id="password1" onblur="check_password(this.value);" onkeyup="checkIntensity(this.value)" class="inputBg"  />
             <span style="color:#FF0000" id="password_notice"> *</span>
           </td>
         </tr>
-        <tr>
+        <tr style="display: none">
           <td align="right">{$lang.label_password_intensity}</td>
           <td>
             <table width="145" border="0" cellspacing="0" cellpadding="1">
@@ -133,7 +129,8 @@
         <tr>
           <td align="right">{$lang.label_confirm_password}</td>
           <td>
-          <input name="confirm_password" type="password" id="conform_password" onblur="check_conform_password(this.value);"  class="inputBg" style="width:179px;"/>
+          <input name="confirm_password" type="password" id="conform_password"
+                 onblur="check_conform_password(this.value);"  class="inputBg" style="width:179px;"/>
             <span style="color:#FF0000" id="conform_password_notice"> *</span>
           </td>
         </tr>
@@ -343,6 +340,7 @@
 <!--#找回密码界面 end-->
 <div class="blank"></div>
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<script src="js/less.min.js"></script>
 </body>
 <script type="text/javascript">
 var process_request = "{$lang.process_request}";
