@@ -24,7 +24,7 @@ $_LANG['kilogram'] = '千克';
 $_LANG['gram'] = '克';
 $_LANG['home'] = '首页';
 $smarty->assign('goods_id', $goods_id);
-$goods_info = get_goods_info($goods_id);
+$goods_info = getGoodsInfo($goods_id);
 $goods_info['goods_name'] = encode_output($goods_info['goods_name']);
 $goods_info['goods_brief'] = encode_output($goods_info['goods_brief']);
 $goods_info['promote_price'] = encode_output($goods_info['promote_price']);

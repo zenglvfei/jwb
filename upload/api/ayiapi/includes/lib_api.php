@@ -130,7 +130,7 @@ function API_GetOrder($post) {
         $sqlPlus = ' and cat_id='.$cat;
     }
     $sql = "SELECT distinct x.order_id, x.order_sn, x.order_status, x.shipping_status, x.pay_status, x.add_time,
-    x.province,x.city,x.district,x.address,x.consignee, y.goods_name , r1.region_name as province_name,first_service_time,
+    x.province,x.city,x.district,x.address,x.consignee,x.pay_type, y.goods_name , r1.region_name as province_name,first_service_time,
     r2.region_name as city_name,r3.region_name as district_name,goods_amount".
         " FROM " .$GLOBALS['ecs']->table('order_info') . " as x," .$GLOBALS['ecs']->table('order_goods') . " as y,
            " .$GLOBALS['ecs']->table('region')."as r1, ".$GLOBALS['ecs']->table('region')." as r2,".$GLOBALS['ecs']->table('region')." as r3
@@ -155,7 +155,7 @@ function API_GetMyOrder($post) {
         $sqlPlus = ' and order_status='.$post['status'];
     }
     $sql = "SELECT distinct x.order_id, x.order_sn, x.order_status, x.shipping_status, x.pay_status, x.add_time,
-    x.province,x.city,x.district,x.address,x.consignee, y.goods_name , r1.region_name as province_name,x.first_service_time,
+    x.province,x.city,x.district,x.address,x.consignee,x.pay_type, y.goods_name , r1.region_name as province_name,x.first_service_time,
     r2.region_name as city_name,r3.region_name as district_name,goods_amount".
         " FROM " .$GLOBALS['ecs']->table('order_info') . " as x," .$GLOBALS['ecs']->table('order_goods') . " as y,
            " .$GLOBALS['ecs']->table('region')."as r1, ".$GLOBALS['ecs']->table('region')." as r2,".$GLOBALS['ecs']->table('region')." as r3
@@ -239,7 +239,7 @@ function get_orders_detail($order_id) {
         }
 
         $sql = "SELECT x.order_id, x.order_sn, x.order_status , x.add_time,
-    x.province,x.city,x.district,x.address,x.consignee, y.goods_name ,y.goods_number,x.goods_amount ,mobile,postscript as leaveword,
+    x.province,x.city,x.district,x.address,x.consignee,x.pay_type, y.goods_name ,y.goods_number,x.goods_amount ,mobile,postscript as leaveword,
     first_service_time,pay_type,r1.region_name as province_name,r2.region_name as city_name,r3.region_name as district_name".
             " FROM " .$GLOBALS['ecs']->table('order_info') . " as x," .$GLOBALS['ecs']->table('order_goods') . " as y,
            " .$GLOBALS['ecs']->table('region')."as r1, ".$GLOBALS['ecs']->table('region')." as r2,".$GLOBALS['ecs']->table('region')." as r3

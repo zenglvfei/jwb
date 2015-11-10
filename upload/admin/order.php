@@ -4412,7 +4412,6 @@ function operable_list($order)
 
 
 
-
     $ss = $order['shipping_status'];
     $ps = $order['pay_status'];
     /* 取得订单操作权限 */

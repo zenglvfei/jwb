@@ -2240,7 +2240,7 @@ elseif ($action == 'affiliate')
         $types = array(1,2,3,4,5);
         $smarty->assign('types', $types);
 
-        $goods = get_goods_info($goodsid);
+        $goods = getGoodsInfo($goodsid);
         $shopurl = $ecs->url();
         $goods['goods_img'] = (strpos($goods['goods_img'], 'http://') === false && strpos($goods['goods_img'], 'https://') === false) ? $shopurl . $goods['goods_img'] : $goods['goods_img'];
         $goods['goods_thumb'] = (strpos($goods['goods_thumb'], 'http://') === false && strpos($goods['goods_thumb'], 'https://') === false) ? $shopurl . $goods['goods_thumb'] : $goods['goods_thumb'];

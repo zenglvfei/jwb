@@ -461,7 +461,7 @@ function wholesale_list($size, $page, $where)
         }
         $row['goods_url'] = build_uri('goods', array('gid'=>$row['goods_id']), $row['goods_name']);
 
-        $properties = get_goods_properties($row['goods_id']);
+        $properties = getGoodsProperties($row['goods_id']);
         $row['goods_attr'] = $properties['pro'];
 
         $price_ladder = get_price_ladder($row['goods_id']);

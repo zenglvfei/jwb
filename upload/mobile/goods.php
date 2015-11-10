@@ -25,7 +25,7 @@ $_LANG['gram'] = '克';
 $_LANG['home'] = '首页';
 $_LANG['goods_attr'] = '';
 $smarty->assign('goods_id', $goods_id);
-$goods_info = get_goods_info($goods_id);
+$goods_info = getGoodsInfo($goods_id);
 if ($goods_info === false)
 {
    /* 如果没有找到任何记录则跳回到首页 */
@@ -69,7 +69,7 @@ foreach ($cat_array as $key => $cat_data)
 $smarty->assign('cat_array', $cat_array);
 
 
-$properties = get_goods_properties($goods_id);  // 获得商品的规格和属性
+$properties = getGoodsProperties($goods_id);  // 获得商品的规格和属性
 $smarty->assign('specification',       $properties['spe']);  // 商品规格
 
 

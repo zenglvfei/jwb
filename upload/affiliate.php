@@ -53,7 +53,7 @@ if (!$smarty->is_cached($tpl, $cache_id))
    /* 鏍规嵁鍙傛暟鐢熸垚鏌ヨ?璇?彞 */
 
     $goods_url = $ecs->url() . "goods.php?u=$userid&id=";
-    $goods = get_goods_info($goodsid);
+    $goods = getGoodsInfo($goodsid);
     $goods['goods_thumb'] = (strpos($goods['goods_thumb'], 'http://') === false && strpos($goods['goods_thumb'], 'https://') === false) ? $ecs->url() . $goods['goods_thumb'] : $goods['goods_thumb'];
     $goods['goods_img'] = (strpos($goods['goods_img'], 'http://') === false && strpos($goods['goods_img'], 'https://') === false) ? $ecs->url() . $goods['goods_img'] : $goods['goods_img'];
     $goods['shop_price'] = price_format($goods['shop_price']);

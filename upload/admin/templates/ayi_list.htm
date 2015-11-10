@@ -37,16 +37,12 @@
     <td>{$ayi.real_name}</td>
     <td>{$ayi.mobile}</td>
       <td>{$ayi.age}</td>
-<!--
-      <td>{if $ayi.sex eq 1}男{else}女{/if}</td>-->
+      <td>{if $ayi.sex eq 1}男{else}女{/if}</td>
       <td>{$ayi.home_town}</td>
       <td>{$ayi.reg_time}</td>
-<!--      <td>{if $ayi.validate_status eq 0}待审核{else}拒绝{/if}</td>-->
-<!--
-      <td>{if $ayi.validate_status eq 0}待审核{else if $ayi.validate_status eq 1}通过{else}拒绝{/if}</td>-->
+      <td>{$ayi.validate_status_value}</td>
     <td align="center">
-      <a href="ayi_manage.php?act=reply&amp;id={$ayi.ayi_id}">{$lang.view_content}</a> |
-      <a href="javascript:" onclick="listTable.remove({$ayi.user_id}, '{$lang.drop_confirm}')">{$lang.remove}</a>
+        <a href="ayi_manage.php?act=info&id={$ayi.user_id}">详情</a>
     </td>
   </tr>
     {foreachelse}
@@ -54,20 +50,6 @@
     {/foreach}
   </table>
 
-  <table cellpadding="4" cellspacing="0">
-    <tr>
-      <td>
-      <div>
-      <select name="sel_action">
-        <option value="remove">{$lang.drop_select}</option>
-        <option value="allow">{$lang.allow}</option>
-        <option value="deny">{$lang.forbid}</option>
-      </select>
-      <input type="hidden" name="act" value="batch" />
-      <input type="submit" name="drop" id="btnSubmit" value="{$lang.button_submit}" class="button" disabled="true" /></div></td>
-      <td align="right">{include file="page.htm"}</td>
-    </tr>
-  </table>
 
 {if $full_page}
 </div>

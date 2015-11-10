@@ -7,9 +7,9 @@ function dispatch($post)
     $func_arr = array('GetDomain', 'UserLogin', 'UserRegister', 'AddCategory', 'AddBrand', 'AddGoods',
         'GetCategory', 'GetBrand', 'GetGoods', 'DeleteBrand', 'DeleteCategory', 'DeleteGoods',
         'EditBrand', 'EditCategory', 'EditGoods', 'OrderFrame','GetArea','AddAddress','EditAddress','DelAddress',
-        'GetAddress','GetBonus','OrderList');
-
+        'GetAddress','GetBonus','OrderList','GetGoodsInfo');
     if (function_exists('API_' . $post['Action'])) {
+        $_SESSION['discount'] =1;
         return call_user_func('API_' . $post['Action'], $post);
     } else {
         API_Error();

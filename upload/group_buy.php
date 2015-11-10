@@ -146,7 +146,7 @@ elseif ($_REQUEST['act'] == 'view')
         $smarty->assign('gb_goods', $goods);
 
         /* 取得商品的规格 */
-        $properties = get_goods_properties($goods_id);
+        $properties = getGoodsProperties($goods_id);
         $smarty->assign('specification', $properties['spe']); // 商品规格
 
         //模板赋值

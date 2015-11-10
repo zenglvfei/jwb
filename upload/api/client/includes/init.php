@@ -69,7 +69,6 @@ if (!defined('EC_CHARSET'))
 $json = new JSON;
 
 /* 分析JSON数据 */
-//echo $_POST['Json'];
 parse_json($json, $_POST['Json']);
 
 
