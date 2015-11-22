@@ -1,6 +1,5 @@
  .good-area-r {
      width: 960px;
-     border: 1px solid;
      overflow: hidden;
  }
  .good-left {
@@ -10,7 +9,6 @@
  }
  .good-right{
      width: 373px;
-     border: 1px solid red;
      display: inline-block;
      float: right;
      margin-bottom:-3000px;

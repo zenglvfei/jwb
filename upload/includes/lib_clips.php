@@ -30,7 +30,7 @@ if (!defined('IN_ECS'))
  */
 function get_collection_goods($user_id, $num = 10, $start = 0)
 {
-    $sql = 'SELECT g.goods_id, g.goods_name, g.market_price, g.shop_price AS org_price, '.
+    $sql = 'SELECT g.goods_id, g.goods_sn,g.goods_name, g.market_price, g.shop_price AS org_price, '.
                 "IFNULL(mp.user_price, g.shop_price * '$_SESSION[discount]') AS shop_price, ".
                 'g.promote_price, g.promote_start_date,g.promote_end_date, c.rec_id, c.is_attention' .
             ' FROM ' . $GLOBALS['ecs']->table('collect_goods') . ' AS c' .
@@ -54,13 +54,10 @@ function get_collection_goods($user_id, $num = 10, $start = 0)
         }
 
         $goods_list[$row['goods_id']]['rec_id']        = $row['rec_id'];
-        $goods_list[$row['goods_id']]['is_attention']  = $row['is_attention'];
         $goods_list[$row['goods_id']]['goods_id']      = $row['goods_id'];
+        $goods_list[$row['goods_id']]['goods_sn']      = $row['goods_sn'];
         $goods_list[$row['goods_id']]['goods_name']    = $row['goods_name'];
-        $goods_list[$row['goods_id']]['market_price']  = price_format($row['market_price']);
         $goods_list[$row['goods_id']]['shop_price']    = price_format($row['shop_price']);
-        $goods_list[$row['goods_id']]['promote_price'] = ($promote_price > 0) ? price_format($promote_price) : '';
-        $goods_list[$row['goods_id']]['url']           = build_uri('goods', array('gid'=>$row['goods_id']), $row['goods_name']);
     }
 
     return $goods_list;
@@ -577,14 +574,14 @@ function get_user_default($user_id)
     $info['formated_credit_line'] = price_format($info['credit_line'], false);
 
     //如果$_SESSION中时间无效说明用户是第一次登录。取当前登录时间。
-    $last_time = !isset($_SESSION['last_time']) ? $row['last_login'] : $_SESSION['last_time'];
+/*    $last_time = !isset($_SESSION['last_time']) ? $row['last_login'] : $_SESSION['last_time'];
 
     if ($last_time == 0)
     {
         $_SESSION['last_time'] = $last_time = gmtime();
     }
 
-    $info['last_time'] = local_date($GLOBALS['_CFG']['time_format'], $last_time);
+    $info['last_time'] = local_date($GLOBALS['_CFG']['time_format'], $last_time);*/
     $info['surplus']   = price_format($row['user_money'], false);
     $info['bonus']     = sprintf($GLOBALS['_LANG']['user_bonus_info'], $user_bonus['bonus_count'], price_format($user_bonus['bonus_value'], false));
 
@@ -592,11 +589,11 @@ function get_user_default($user_id)
             " WHERE user_id = '" .$user_id. "' AND add_time > '" .local_strtotime('-1 months'). "'";
     $info['order_count'] = $GLOBALS['db']->getOne($sql);
 
-    include_once(ROOT_PATH . 'includes/lib_order.php');
+/*    include_once(ROOT_PATH . 'includes/lib_order.php');
     $sql = "SELECT order_id, order_sn ".
             " FROM " .$GLOBALS['ecs']->table('order_info').
             " WHERE user_id = '" .$user_id. "' AND shipping_time > '" .$last_time. "'". order_query_sql('shipped');
-    $info['shipped_order'] = $GLOBALS['db']->getAll($sql);
+    $info['shipped_order'] = $GLOBALS['db']->getAll($sql);*/
 
     return $info;
 }

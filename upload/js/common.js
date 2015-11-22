@@ -35,6 +35,42 @@ function addToCart(goodsId, parentId)
 }
 
 /**
+ * 直接下单
+ * @param goodsId
+ * @param parentId
+ */
+function buyDirect(goodsId, parentId)
+{
+    var goods        = new Object();
+    var spec_arr     = new Array();
+    var fittings_arr = new Array();
+    var number       = 1;
+    var formBuy      = document.forms['ECS_FORMBUY'];
+    var quick		   = 0;
+
+    // 检查是否有商品规格
+    if (formBuy)
+    {
+        spec_arr = getSelectedAttributes(formBuy);
+
+        if (formBuy.elements['number'])
+        {
+            number = formBuy.elements['number'].value;
+        }
+
+        quick = 1;
+    }
+
+    goods.quick    = quick;
+    goods.spec     = spec_arr;
+    goods.goods_id = goodsId;
+    goods.number   = number;
+    goods.parent   = (typeof(parentId) == "undefined") ? 0 : parseInt(parentId);
+
+    Ajax.call('flow.php?step=add_to_cart', 'goods=' + goods.toJSONString(), addToCartResponse, 'POST', 'JSON');
+}
+
+/**
  * 获得选定的商品属性
  */
 function getSelectedAttributes(formBuy)

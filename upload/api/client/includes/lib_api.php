@@ -9,9 +9,9 @@ function dispatch($post)
         'EditBrand', 'EditCategory', 'EditGoods', 'OrderFrame','GetArea','AddAddress','EditAddress','DelAddress',
         'GetAddress','GetBonus','OrderList','GetGoodsInfo');
     if (function_exists('API_' . $post['Action'])) {
-        $_SESSION['discount'] =1;
         return call_user_func('API_' . $post['Action'], $post);
     } else {
+		//echo 'test';
         API_Error();
     }
 }

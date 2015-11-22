@@ -17,7 +17,7 @@ function API_OrderDetail($post) {
     $user_id = $post['user_id'];
     $order_id= $post['order_id'];
 
-    $sql = "SELECT distinct x.order_id, x.order_sn, x.order_status,  x.add_time,
+    $sql = "SELECT distinct x.order_id, x.order_sn, x.order_status,  x.add_time,x.pay_status,
     x.province,x.city,x.district,x.address,x.consignee,x.pay_type, y.goods_name, y.goods_number, r1.region_name as province_name,x.first_service_time,
     r2.region_name as city_name,r3.region_name as district_name,goods_amount".
         " FROM " .$GLOBALS['ecs']->table('order_info') . " as x," .$GLOBALS['ecs']->table('order_goods') . " as y,
@@ -98,6 +98,25 @@ function API_OrderStatusMod($post) {
     client_show_message(200, true, "修改订单成功", 0, true, EC_CHARSET);
 }
 
+function API_PayStatusMod($post) {
+    if (!(isset($post['order_id']) && isset($post['pay_status']))) {
+        client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
+    }
+    $arr = array(
+        'pay_status'  => $post['pay_status']
+    );
+    $order_id = $post['order_id'];
+	$pay_status = $post['pay_status'];
+	
+	$sql = 'UPDATE ' . $GLOBALS['ecs']->table('order_info') .
+                            " SET " .
+                                " pay_status = '$pay_status', " .
+                                " pay_time = '".gmtime()."' " .
+                       "WHERE order_id = '$order_id'";
+    $GLOBALS['db']->query($sql);
+	
+    client_show_message(200, true, "修改支付状态成功", 0, true, EC_CHARSET);
+}
 
 
 function API_GetAyiList($post) {
@@ -264,4 +283,123 @@ function API_GetGoodsList($post) {
     $result['list'] = $res;
     show_json($GLOBALS['json'], $result, true);
 }
+
+
+function API_CollectAdd($post) {
+    if (!isset($post['goodsid']) || !isset($post['user_id'])) {
+        client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
+    }
+    $goodInfo = getGoodsInfo($post['goodsid']);
+
+        /* 检查是否已经存在于用户的收藏夹 */
+        $sql = "SELECT COUNT(*) FROM " .$GLOBALS['ecs']->table('collect_goods') .
+            " WHERE user_id=".$post['user_id']." AND goods_id = '".$goodInfo['goods_id']."'";
+        if ($GLOBALS['db']->GetOne($sql) > 0)
+        {
+            client_show_message(402, true, "您已经收藏过该服务", 0, true, EC_CHARSET);
+        }
+        else
+        {
+            $time = gmtime();
+            $sql = "INSERT INTO " .$GLOBALS['ecs']->table('collect_goods'). " (user_id, goods_id, add_time)" .
+                "VALUES (".$post['user_id'].", ".$goodInfo['goods_id'].", '$time')";
+
+            if ($GLOBALS['db']->query($sql) === true)
+            {
+                client_show_message(200, true, "收藏成功", 0, true, EC_CHARSET);
+            } else {
+
+                client_show_message(403, true, "收藏失败", 0, true, EC_CHARSET);
+            }
+        }
+}
+
+
+function API_CollectList($post) {
+    if (!isset($post['user_id'])) {
+        client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
+    }
+    $user_id = $post['user_id'];
+
+    include_once(ROOT_PATH . 'includes/lib_clips.php');
+
+    $pageSize = isset($post['pageSize']) ? intval($post['pageSize']) : 10;
+    $pageNum = isset($post['pageNum']) ? intval($post['pageNum']) : 1;
+    $pageStart = ($pageNum -1) * $pageSize;
+
+    $record_count = $GLOBALS['db']->getOne("SELECT COUNT(*) FROM " .$GLOBALS['ecs']->table('collect_goods').
+        " WHERE user_id='$user_id' ORDER BY add_time DESC");
+
+    $pageTotal = $record_count > 0 ? intval(ceil($record_count / $pageSize)) : 1;
+    $goodsList = get_collection_goods($user_id, $pageSize, $pageStart);
+    $result = array();
+    $result['MessageCode'] = 200;
+    $result['list'] = $goodsList;
+    $result['pageSize'] = $pageSize;
+    $result['pageNum'] = $pageNum;
+    $result['pageTotal'] = $pageTotal;
+    show_json($GLOBALS['json'], $result, true);
+}
+
+function API_CollectDel($post) {
+    include_once(ROOT_PATH . 'includes/lib_clips.php');
+
+    if (!isset($post['rec_id'])) {
+        client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
+    }
+
+    $rec_id = intval($post['rec_id']);
+    $sql = 'DELETE FROM ' .$GLOBALS['ecs']->table('collect_goods'). " WHERE rec_id=".$rec_id;
+    if ($GLOBALS['db']->query($sql) == true) {
+        client_show_message(200, true, "删除成功", 0, true, EC_CHARSET);
+    } else {
+        client_show_message(403, true, "删除失败", 0, true, EC_CHARSET);
+    }
+}
+
+function API_GetUserInfo($post) {
+    if (!isset($post['user_id'])) {
+        client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
+    }
+    include_once(ROOT_PATH .'includes/lib_clips.php');
+    $user_id = $post['user_id'];
+    $info = get_user_default($user_id);
+    $result = array();
+    $result['MessageCode'] = 200;
+    $result['surplus'] = $info['surplus'];
+    $result['userName'] = $info['username'];
+    $result['bonus'] = $info['bonus'];
+    show_json($GLOBALS['json'], $result, true);
+}
+
+function API_DepositMoney($post){
+    include_once(ROOT_PATH . 'includes/lib_clips.php');
+    // include_once(ROOT_PATH . 'includes/lib_order.php');
+    include_once(ROOT_PATH .'includes/lib_payment.php');
+    if (!isset($post['user_id']) || !isset($post['amount'])) {
+        client_show_message(401, true, "参数错误", 0, true, EC_CHARSET);
+    }
+    $user_id= $post['user_id'];
+    $amount = floatval($post['amount']);
+    /* 变量初始化 */
+    $surplus = array(
+        'user_id'      => $user_id,
+        'rec_id'       => 0,
+        'process_type' =>  0,
+        'payment_id'   =>  0,
+        'user_note'    => '',
+        'amount'       => $amount
+    );
+    $sql = 'update ' .$GLOBALS['ecs']->table('users'). " set user_money=user_money+".$amount." WHERE  user_id=".$user_id;
+    if ($GLOBALS['db']->query($sql) == true) {
+      //插入会员账目明细
+        insert_user_account($surplus, $amount);
+        client_show_message(200, true, "成功", 0, true, EC_CHARSET);
+    } else {
+        client_show_message(200, true, "失败", 0, true, EC_CHARSET);
+    }
+
+}
+
+
 ?>

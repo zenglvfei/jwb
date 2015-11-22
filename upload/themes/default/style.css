@@ -316,10 +316,9 @@ h6 span{float:left; padding-left:15px;}
 #goodsInfo .gallery li{float:left; width:48px; margin:0 2px;}
 #goodsInfo .gallery li img{width:46px; height:46px; display:block;}
 /*文字信息*/
-#goodsInfo .textInfo{background:#fff; width:473px; float:left; padding:10px;}
+#goodsInfo .textInfo{ width:473px; float:left; padding:10px;}
 #goodsInfo .textInfo p{font-size:14px; font-weight:bold; padding:0 5px 5px 8px;}
-#goodsInfo .textInfo ul{border-top:1px solid #ccc;}
-#goodsInfo .textInfo li{background:url(images/lineBg.gif) repeat-x left bottom; padding:0px 8px; _height:1%;}
+#goodsInfo .textInfo li{ padding:0px 8px; _height:1%;}
 #goodsInfo .textInfo li.padd{padding:7px 0px 7px 8px;}
 #goodsInfo .textInfo li dd{width:50%; float:left; padding:7px 0px;}
 #goodsInfo .textInfo li dd.ddR{border-left:1px solid #eeecec; width:48%; padding-left:8px;}

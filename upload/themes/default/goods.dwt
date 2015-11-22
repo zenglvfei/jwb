@@ -52,9 +52,6 @@ function register(str){
       <div id="goodsInfo" class="clearfix">
           <div class="textInfo">
               <form action="javascript:addToCart({$goods.goods_id})" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY" >
-                  <div class="clearfix">
-                      <p class="f_l">{$goods.goods_style_name}</p>
-                  </div>
                   <ul>
                       <li class="clearfix">
                           <dd>
@@ -117,7 +114,8 @@ function register(str){
                       <!-- {/foreach} -->
                       <!-- {* 结束循环可选属性 *} -->
                       <li class="padd">
-                          <a href="javascript:addToCart({$goods.goods_id})"><img src="images/bnt_cat.gif" /></a>
+                          <a href="javascript:buyDirect({$goods.goods_id})">立即预约</a>
+<!--                          <a href="javascript:addToCart({$goods.goods_id})"><img src="images/bnt_cat.gif" /></a>-->
                       </li>
                   </ul>
               </form>

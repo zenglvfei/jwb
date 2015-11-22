@@ -339,11 +339,17 @@ function API_OrderFrame($post) {
             $common = getCommonOrderInfo($post);
             $good_attr_name = '';
             $goodNum= isset($post['goodNum']) ? intval($post['goodNum']) : 1;
-            $goods_amount = 0;
+            $price = 15;
+            if ($goodNum> 50 && $goodNum< 100 ) {
+                $price = 12;
+            } else if ($goodNum >= 100) {
+                $price = 10;
+            }
+            $goods_amount = $price *$goodNum;
             $order_amount = $goods_amount;
             doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
-                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
+                $goods_amount,$order_amount,$common['consignee'],$common['mobile'],$price,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
 
         // 石材抛光
@@ -774,7 +780,7 @@ function doOrder($goods_sn, $serviceTime, $province, $city, $district, $detailAd
     $order['leaveword'] = $leaveword;
     $order['firstServiceTime'] = $firstServiceTime;
     $order['addTime'] =time();
-    $order['order_status'] = 0;
+    $order['order_status'] = 1;
     $order['pay_status'] = 0;
     $order['goods_amount'] =$goods_amount ;
     $order['order_amount'] =$order_amount ;
@@ -788,7 +794,7 @@ function doOrder($goods_sn, $serviceTime, $province, $city, $district, $detailAd
     $user_info = user_info($user_id);
 
 
-   // 1 余额，3见面付，
+     // 1 余额，3见面付，
     if ($pay_id== 1) {
         if ($order['goods_amount'] >$user_info['user_money']) {
             client_show_message(400, true, "余额不足，不能余额支付", $user_id, true, EC_CHARSET);
@@ -878,6 +884,7 @@ function doOrder($goods_sn, $serviceTime, $province, $city, $district, $detailAd
 
         client_show_message(200, true, "预约成功", 0, true, EC_CHARSET);
     }
+
 
 }
 

@@ -1673,6 +1673,7 @@ elseif ($action == 'collect')
     $result = array('error' => 0, 'message' => '');
     $goods_id = $_GET['id'];
 
+
     if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] == 0)
     {
         $result['error'] = 1;
