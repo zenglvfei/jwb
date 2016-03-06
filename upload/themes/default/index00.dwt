@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>家务宝</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="themes/default/style.css" rel="stylesheet" type="text/css" />
+<link href="themes/default/index.less" rel="stylesheet/less"/>
+<link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,index.js'}
+</head>
+<body>
+
+<div class="header-img">
+    <div class="block">
+        <div class="char">
+            <p class="big">5000+</p>
+            <p class="small">我们在为超过5000个家庭提供家务服务</p>
+            <p class="big">1000+</p>
+            <p class="small">我们储备超过1000个人专业家庭服务技师</p>
+        </div>
+    </div>
+    <div class="weixin"></div>
+</div>
+<div class="service-phone">
+    <span class="phone-icon"></span>
+    <span class="big">4006-515-580</span>
+</div>
+<div>
+    <ul class="service-slogan block" id="service-slogan">
+        <li>
+            <div class="img training"></div>
+            <p class="tip">专业技师</p>
+            <p class="tip2">严格面试、系统培训、标准化服务</p>
+            <div class="arrow"></div>
+        </li>
+        <li>
+            <div class="img heart"></div>
+            <p class="tip">贴心管家</p>
+            <p class="tip2">定制专属服务、锁定服务人员</p>
+            <div class="arrow hide"></div>
+        </li>
+        <li>
+            <div class="img quality"></div>
+            <p class="tip">服务保障</p>
+            <p class="tip2">服务人员3+认证、精细化服务管理</p>
+            <div class="arrow hide"></div>
+        </li>
+        <li>
+            <div class="img safe"></div>
+            <p class="tip">安全放心</p>
+            <p class="tip2">家政服务责任险+r人身意外险，保卫"0"风险</p>
+            <div class="arrow hide"></div>
+        </li>
+    </ul>
+    <div class="slogan-content">
+        <div class="">
+            <div id="slogan-content1" class="slogan-content-block">
+                <div class="tese1 tese">
+                    <div class="block">
+                        <div class="char">
+                            <p>
+                                每一位技术都经过80课时
+                            </p>
+                            <p>
+                                <span class="big-font">5</span>项培训流程
+                            </p>
+                            <p>
+                                服务礼仪、职业素养、专业技能、操作实训、考核上岗
+                            </p>
+                            <p>
+                                成为家庭服务专家，我们用行动说
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="slogan-content2" class="slogan-content-block hide">
+                <div class="tese2 tese">
+                    <div class="block">
+                        <div class="char">
+                            <p>
+                                每一位技术都经过80课时
+                            </p>
+                            <p>
+                                <span class="big-font">5</span>项培训流程
+                            </p>
+                            <p>
+                                服务礼仪、职业素养、专业技能、操作实训、考核上岗
+                            </p>
+                            <p>
+                                成为家庭服务专家，我们用行动说
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="slogan-content3" class="slogan-content-block hide">
+                <div class="tese3 tese">
+                    <div class="block">
+                        <div class="char">
+                            <p>
+                                每一位技术都经过80课时
+                            </p>
+                            <p>
+                                <span class="big-font">5</span>项培训流程
+                            </p>
+                            <p>
+                                服务礼仪、职业素养、专业技能、操作实训、考核上岗
+                            </p>
+                            <p>
+                                成为家庭服务专家，我们用行动说
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="slogan-content4" class="slogan-content-block hide">
+                <div class="tese4 tese">
+                    <div class="block">
+                        <div class="char">
+                            <p>
+                                每一位技术都经过80课时
+                            </p>
+                            <p>
+                                <span class="big-font">5</span>项培训流程
+                            </p>
+                            <p>
+                                服务礼仪、职业素养、专业技能、操作实训、考核上岗
+                            </p>
+                            <p>
+                                成为家庭服务专家，我们用行动说
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="tehui-bg">
+    <div class="index-gooder-header">
+    </div>
+    <div class="index-gooder-header-right">
+    </div>
+    <div class="img"></div>
+</div>-->
+
+
+
+
+
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<script src="js/less.min.js"></script>
+
+<script type="text/javascript">
+    $('#service-slogan .img').click(function(e) {
+        var index = $('#service-slogan .img').index(this);
+        $('#service-slogan .arrow').addClass('hide');
+        $('.slogan-content-block').addClass('hide');
+        $('.slogan-content-block').eq(index).removeClass('hide');
+        $('#service-slogan .arrow').eq(index).removeClass('hide');
+    });
+
+</script>
+</body>
+</html>

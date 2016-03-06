@@ -1,18 +1,19 @@
 .header-img {
     background: url(images/banner.jpg) no-repeat center;
-    height: 950px;
+    height: 730px;
+  position: relative;
 }
 .service-phone {
-    color: yellow;
+    color: white;
     height: 40px;
     line-height: 40px;
-    background: #01A5E4;
+    background: rgb(0,147,221);
     text-align: right;
     padding-right: 15px ;
 }
 
 .service-phone .big {
-    font-size: 19px;
+    font-size: 25px;
 }
 .service-phone .small{
     font-size: 16px;
@@ -21,10 +22,13 @@
     position: relative;
     display: inline-block;
     width: 24%;
+  vertical-align: top;
 }
 
 .service-slogan {
     margin-top: 20px;
+  position: relative;
+  z-index: 100;
 }
 .service-slogan p{
     text-align: center;
@@ -41,35 +45,39 @@
     font-size: 16px;
 
 }
+
+ .tip2 {
+    height: 40px;
+   margin-top: 5px;
+}
 .service-slogan .training{
-    background-position:-10px 2px ;
+    background-position:-1px 2px ;
 
 }
 .service-slogan .heart{
-    background-position:-157px -133px ;
+    background-position:-151px -133px ;
 }
 .service-slogan .quality{
-    background-position:-150px 5px ;
+    background-position:-138px 1px ;
 
 }
 .service-slogan .safe{
-    background-position:-15px -128px ;
+    background-position:-7px -131px ;
 
 }
 .slogan-content{
-    padding-top: 27px;
     margin-top: 15px;
     width: 100%;
-    height: 400px;
+    height: 539px;
     background: #EFEFEF;
 }
 .service-slogan .arrow {
-    bottom: -34px;
-    left: 61px;
-    position: absolute;
-    width: 60px;
-    height: 18px;
-    background: url(images/icons.png) no-repeat -112px -17px;
+  bottom: -37px;
+  left: 61px;
+  position: absolute;
+  width: 60px;
+  height: 26px;
+  background: url(http://localhost/ecshop/upload/themes/default/images/arrow.png) no-repeat -1px -1px;
 }
 .index-gooder-header {
     display: inline-block;
@@ -93,21 +101,14 @@
     float:right;
 }
 .goodsItem .content {
-    padding: 3px;
-    width: 261px;
-    height: 51px;
-    border: 1px solid #C0C1C0;
-    border-top: 0px;
-    margin: 0;
-    margin-top: -5px;
+  padding: 3px;
+  width: 98%;
+  border: 1px solid #C0C1C0;
+  border-top: 0px;
+  margin: 0;
+  margin-top: -5px;
 }
 .header-img .logo {
-    margin-left: 44px;
-    background: url(images/logo.png) no-repeat -0px -3px;
-    width: 382px;
-    height: 142px;
-    position: absolute;
-    margin-top: 20px;
 }
 .header-img .char{
     margin-left: 43px;
@@ -164,4 +165,86 @@
 }
 .tehui-bg {
     width: 100%;    position: relative;
+}
+.phone-icon {
+  top: 5px;
+  position: relative;
+  background: url(http://localhost/ecshop/upload/themes/default/images/icons.png) no-repeat -201px -10px;
+  width: 30px;
+  height: 31px;
+  display: inline-block;
+}
+.weixin {
+  margin-left: 44px;
+  background: url(http://localhost/ecshop/upload/themes/default/images/weixin.jpg) no-repeat 0px -3px;
+  width: 100px;
+  height: 125px;
+  position: absolute;
+  margin-top: 20px;
+  bottom: 180px;
+  left: 155px;
+}
+.tese {
+  background: url(images/tedian1.jpg) no-repeat 0 0;
+  height: 1400px;
+  width: 100%;
+  position: relative;
+}
+
+.tese1 {
+  background: url(images/tedian1.jpg) no-repeat 0 0;
+}
+.slogan-content-block {
+  position: relative;
+  .block {
+    position: relative;
+  }
+  .char {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    color: #0FA2B1;
+    p {
+      font-size: 17px;
+      margin-top: 20px;
+    }
+  }
+}
+.big-font {
+  font-size: 25px;
+}
+.service-order {
+  height: 45px;
+  text-align: left;
+  line-height: 45px;
+  .cat {
+    margin-left: 20px;
+  }
+
+}
+.goodsItem {
+  .price {
+    font-size: 20px;
+    color: #F08200;
+    font-weight: bold;
+  }
+  .btn-org {
+    position: relative;
+    top: -5px;
+  }
+  .blue {
+    color: #1CA8DB
+  }
+  .org{
+    color: #F08200
+  }
+  .had-sell {
+     background: #EFEFEF;
+    padding: 5px 10px;
+    border-radius:5px ;
+  }
+  .secd {
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
 }

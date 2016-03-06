@@ -6,8 +6,8 @@
     <div class="right">
         <div>
             <span class="down-load-btn">免费下载</span>
-            <span class="android-icon"></span>
-            <span class="apple-icon"></span>
+<!--            <span class="android-icon"></span>
+            <span class="apple-icon"></span>-->
         </div>
         <div class="tip">
             <p>
@@ -21,7 +21,24 @@
 
         </div>
     </div>
-    <div class="hongbao"></div>
+    <div class="hongbao">
+
+        <div id="mediaplayer123">JW Player goes here</div>
+
+        <script type="text/javascript" src="js/jwplayer/jwplayer.js"></script>
+        <script type="text/javascript">
+            jwplayer("mediaplayer123").setup({
+                flashplayer: "js/jwplayer/player.swf",
+                file: "xuanchuanpian.mp4",
+                image: "preview.jpg",
+                width: 240,height:180
+
+            });
+        </script>
+
+    </div>
+
+
 </div>
 <div class="footer">
 
@@ -33,6 +50,33 @@
                     <li>
                         <a href="">关于家务宝</a>
                     </li>
+                    <li>
+                        <a href="">一路历程</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_right_items">
+                <span class="footer_right_title">家务咨询</span>
+                <ul>
+                    <li><a href=""
+                           target="_blank">行业咨询</a></li>
+
+                    <li><a href=""
+                           target="_blank">活动信息</a></li>
+                    <li><a href=""
+                           target="_blank">生活技巧</a></li>
+                </ul>
+            </div>
+            <div class="footer_right_items">
+                <span class="footer_right_title">家务学院</span>
+                <ul>
+                    <li><a href=""
+                           target="_blank">培训课程</a></li>
+                    <li><a href=""
+                           target="_blank">专业师资</a></li>
+                    <li><a href=""
+                           target="_blank">学员风采</a></li>
+
                 </ul>
             </div>
             <div class="footer_right_items">
@@ -41,20 +85,22 @@
                     <li><a href=""
                            target="_blank">我们的团队</a></li>
 
+                    <li><a href=""
+                           target="_blank">职位空缺</a></li>
                 </ul>
             </div>
             <div class="footer_right_items">
-                <span class="footer_right_title">合作申请</span>
+                <span class="footer_right_title">招募合伙人</span>
                 <ul>
                     <li><a href=""
-                           target="_blank">城市合作</a></li>
+                           target="_blank"></a></li>
 
                 </ul>
             </div>
         </div>
         <div class="clearboth"></div>
         <div class="copyright">
-             ©2014-2015 家务宝信息技术有限公司 版权所有
+             ©2014-2016 家务宝信息技术有限公司 版权所有
         </div>
     </div>
     <script type="text/javascript">

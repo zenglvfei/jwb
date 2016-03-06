@@ -20,61 +20,152 @@
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+
+
 <div class="header-img">
     <div class="block">
-        <div class="logo"></div>
         <div class="char">
-            <p class="big">3000+</p>
-            <p class="small">我们在为超过3000个家庭提供家庭服务</p>
-            <p class="big">500+</p>
-            <p class="small">全国有500+中小企业购买了我们的包年服务</p>
-            <p class="big">10000+</p>
-            <p class="small">超过10000人享受了我们精细化的贴心服务</p>
+            <p class="big">5000+</p>
+            <p class="small">我们在为超过5000个家庭提供家务服务</p>
+            <p class="big">1000+</p>
+            <p class="small">我们储备超过1000个人专业家庭服务技师</p>
         </div>
     </div>
+    <div class="weixin"></div>
 </div>
 <div class="service-phone">
-    <span class="small">24h服务/</span>
-    <span class="big">400-066-1010</span>
+    <span class="phone-icon"></span>
+    <span class="big">4006-515-580</span>
 </div>
 <div>
     <ul class="service-slogan block" id="service-slogan">
         <li>
             <div class="img training"></div>
-            <p class="tip">全部人员专业培训</p>
+            <p class="tip">专业技师</p>
+            <p class="tip2">严格面试、系统培训、标准化服务</p>
             <div class="arrow"></div>
         </li>
         <li>
             <div class="img heart"></div>
-            <p class="tip">最贴心的服务标准</p>
+            <p class="tip">贴心管家</p>
+            <p class="tip2">定制专属服务、锁定服务人员</p>
             <div class="arrow hide"></div>
         </li>
         <li>
             <div class="img quality"></div>
-            <p class="tip">100%品质保证</p>
+            <p class="tip">服务保障</p>
+            <p class="tip2">服务人员3+认证、精细化服务管理</p>
             <div class="arrow hide"></div>
         </li>
         <li>
             <div class="img safe"></div>
-            <p class="tip">100%安全保障</p>
+            <p class="tip">安全放心</p>
+            <p class="tip2">家政服务责任险+r人身意外险，保卫"0"风险</p>
             <div class="arrow hide"></div>
         </li>
     </ul>
     <div class="slogan-content">
-        <div class="block">
-            <div id="slogan-content1" class="slogan-content-block">全部人员专业培训</div>
-            <div id="slogan-content2" class="slogan-content-block hide">最贴心的服务标准</div>
-            <div id="slogan-content3" class="slogan-content-block hide">100%品质保证</div>
-            <div id="slogan-content4" class="slogan-content-block hide">100%安全保障</div>
+        <div class="">
+            <div id="slogan-content1" class="slogan-content-block">
+                <div class="tese1 tese">
+                    <div class="block">
+                        <div class="char">
+                            <p>
+                                每一位技术都经过80课时
+                            </p>
+                            <p>
+                                <span class="big-font">5</span>项培训流程
+                            </p>
+                            <p>
+                                服务礼仪、职业素养、专业技能、操作实训、考核上岗
+                            </p>
+                            <p>
+                                成为家庭服务专家，我们用行动说
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="slogan-content2" class="slogan-content-block hide">
+                <div class="tese2 tese">
+                    <div class="block">
+                        <div class="char">
+                            <p>
+                                每一位技术都经过80课时
+                            </p>
+                            <p>
+                                <span class="big-font">5</span>项培训流程
+                            </p>
+                            <p>
+                                服务礼仪、职业素养、专业技能、操作实训、考核上岗
+                            </p>
+                            <p>
+                                成为家庭服务专家，我们用行动说
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="slogan-content3" class="slogan-content-block hide">
+                <div class="tese3 tese">
+                    <div class="block">
+                        <div class="char">
+                            <p>
+                                每一位技术都经过80课时
+                            </p>
+                            <p>
+                                <span class="big-font">5</span>项培训流程
+                            </p>
+                            <p>
+                                服务礼仪、职业素养、专业技能、操作实训、考核上岗
+                            </p>
+                            <p>
+                                成为家庭服务专家，我们用行动说
+                            </p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div id="slogan-content4" class="slogan-content-block hide">
+                <div class="tese4 tese">
+                    <div class="block">
+                        <div class="char">
+                            <p>
+                                每一位技术都经过80课时
+                            </p>
+                            <p>
+                                <span class="big-font">5</span>项培训流程
+                            </p>
+                            <p>
+                                服务礼仪、职业素养、专业技能、操作实训、考核上岗
+                            </p>
+                            <p>
+                                成为家庭服务专家，我们用行动说
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<div class="tehui-bg">
+<!--<div class="tehui-bg">
     <div class="index-gooder-header">
     </div>
     <div class="index-gooder-header-right">
     </div>
     <div class="img"></div>
+</div>-->
+
+
+<div class="service-phone service-order">
+    <div class="block">
+        <span class="title big-font">立即预定服务</span>
+        <span class="cat">企业服务</span>
+        <span class="cat">家庭服务</span>
+        <span style="float:right">更多服务</span>
+    </div>
 </div>
 
 <div class="block clearfix" >
@@ -86,22 +177,170 @@
   <div id="show_best_area" class="clearfix goodsBox">
   <!-- {/if} -->
   <!--{foreach from=$best_goods item=goods}-->
-  <div class="goodsItem">
-<!--      <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="goodsimg" /></a>-->
+<!--  <div class="goodsItem">
            <a href="{$goods.url}"><img src="{$goods.original_img}" alt="{$goods.name|escape:html}" class="goodsimg" /></a>
       <div class="content">
           <p><a href="" title="{$goods.name|escape:html}">{$goods.name}</a></p>
-          <font class="f1">
-              <!-- {if $goods.promote_price neq ""} -->
+          <font class="price">
+              &lt;!&ndash; {if $goods.promote_price neq ""} &ndash;&gt;
               {$goods.promote_price}
-              <!-- {else}-->
+              &lt;!&ndash; {else}&ndash;&gt;
               {$goods.shop_price}
-              <!--{/if}-->
+              &lt;!&ndash;{/if}&ndash;&gt;
           </font>
-          <div class="btn btn-blue">立即预定</div>
+          <div class="btn btn-org">立即预定</div>
       </div>
-        </div>
+  </div>-->
   <!--{/foreach}-->
+
+
+      <div class="goodsItem">
+          <a >
+              <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+          </a>
+          <div class="content">
+              <p>
+                  <a href="" title="{$goods.name|escape:html}">
+                  企业保洁
+                  <span class="blue">-专属企业管家，锁定服务人员</span>
+                  <span class="org">-100m 3小时</span>
+                  </a>
+              </p>
+              <p class="secd">
+                  <span class="price">
+                      ￥99/次
+                  </span>
+                  <span class="had-sell">
+                      已售 326 单
+                  </span>
+                  <span class="btn btn-org">立即预定</span>
+              </p>
+          </div>
+      </div>
+
+
+      <div class="goodsItem">
+          <a >
+              <img src="themes/default/images/goods/g2.jpg"  class="goodsimg" />
+          </a>
+          <div class="content">
+              <p>
+                  <a href="" title="{$goods.name|escape:html}">
+                     擦洗玻璃
+                      <span class="blue">-专业双门擦洗窗户，亮洁如新</span>
+                      <span class="org">-专业</span>
+                  </a>
+              </p>
+              <p class="secd">
+                  <span class="price">
+                      ￥12/平米
+                  </span>
+                  <span class="had-sell">
+                      已售 1326 单
+                  </span>
+                  <span class="btn btn-org">立即预定</span>
+              </p>
+          </div>
+      </div>
+
+
+      <div class="goodsItem">
+          <a >
+              <img src="themes/default/images/goods/g3.jpg"  class="goodsimg" />
+          </a>
+          <div class="content">
+              <p>
+                  <a href="" title="{$goods.name|escape:html}">
+                     家庭日常保洁
+                      <span class="blue">-小时工</span>
+                      <span class="org">-日常清洁客厅、卧室、卫生间</span>
+                  </a>
+              </p>
+              <p class="secd">
+                  <span class="price">
+                      ￥30/小时起
+                  </span>
+                  <span class="had-sell">
+                      已售 2681 单
+                  </span>
+                  <span class="btn btn-org">立即预定</span>
+              </p>
+          </div>
+      </div>
+
+      <div class="goodsItem">
+          <a >
+              <img src="themes/default/images/goods/g4.jpg"  class="goodsimg" />
+          </a>
+          <div class="content">
+              <p>
+                  <a href="" title="{$goods.name|escape:html}">
+                      空调清洗
+                      <span class="blue">-杜绝室内雾霾，还原健康生活</span>
+                      <span class="org">-除尘、除菌、除味</span>
+                  </a>
+              </p>
+              <p class="secd">
+                  <span class="price">
+                      ￥100/台起
+                  </span>
+                  <span class="had-sell">
+                      已售 268 单
+                  </span>
+                  <span class="btn btn-org">立即预定</span>
+              </p>
+          </div>
+      </div>
+
+
+      <div class="goodsItem">
+          <a >
+              <img src="themes/default/images/goods/g5.jpg"  class="goodsimg" />
+          </a>
+          <div class="content">
+              <p>
+                  <a href="" title="{$goods.name|escape:html}">
+                      家务包月
+                      <span class="blue">-保洁、做饭、洗衣</span>
+                      <span class="org">-绑定服务人员</span>
+                  </a>
+              </p>
+              <p class="secd">
+                  <span class="price">
+                      ￥389/4次
+                  </span>
+                  <span class="had-sell">
+                      已售 355 单
+                  </span>
+                  <span class="btn btn-org">立即预定</span>
+              </p>
+          </div>
+      </div>
+
+      <div class="goodsItem">
+          <a >
+              <img src="themes/default/images/goods/g6.jpg"  class="goodsimg" />
+          </a>
+          <div class="content">
+              <p>
+                  <a href="" title="{$goods.name|escape:html}">
+                      家居深度保洁
+                      <span class="blue">-全屋无死角清洁、高温除菌</span>
+                      <span class="org">-专业团队、好评</span>
+                  </a>
+              </p>
+              <p class="secd">
+                  <span class="price">
+                      ￥750/套起
+                  </span>
+                  <span class="had-sell">
+                      已售 527 单
+                  </span>
+                  <span class="btn btn-org">立即预定</span>
+              </p>
+          </div>
+      </div>
+
 
 <!--  <div class="more">
       <a href="../search.php?intro=best"><img src="images/more.gif" /></a>
