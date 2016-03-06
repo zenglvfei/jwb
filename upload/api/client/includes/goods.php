@@ -452,10 +452,31 @@ function API_OrderFrame($post) {
             $common = getCommonOrderInfo($post);
             $good_attr_name = '';
             $goodNum= isset($post['goodNum']) ? intval($post['goodNum']) : 1;
-            $price = 120;
-            $goods_amount = $price *$goodNum;
-            $order_amount = $goods_amount;
-            doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], '',
+            $type = isset($post['type']) ? trim($post['type']) : '';
+            switch($type) {
+                // 单门
+                case '1':
+                    $good_attr_id = 497;
+                    break;
+                // 双门
+                case '2':
+                    $good_attr_id = 498;
+                    break;
+                // 三门
+                case '3':
+                    $good_attr_id = 499;
+                    break;
+                // 对门
+                case '4':
+                    $good_attr_id = 500;
+                    break;
+
+            }
+            $good_attr_name = get_goods_attr_info(Array($good_attr_id),'pice');
+            // 柜机
+            $goods_amount = -1;
+            $order_amount = -1;
+            doOrder($goods_sn, $goodNum, $common['province'], $common['city'], $common['district'], $common['detailAddress'], $good_attr_id,
                 $good_attr_name, $common['leaveword'],$common['firstServiceTime'], $common['uid'],
                 $goods_amount,$order_amount,$common['consignee'],$common['mobile'],-1,$common['pay_id'],$common['pay_type'],$common['play_ayi']);
             break;
@@ -764,6 +785,8 @@ function doOrder($goods_sn, $serviceTime, $province, $city, $district, $detailAd
       $pay_id,$pay_type,$plan_ayi
 )
 {
+
+
     $order['order_sn'] = get_order_sn();
     $order['user_id'] = $user_id;
     $order['pay_id'] = $pay_id;
@@ -776,6 +799,12 @@ function doOrder($goods_sn, $serviceTime, $province, $city, $district, $detailAd
     $order['district'] = $district;
     $order['address'] = $detailAddress;
     $order['good_attr_id'] = $good_attr_id;
+        if (is_array($good_attr_id)) {
+            $order['good_attr_id'] = $good_attr_id;
+        } else {
+            $order['good_attr_id'] = Array($good_attr_id);
+        }
+
     $order['good_attr_name'] = $good_attr_name;
     $order['leaveword'] = $leaveword;
     $order['firstServiceTime'] = $firstServiceTime;
