@@ -22,17 +22,18 @@
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 
 
-
-<div class="header-img">
-    <div class="block">
-        <div class="char">
-            <p class="big">5000+</p>
-            <p class="small">我们在为超过5000个家庭提供家务服务</p>
-            <p class="big">1000+</p>
-            <p class="small">我们储备超过1000个人专业家庭服务技师</p>
+<div class="header-img-block">
+    <div class="block header-img">
+        <div class="block">
+            <div class="char">
+<!--                <p class="big">5000+</p>
+                <p class="small">我们在为超过5000个家庭提供家务服务</p>
+                <p class="big">1000+</p>
+                <p class="small">我们储备超过1000个人专业家庭服务技师</p>-->
+            </div>
         </div>
+        <div class="weixin"></div>
     </div>
-    <div class="weixin"></div>
 </div>
 <div class="service-phone">
     <span class="phone-icon"></span>
@@ -61,17 +62,17 @@
         <li>
             <div class="img safe"></div>
             <p class="tip">安全放心</p>
-            <p class="tip2">家政服务责任险+r人身意外险，保卫"0"风险</p>
+            <p class="tip2">家政服务责任险+人身意外险，保卫"0"风险</p>
             <div class="arrow hide"></div>
         </li>
     </ul>
-    <div class="slogan-content">
+    <div class="slogan-content block">
         <div class="">
             <div id="slogan-content1" class="slogan-content-block">
                 <div class="tese1 tese">
                     <div class="block">
-                        <div class="char">
-                            <p>
+                        <div class="char tese1-char">
+<!--                            <p>
                                 每一位技术都经过80课时
                             </p>
                             <p>
@@ -82,7 +83,7 @@
                             </p>
                             <p>
                                 成为家庭服务专家，我们用行动说
-                            </p>
+                            </p>-->
                         </div>
                     </div>
                 </div>
@@ -90,19 +91,9 @@
             <div id="slogan-content2" class="slogan-content-block hide">
                 <div class="tese2 tese">
                     <div class="block">
-                        <div class="char">
-                            <p>
-                                每一位技术都经过80课时
-                            </p>
-                            <p>
-                                <span class="big-font">5</span>项培训流程
-                            </p>
-                            <p>
-                                服务礼仪、职业素养、专业技能、操作实训、考核上岗
-                            </p>
-                            <p>
-                                成为家庭服务专家，我们用行动说
-                            </p>
+                        <div class="char tese2-char">
+<!--                            <p>专属生活管家，制定全套生活服务方案</p>
+                            <p>全年预定，锁定专属服务人员</p>-->
                         </div>
                     </div>
                 </div>
@@ -110,19 +101,9 @@
             <div id="slogan-content3" class="slogan-content-block hide">
                 <div class="tese3 tese">
                     <div class="block">
-                        <div class="char">
-                            <p>
-                                每一位技术都经过80课时
-                            </p>
-                            <p>
-                                <span class="big-font">5</span>项培训流程
-                            </p>
-                            <p>
-                                服务礼仪、职业素养、专业技能、操作实训、考核上岗
-                            </p>
-                            <p>
-                                成为家庭服务专家，我们用行动说
-                            </p>
+                        <div class="char tese3-char">
+                            <div class="char-img">
+                            </div>
                         </div>
                      </div>
                 </div>
@@ -130,19 +111,9 @@
             <div id="slogan-content4" class="slogan-content-block hide">
                 <div class="tese4 tese">
                     <div class="block">
-                        <div class="char">
-                            <p>
-                                每一位技术都经过80课时
-                            </p>
-                            <p>
-                                <span class="big-font">5</span>项培训流程
-                            </p>
-                            <p>
-                                服务礼仪、职业素养、专业技能、操作实训、考核上岗
-                            </p>
-                            <p>
-                                成为家庭服务专家，我们用行动说
-                            </p>
+                        <div class="char tese4-char">
+<!--                            <p>《家庭服务责任险》 + 《家政人员人身意外险》，服务全程保障</p>
+                            <p>如因服务导致财产损失，我们先行协商赔付，预约服务更放心</p>-->
                         </div>
                     </div>
                 </div>
@@ -198,6 +169,7 @@
           <a >
               <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
           </a>
+          <div class="star star1"></div>
           <div class="content">
               <p>
                   <a href="" title="{$goods.name|escape:html}">
@@ -297,6 +269,7 @@
           <a >
               <img src="themes/default/images/goods/g5.jpg"  class="goodsimg" />
           </a>
+          <div class="star star2"></div>
           <div class="content">
               <p>
                   <a href="" title="{$goods.name|escape:html}">

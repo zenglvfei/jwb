@@ -257,7 +257,7 @@ h6 span{float:left; padding-left:15px;}
     width: 100%;
     border: 1px solid #C0C1C0;
     margin-bottom: 4px;
-    height: 190px;
+    height: 227px;
 }
 .goodsItem img{width:52px; height:17px;}
 .goodsItem p{text-align:left; color:#3f3f3f; margin-bottom: 5px}
@@ -556,7 +556,7 @@ h6 span{float:left; padding-left:15px;}
     background: url(images/mobile-app.jpg) no-repeat -0px -0px;
     width: 200px;
     height: 158px;
-    top: 5px;
+    top: 8px;
     position: relative;
 }
 .footer-top .hongbao{
@@ -579,9 +579,9 @@ h6 span{float:left; padding-left:15px;}
     background: #B7CDD9;
     display: inline-block;
     border-radius: 13px;
-    padding: 5px 18px;
+    padding: 12px 18px;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 23pt;
 
 }
 
@@ -612,6 +612,7 @@ h6 span{float:left; padding-left:15px;}
 
 .footer-top .tip p {
     line-height: 30px;
+    font-size: 12.5pt;
 }
 .footer-top .bonus-img{
 
@@ -636,8 +637,11 @@ h6 span{float:left; padding-left:15px;}
 }
 
 .footer_left, .footer_right {
-    height: 202px;
     float: left;
+    background: url(images/footchar.png) no-repeat 0 0;
+    width: 634px;
+    height: 119px;
+    margin: 20px;
 }
 
 .footer_left {
@@ -669,17 +673,18 @@ h6 span{float:left; padding-left:15px;}
 .footer_right_items {
     float: left;
     margin-left: 52px;
-    width: 87px;
+    width: 100px;
 }
 
 .footer_right_title {
-    font-size: 14px;
+    font-size: 14pt;
     display: block;
     margin: 30px 0 20px 0;
     font-weight: bold;
 }
 
 .footer_right_title+ ul {
+    font-size: 10pt;
     line-height: 24px;
 }
 
@@ -755,7 +760,7 @@ h6 span{float:left; padding-left:15px;}
 }
  .header-block .logo {
      margin-left: 44px;
-     background: url(http://localhost/ecshop/upload/themes/default/images/logo.png) no-repeat 0px -3px;
+     background: url(images/logo.png) no-repeat 0px -3px;
      width: 300px;
      height: 43px;
      position: absolute;
