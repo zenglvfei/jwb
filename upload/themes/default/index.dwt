@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Keywords" content="{$keywords}" />
-<meta name="Description" content="{$description}" />
+<meta name="Keywords" content="家务宝" />
+<meta name="Description" content="家务宝" />
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>家务宝</title>
 <!-- TemplateEndEditable -->
@@ -12,8 +12,7 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="themes/default/style.css" rel="stylesheet" type="text/css" />
-<link href="themes/default/index.less" rel="stylesheet/less"/>
-<link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
+<link href="themes/default/less/index.css" rel="stylesheet" type="text/css" />
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 {* 包含脚本文件 *}
 {insert_scripts files='common.js,index.js'}
@@ -381,7 +380,6 @@
 <div class="blank5"></div>
 <div class="blank"></div>
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
-<script src="js/less.min.js"></script>
 
 <script type="text/javascript">
     $('#service-slogan .img').click(function(e) {
