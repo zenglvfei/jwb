@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>家务宝</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="themes/default/style.css" rel="stylesheet" type="text/css" />
+<link href="themes/default/less/channel.css"  rel="stylesheet" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+{* 包含脚本文件 *}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="channel page-content">
+    <a class="link-block" href="cityCooperation.php">
+        <img src="images/city.png" class="img"/>
+        <div>
+            <div class="title">家务宝城市合伙人计划
+            </div>
+            <div class="sub-title">
+                一场全新的“互联网+电商+培训+家庭服务终端”的创业变革， 你准备好了吗？
+            </div>
+        </div>
+    </a>
+    <a class="link-block" href="brandCooperation.php">
+        <img src="images/company.png" class="img"/>
+        <div>
+            <div class="title">
+                品牌企业合作
+            </div>
+            <div class="sub-title">多渠道合作，推广互助，聚众之力，开启共赢之旅
+
+            </div>
+        </div>
+
+    </a>
+
+</div>
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

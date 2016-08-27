@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>家务宝</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="themes/default/style.css" rel="stylesheet" type="text/css" />
+<link href="themes/default/less/channel.css"  rel="stylesheet" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+{* 包含脚本文件 *}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="channel">
+    <div class="banner banner-city">
+        <img src="images/cityBanner.png" class="banner-img"/>
+    </div>
+    <div class="article-block page-content">
+        <div class="article-title">合作的必要性</div>
+        <div class="article-content">
+            <P>
+                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
+                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
+                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
+                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
+                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
+                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
+                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
+                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
+                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
+            </P>
+        </div>
+    </div>
+</div>
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>
