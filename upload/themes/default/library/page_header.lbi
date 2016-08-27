@@ -3,36 +3,21 @@
 var process_request = "{$lang.process_request}";
 </script>
 <div class="header-block block clearfix">
- <div class="f_l"><a href="../index.php" name="top"></a>
+ <div class="header-logo">
+     <a href="../index.php" name="top"></a>
      <div class="logo"></div>
  </div>
- <div class="f_r log">
+ <div class="header-title log">
    <ul>
-<!--   <li class="userInfo">
-   <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font>
-   </li>-->
-   <!--{if $navigator_list.top}-->
         <li id="topNav" class="clearfix">
-             <select>
-                 <option selected>北京</option>
-             </select>
-              <a href="">首页</a>
-            <a href="">我的订单</a>
-              <a href="">会员优惠</a>
-              <a href="">登录</a>
-              <a href="">注册</a>
-            <a href="">APP下载</a>
-            <a href="">营养配送</a>
-              <a href="" class="find-job">招募</br>合伙人</a>
+            <a href="index.php">首页</a>
+            <a href="family.php">家庭服务</a>
+            <a href="">企业服务</a>
+            <a href="">生活管家</a>
+            <a href="school.php">家务宝学院</a>
+            <a href="">合作渠道</a>
+            <a href="aboutus.php">家务宝故事</a>
           </li>
-<!--   <li id="topNav" class="clearfix">
-       <a href="../index.php">首页</a>
-       <a href="">会员优惠</a>
-       <a href="flow.php">购物车</a>
-       <a href="">APP下载</a>
-       <a href="" class="find-job">招募</br>合伙人</a>
-   </li>-->
-   <!-- {/if} -->
    </ul>
  </div>
 </div>

@@ -13,8 +13,7 @@ body {
 }
 .page-content {
   width: 1200px;
-  margin-top: 45px;
-  margin: 45px auto 0;
+  margin: 20px auto 0;
 }
 .tab {
   margin-top: 10px;
@@ -67,4 +66,54 @@ body {
 }
 .article-block p {
   text-indent: 2em;
+}
+.goodsItem .price {
+  font-size: 14pt;
+  color: #F08200;
+  font-weight: bold;
+}
+.goodsItem .btn-org {
+  position: relative;
+  top: -5px;
+  font-size: 14pt;
+}
+.goodsItem .blue {
+  color: #1CA8DB;
+}
+.goodsItem .org {
+  color: #F08200;
+  font-size: 6pt;
+}
+.goodsItem .had-sell {
+  background: #EFEFEF;
+  padding: 5px 10px;
+  border-radius: 5px ;
+}
+.goodsItem .secd {
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+.goodsItem .star {
+  background: url(../images/star.png) no-repeat 0 0;
+  width: 85px;
+  height: 83px;
+}
+.goodsItem .star1 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.goodsItem .star2 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.goodsItem .content {
+  font-size: 9px;
+  padding: 3px;
+  width: 377px;
+  border: 1px solid #C0C1C0;
+  border-top: 0px;
+  margin: 0;
+  margin-top: -5px;
 }

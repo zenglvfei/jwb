@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>家务宝</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="themes/default/style.css" rel="stylesheet" type="text/css" />
+<link href="themes/default/less/family.css"  rel="stylesheet" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+{* 包含脚本文件 *}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="page-content">
+    <ul class="left-nav tabs">
+        <li class="tab active"> 保洁服务 </li>
+        <li class="tab">家电清洗</li>
+        <li class="tab">家居保养</li>
+        <li class="tab">家居美化 </li>
+        <li class="tab">居家陪护</li>
+        <li class="tab">维修服务</li>
+        <li class="tab">居家换新 </li>
+        <li class="tab">厨师到家 </li>
+        <li class="tab">生活商城 </li>
+    </ul>
+
+
+    <div class="article-block">
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+            </a>
+            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        保洁服务
+                        <span class="blue">-专属企业管家，锁定服务人员</span>
+                        <span class="org">-100m 3小时</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+            </a>
+            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        企业保洁
+                        <span class="blue">-专属企业管家，锁定服务人员</span>
+                        <span class="org">-100m 3小时</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+            </a>
+            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <span href="" title="{$goods.name|escape:html}">
+                        企业保洁
+                        <span class="blue">-专属企业管家，锁定服务人员</span>
+                        <span class="org">-100m 3小时</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+            </a>
+            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        企业保洁
+                        <span class="blue">-专属企业管家，锁定服务人员</span>
+                        <span class="org">-100m 3小时</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="article-block hide">
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+            </a>
+            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家电清洗
+                        <span class="blue">-专属企业管家，锁定服务人员</span>
+                        <span class="org">-100m 3小时</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="article-block hide">
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+            </a>
+            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居保养
+                        <span class="blue">-专属企业管家，锁定服务人员</span>
+                        <span class="org">-100m 3小时</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="article-block hide">
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+            </a>
+            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居美化
+                        <span class="blue">-专属企业管家，锁定服务人员</span>
+                        <span class="org">-100m 3小时</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="article-block hide">
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+            </a>
+            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+
+                        居家陪护
+                        <span class="blue">-专属企业管家，锁定服务人员</span>
+                        <span class="org">-100m 3小时</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+            </a>
+            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        维修服务
+
+                        <span class="blue">-专属企业管家，锁定服务人员</span>
+                        <span class="org">-100m 3小时</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+            </a>
+            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        居家换新
+
+                        <span class="blue">-专属企业管家，锁定服务人员</span>
+                        <span class="org">-100m 3小时</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+            </a>
+            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        厨师到家
+
+                        <span class="blue">-专属企业管家，锁定服务人员</span>
+                        <span class="org">-100m 3小时</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+            </a>
+            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        生活商城
+                        <span class="blue">-专属企业管家，锁定服务人员</span>
+                        <span class="org">-100m 3小时</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<script src="js/less.min.js"></script>
+
+<script type="text/javascript">
+
+    $('.tab').click(function(e) {
+    var index = $('.tab').index(this);
+
+    $('.tab').removeClass('active');
+    $('.article-block').addClass('hide');
+
+    $('.tab').eq(index).addClass('active');
+    $('.article-block').eq(index).removeClass('hide');
+   });
+
+</script>
+</body>
+</html>
