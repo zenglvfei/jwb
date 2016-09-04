@@ -4,6 +4,9 @@ body {
 .hide {
   display: none !important;
 }
+.red {
+  color: red;
+}
 .sub-tab {
   line-height: 30px;
   text-align: center;

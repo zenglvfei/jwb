@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <div class="service">
+    <div class="service all">
         <div class="title">全部企业服务</div>
         <div class="sub-title">根据企业需求，提供最适合的企业服务后勤方案</div>
         <div class="item-block">
@@ -82,10 +82,95 @@
         </div>
         <div class="item-block">
             <img src="images/companyService/big-2.png" class="img">
-            <div class="title"></div>
+            <div class="title">包年包月灵活选择</div>
+        </div>
+        <div class="item-block">
+            <img src="images/companyService/big-3.png" class="img">
+            <div class="title">临时变更需求不限次</div>
+        </div>
+        <div class="item-block">
+            <img src="images/companyService/big-4.png" class="img">
+            <div class="title">企业后勤服务全案</div>
         </div>
     </div>
 
+
+    <div class="service flow">
+        <img src="images/companyService/step.png">
+    </div>
+
+    <div class="service">
+        <div class="title">我们的客户</div>
+        <table class="logo-block" border="1">
+            <tr>
+            <td class="img-block">
+                <img src="images/companyService/logo1.png">
+            </td>
+            <td class="img-block">
+                <img src="images/companyService/logo2.png">
+            </td>
+            <td class="img-block">
+                <img src="images/companyService/logo3.png">
+            </td>
+            <td class="img-block">
+                <img src="images/companyService/logo4.png">
+            </td>
+            <td class="img-block">
+                <img src="images/companyService/logo5.png">
+            </td>
+            <td class="img-block">
+                <img src="images/companyService/logo6.png">
+            </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="service register">
+        <div class="title">现在注册企业用户，预约报价</div>
+        <div class="sub-title">首次体验，仅需<span style="color: red">50元</span></div>
+
+        <div class="field-block">
+            <div class="field-name">
+                <span class="red">*</span>联系人姓名
+            </div>
+            <div class="field-input">
+                <input placeholder="请输入联系人的真实姓名"/>
+            </div>
+        </div>
+
+        <div class="field-block">
+            <div class="field-name">
+                <span class="red">*</span>联系人手机
+            </div>
+            <div class="field-input">
+                <input placeholder="请输入联系人的手机号码"/>
+            </div>
+        </div>
+
+
+        <div class="field-block">
+            <div class="field-name">
+                <span class="red">*</span>公司所在地
+            </div>
+            <div class="field-input">
+                <input placeholder="选择城市"/>
+            </div>
+        </div>
+
+
+        <div class="field-block">
+            <div class="field-name">
+                <span class="red">*</span>公司名称
+            </div>
+            <div class="field-input">
+                <input placeholder="请输入公司名称全称"/>
+            </div>
+        </div>
+        <textarea >
+
+        </textarea>
+        <div class="reg-btn">一键注册</div>
+    </div>
 </div>
 
 <div class="blank"></div>
