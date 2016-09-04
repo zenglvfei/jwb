@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>家务宝</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="themes/default/style.css" rel="stylesheet" type="text/css" />
+<link href="themes/default/less/companyService.css"  rel="stylesheet" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+{* 包含脚本文件 *}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="company-service page-content">
+    <div class="slide">
+    </div>
+    <div class="slogan">
+        <div class="block">
+            <div class="title">价格优势</div>
+            <div class="sub-title">正规发票 低于市场价20%</div>
+        </div>
+        <div class="block">
+            <div class="title">结算便捷</div>
+            <div class="sub-title">月结后付费</div>
+        </div>
+        <div class="block">
+            <div class="title">安全保证</div>
+            <div class="sub-title">专业保洁 专业设备 身份保险 纠纷先赔付</div>
+        </div>
+        <div class="block">
+            <div class="title">完善服务</div>
+            <div class="sub-title">不满意随时更换阿姨 不干净免费重新打扫</div>
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="title">全部企业服务</div>
+        <div class="sub-title">根据企业需求，提供最适合的企业服务后勤方案</div>
+        <div class="item-block">
+            <img src="images/companyService/all-1.png" class="img">
+            <div class="title">保洁服务</div>
+            <div class="sub-title">单次体验、日常保洁、深度保洁、新址开荒、大扫除、玻璃清洗、家电清洗</div>
+        </div>
+        <div class="item-block">
+            <img src="images/companyService/all-2.png" class="img">
+            <div class="title">养护服务</div>
+            <div class="sub-title">皮质沙发保养、地板打蜡、地毯吸尘、石材抛光
+            </div>
+        </div>
+        <div class="item-block">
+            <img src="images/companyService/all-3.png" class="img">
+            <div class="title">办公饮用水</div>
+            <div class="sub-title">桶装水、瓶装水、饮料</div>
+        </div>
+        <div class="item-block">
+            <img src="images/companyService/all-4.png" class="img">
+            <div class="title">绿植</div>
+            <div class="sub-title">绿植租赁、购买</div>
+        </div>
+        <div class="item-block">
+            <img src="images/companyService/all-5.png" class="img">
+            <div class="title">员工餐厅</div>
+            <div class="sub-title">食堂外包、下午茶、员工餐</div>
+        </div>
+        <div class="item-block">
+            <img src="images/companyService/all-6.png" class="img">
+            <div class="title">办公耗材</div>
+            <div class="sub-title">办公用纸、硒鼓、彩墨</div>
+        </div>
+    </div>
+
+
+    <div class="service big">
+        <div class="title">大客户合作模式 </div>
+        <div class="item-block">
+            <img src="images/companyService/big-1.png" class="img">
+            <div class="title">多地址服务</div>
+        </div>
+        <div class="item-block">
+            <img src="images/companyService/big-2.png" class="img">
+            <div class="title"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+
+<script type="text/javascript">
+</script>
+</body>
+</html>
