@@ -120,6 +120,9 @@ body {
   margin: 0;
   margin-top: -5px;
 }
+.banner .img {
+  width: 100%;
+}
 .channel .link-block {
   height: 60px;
   display: inline-block;

@@ -15,9 +15,10 @@
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="banner">
+    <img src="images/companyService/banner.png" class="img">
+</div>
 <div class="company-service page-content">
-    <div class="slide">
-    </div>
     <div class="slogan">
         <div class="block">
             <div class="title">价格优势</div>

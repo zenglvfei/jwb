@@ -633,6 +633,7 @@ h6 span{float:left; padding-left:15px;}
 
 .footer a {
     color: #fff;
+    text-decoration: none;
 }
 
 .footer a:hover {
@@ -640,11 +641,9 @@ h6 span{float:left; padding-left:15px;}
 }
 
 .footer_left, .footer_right {
-    float: left;
-    background: url(images/footchar.png) no-repeat 0 0;
     width: 634px;
     height: 119px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .footer_left {

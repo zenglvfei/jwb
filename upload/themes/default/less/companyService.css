@@ -120,6 +120,9 @@ body {
   margin: 0;
   margin-top: -5px;
 }
+.banner .img {
+  width: 100%;
+}
 .company-service .title {
   color: #343434;
   font-size: 20px;
@@ -130,7 +133,7 @@ body {
   font-size: 16px;
 }
 .company-service .slogan {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .company-service .slogan .title {
   padding-top: 10px;

@@ -120,6 +120,9 @@ body {
   margin: 0;
   margin-top: -5px;
 }
+.banner .img {
+  width: 100%;
+}
 .header-img {
   background: url(../images/banner.jpg) no-repeat center;
   height: 730px;

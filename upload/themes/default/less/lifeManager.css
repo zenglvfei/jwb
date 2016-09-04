@@ -123,3 +123,30 @@ body {
 .banner .img {
   width: 100%;
 }
+.life-manager {
+  background: #FDFDFD;
+}
+.life-manager .left-block {
+  width: 1200px;
+  margin-left: 0px;
+}
+.life-manager .img {
+  width: 500px;
+  height: 350px;
+}
+.life-manager .content-block {
+  width: 690px;
+  display: inline-block;
+  vertical-align: top;
+}
+.life-manager .title {
+  text-align: center;
+  font-size: 35px;
+  color: #000000;
+  padding: 20px;
+}
+.life-manager .content {
+  font-size: 23px;
+  color: #747474;
+  line-height: 30px;
+}
