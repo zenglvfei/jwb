@@ -75,7 +75,7 @@ $modules['04_order']['10_back_order']               = 'order.php?act=back_list';
 // $modules['06_stats']['report_users']                = 'users_order.php?act=order_num';
 // $modules['06_stats']['visit_buy_per']               = 'visit_sold.php?act=list';
 
-// $modules['07_content']['03_article_list']           = 'article.php?act=list';
+ $modules['07_content']['03_article_list']           = 'article.php?act=list';
 // $modules['07_content']['02_articlecat_list']        = 'articlecat.php?act=list';
 // $modules['07_content']['vote_list']                 = 'vote.php?act=list';
 // $modules['07_content']['article_auto']              = 'article_auto.php?act=list';

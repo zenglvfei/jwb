@@ -123,6 +123,11 @@ body {
 .banner .img {
   width: 100%;
 }
+iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
 .header-img {
   background: url(../images/banner.jpg) no-repeat center;
   height: 730px;
