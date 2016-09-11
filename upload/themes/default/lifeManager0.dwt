@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>家务宝</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="themes/default/style.css" rel="stylesheet" type="text/css" />
+<link href="themes/default/less/lifeManager.css"  rel="stylesheet" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+{* 包含脚本文件 *}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="life-manager">
+    <div class="left-block">
+        <img src="images/lifeManager/pic1.png" class="img">
+        <div class="content-block">
+            <div class="title">
+                小宝管家
+            </div>
+            <div class="content">
+                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
+                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
+                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
+                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
+                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
+                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
+                小宝管家
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="images/lifeManager/banner1.png">
+    </div>
+    <div class="page-content content">
+        中间的内容吧拉来巴拉拉巴拉拉 中间的内容吧拉来巴拉拉巴拉拉 中间的内容吧拉来巴拉拉巴拉拉 中间的内容吧拉来巴拉拉巴拉拉
+        中间的内容吧拉来巴拉拉巴拉拉
+        中间的内容吧拉来巴拉拉巴拉拉
+        中间的内容吧拉来巴拉拉巴拉拉
+        中间的内容吧拉来巴拉拉巴拉拉
+        中间的内容吧拉来巴拉拉巴拉拉
+        中间的内容吧拉来巴拉拉巴拉拉
+        中间的内容吧拉来巴拉拉巴拉拉
+        中间的内容吧拉来巴拉拉巴拉拉
+        中间的内容吧拉来巴拉拉巴拉拉
+        中间的内容吧拉来巴拉拉巴拉拉
+    </div>
+    <div class="banner">
+        <img src="images/lifeManager/banner2.png">
+    </div>
+    <div class="left-block">
+        <img src="images/lifeManager/pic1.png" class="img">
+        <div class="content-block">
+            <div class="title">
+                优渥家成员
+            </div>
+            <div class="content">
+                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
+                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
+                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
+                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
+                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
+                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
+                小宝管家
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="images/lifeManager/banner3.png">
+    </div>
+
+</div>
+
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<script src="js/less.min.js"></script>
+
+<script type="text/javascript">
+
+    $('.tab').click(function(e) {
+    var index = $('.tab').index(this);
+
+    $('.tab').removeClass('active');
+    $('.article-block').addClass('hide');
+
+    $('.tab').eq(index).addClass('active');
+    $('.article-block').eq(index).removeClass('hide');
+   });
+
+</script>
+</body>
+</html>

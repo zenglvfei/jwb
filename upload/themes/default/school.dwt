@@ -45,72 +45,112 @@
     <div class="article-block">
         <div class="article-title">关于我们</div>
         <div class="article-content">
-            <img class="article-img" src="images/aboutus/a.png">
-            <P>
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-            </P>
+            <iframe src="article.php?id=67"></iframe>
         </div>
     </div>
 
     <div class="article-block hide">
         <div class="article-title">师资团队</div>
         <div class="article-content">
-            <img class="article-img" src="images/aboutus/b.png">
-            <P>
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-            </P>
+            <iframe src="article.php?id=68"></iframe>
         </div>
     </div>
 
     <div class="article-block hide">
         <div class="article-title">学院证书</div>
         <div class="article-content">
-            <img class="article-img" src="images/aboutus/c.png">
-            <P>
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-            </P>
+            <iframe src="article.php?id=69"></iframe>
         </div>
     </div>
 
     <div class="article-block hide">
         <div class="article-title">家政创业营</div>
         <div class="article-content">
-            <img class="article-img" src="images/aboutus/d.png">
-            <P>
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-                内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容 内容我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队我们的团队
-            </P>
+            <iframe src="article.php?id=70"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">高级管家培训班</div>
+        <div class="article-content">
+            <iframe src="article.php?id=71"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">家庭服务管理训练营</div>
+        <div class="article-content">
+            <iframe src="article.php?id=72"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">高级保洁师</div>
+        <div class="article-content">
+            <iframe src="article.php?id=73"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">衣橱管理师培训班</div>
+        <div class="article-content">
+            <iframe src="article.php?id=74"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">母婴护理师培训班</div>
+        <div class="article-content">
+            <iframe src="article.php?id=75"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">婴幼儿辅食制作</div>
+        <div class="article-content">
+            <iframe src="article.php?id=76"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">家居养护技能提升班</div>
+        <div class="article-content">
+            <iframe src="article.php?id=77"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">养老护理培训班</div>
+        <div class="article-content">
+            <iframe src="article.php?id=78"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">高端月子餐班</div>
+        <div class="article-content">
+            <iframe src="article.php?id=79"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">婴幼早期教育指导班</div>
+        <div class="article-content">
+            <iframe src="article.php?id=80"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">产后修复师</div>
+        <div class="article-content">
+            <iframe src="article.php?id=81"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">高级无痛催乳师班</div>
+        <div class="article-content">
+            <iframe src="article.php?id=82"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">新爸新妈第一课</div>
+        <div class="article-content">
+            <iframe src="article.php?id=83"></iframe>
+        </div>
+    </div>
+    <div class="article-block hide">
+        <div class="article-title">失能失智老人家属训练营</div>
+        <div class="article-content">
+            <iframe src="article.php?id=84"></iframe>
         </div>
     </div>
 </div>
@@ -118,11 +158,11 @@
 <div class="blank"></div>
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
 
+<script src="js/commonSimple.js"></script>
 <script type="text/javascript">
 
     $('.sub-tab').click(function(e) {
     var index = $('.sub-tab').index(this);
-        console.log(index);
 
     $('.sub-tab').removeClass('active');
     $('.article-block').addClass('hide');
@@ -130,6 +170,7 @@
     $('.sub-tab').eq(index).addClass('active');
     $('.article-block').eq(index).removeClass('hide');
    });
+    iFrameHeight();
 
 </script>
 </body>

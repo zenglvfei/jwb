@@ -16,81 +16,14 @@
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 <div class="life-manager">
-    <div class="left-block">
-        <img src="images/lifeManager/pic1.png" class="img">
-        <div class="content-block">
-            <div class="title">
-                小宝管家
-            </div>
-            <div class="content">
-                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
-                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
-                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
-                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
-                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
-                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
-                小宝管家
-            </div>
-        </div>
-    </div>
-    <div class="banner">
-        <img src="images/lifeManager/banner1.png">
-    </div>
-    <div class="page-content content">
-        中间的内容吧拉来巴拉拉巴拉拉 中间的内容吧拉来巴拉拉巴拉拉 中间的内容吧拉来巴拉拉巴拉拉 中间的内容吧拉来巴拉拉巴拉拉
-        中间的内容吧拉来巴拉拉巴拉拉
-        中间的内容吧拉来巴拉拉巴拉拉
-        中间的内容吧拉来巴拉拉巴拉拉
-        中间的内容吧拉来巴拉拉巴拉拉
-        中间的内容吧拉来巴拉拉巴拉拉
-        中间的内容吧拉来巴拉拉巴拉拉
-        中间的内容吧拉来巴拉拉巴拉拉
-        中间的内容吧拉来巴拉拉巴拉拉
-        中间的内容吧拉来巴拉拉巴拉拉
-        中间的内容吧拉来巴拉拉巴拉拉
-    </div>
-    <div class="banner">
-        <img src="images/lifeManager/banner2.png">
-    </div>
-    <div class="left-block">
-        <img src="images/lifeManager/pic1.png" class="img">
-        <div class="content-block">
-            <div class="title">
-                优渥家成员
-            </div>
-            <div class="content">
-                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
-                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
-                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
-                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
-                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
-                小宝管家 小宝管家 小宝管家 小宝管家 小宝管家 小宝管家
-                小宝管家
-            </div>
-        </div>
-    </div>
-    <div class="banner">
-        <img src="images/lifeManager/banner3.png">
-    </div>
-
+    <iframe src="article.php?id=85"></iframe>
 </div>
 
 <div class="blank"></div>
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
-<script src="js/less.min.js"></script>
-
+<script src="js/commonSimple.js"></script>
 <script type="text/javascript">
-
-    $('.tab').click(function(e) {
-    var index = $('.tab').index(this);
-
-    $('.tab').removeClass('active');
-    $('.article-block').addClass('hide');
-
-    $('.tab').eq(index).addClass('active');
-    $('.article-block').eq(index).removeClass('hide');
-   });
-
+    iFrameHeight();
 </script>
 </body>
 </html>
