@@ -32,15 +32,15 @@
     <div class="article-block">
         <div class="goodsItem">
             <a >
-                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+                <img src="themes/default/images/family/baojie/1.png"  class="goodsimg" />
             </a>
-            <div class="star star1"></div>
+        
             <div class="content">
                 <p>
                     <a href="" title="{$goods.name|escape:html}">
-                        保洁服务
-                        <span class="blue">-专属企业管家，锁定服务人员</span>
-                        <span class="org">-100m 3小时</span>
+                        家庭日常保洁
+                        <span class="blue">-小时工 日常保洁、卧室、卫生间</span>
+                        <span class="org">-会员价：每小时30元</span>
                     </a>
                 </p>
             </div>
@@ -48,15 +48,15 @@
 
         <div class="goodsItem">
             <a >
-                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+                <img src="themes/default/images/family/baojie/2.png"  class="goodsimg" />
             </a>
-            <div class="star star1"></div>
+          
             <div class="content">
                 <p>
                     <a href="" title="{$goods.name|escape:html}">
-                        企业保洁
-                        <span class="blue">-专属企业管家，锁定服务人员</span>
-                        <span class="org">-100m 3小时</span>
+                        家庭深度保洁
+                        <span class="blue">-全屋无死角清洁、高温除菌 专业团队、好评</span>
+                        <span class="org">-会员价：750元起（按平米计费）</span>
                     </a>
                 </p>
             </div>
@@ -65,36 +65,20 @@
 
         <div class="goodsItem">
             <a >
-                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+                <img src="themes/default/images/family/baojie/3.png"  class="goodsimg" />
             </a>
-            <div class="star star1"></div>
+       
             <div class="content">
                 <p>
                     <span href="" title="{$goods.name|escape:html}">
-                        企业保洁
-                        <span class="blue">-专属企业管家，锁定服务人员</span>
-                        <span class="org">-100m 3小时</span>
+                        家务包月
+                        <span class="blue">-保洁、做饭、洗衣</span>
+                        <span class="org">-绑定服务人员</span>
                     </span>
                 </p>
             </div>
         </div>
 
-
-        <div class="goodsItem">
-            <a >
-                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
-            </a>
-            <div class="star star1"></div>
-            <div class="content">
-                <p>
-                    <a href="" title="{$goods.name|escape:html}">
-                        企业保洁
-                        <span class="blue">-专属企业管家，锁定服务人员</span>
-                        <span class="org">-100m 3小时</span>
-                    </a>
-                </p>
-            </div>
-        </div>
     </div>
 
 
@@ -102,33 +86,121 @@
     <div class="article-block hide">
         <div class="goodsItem">
             <a >
-                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+                <img src="themes/default/images/family/jiadian/1.png"  class="goodsimg" />
+            </a>
+
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家电清洗
+                        <span class="blue">-冰箱清洗-除冰、除菌、除味</span>
+                        <span class="org">-会员价：80元起</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		
+		        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiadian/2.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家电清洗
+                        <span class="blue">-电烤箱-高温熏蒸 洁净更彻底</span>
+                        <span class="org">-会员价：98元</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		
+		        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiadian/3.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家电清洗
+                        <span class="blue">-空调清洗 除尘、除菌 防止室内雾霾</span>
+                        <span class="org">-会员价：120元起</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		
+		        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiadian/4.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家电清洗
+                        <span class="blue">-热水器清洗-深度去垢 洗的更健康</span>
+                        <span class="org">-会员价：79元起</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		
+		        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiadian/5.png"  class="goodsimg" />
             </a>
             <div class="star star1"></div>
             <div class="content">
                 <p>
                     <a href="" title="{$goods.name|escape:html}">
                         家电清洗
-                        <span class="blue">-专属企业管家，锁定服务人员</span>
-                        <span class="org">-100m 3小时</span>
+                        <span class="blue">-微波炉清洗 高温熏蒸 洁净更彻底</span>
+                        <span class="org">-会员价：58元</span>
                     </a>
                 </p>
             </div>
         </div>
-    </div>
-
-    <div class="article-block hide">
-        <div class="goodsItem">
+		
+		        <div class="goodsItem">
             <a >
-                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+                <img src="themes/default/images/family/jiadian/6.png"  class="goodsimg" />
             </a>
-            <div class="star star1"></div>
             <div class="content">
                 <p>
                     <a href="" title="{$goods.name|escape:html}">
-                        家居保养
-                        <span class="blue">-专属企业管家，锁定服务人员</span>
-                        <span class="org">-100m 3小时</span>
+                        家电清洗
+                        <span class="blue">-洗衣机清洗 彻底杀菌清洗</span>
+                        <span class="org">-会员价：79元起</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		
+		        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiadian/7.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家电清洗
+                        <span class="blue">-消毒柜清洗 高温熏蒸 洁净更彻底</span>
+                        <span class="org">-会员价：68元起</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		
+		        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiadian/8.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家电清洗
+                        <span class="blue">-油烟机清洗 高温熏蒸 油影无踪</span>
+                        <span class="org"></span>
                     </a>
                 </p>
             </div>
@@ -138,15 +210,171 @@
     <div class="article-block hide">
         <div class="goodsItem">
             <a >
-                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+                <img src="themes/default/images/family/jiajuxihu/1.png"  class="goodsimg" />
             </a>
-            <div class="star star1"></div>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居洗护 
+                        <span class="blue">-擦洗玻璃-专业双门擦洗窗户，亮洁如新-专业</span>
+                        <span class="org">-会员价：每平米12元（十平米起）</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		<div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiajuxihu/2.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居洗护 
+                        <span class="blue">-地板打蜡 进口蜂胶 专业养护</span>
+                        <span class="org">-会员价 每平米15元（29平米起）</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		<div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiajuxihu/3.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居洗护 
+                        <span class="blue">-地毯清洗 持久换新 清洗保养一步到位</span>
+                        <span class="org">-会员价 尼龙每平米40元（20平米起）</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		<div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiajuxihu/4.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居洗护 
+                        <span class="blue">-皮沙发护理 持久换新 清洁保养一步到位</span>
+                        <span class="org">-会员价 深色 80元一座 浅色 90元一座（2座起订）</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		<div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiajuxihu/5.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居洗护 
+                        <span class="blue">-清除甲醛 空气净化 呵护家人健康 </span>
+                        <span class="org">-会员价 每平米45元（1800元起）</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		<div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiajuxihu/6.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居洗护 
+                        <span class="blue">-石材养护 持久换新 清洁保养一步到位</span>
+                        <span class="org">-会员价 每平米20元（300元起）</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="article-block hide">
+        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiajumeihua/1.png"  class="goodsimg" />
+            </a>
             <div class="content">
                 <p>
                     <a href="" title="{$goods.name|escape:html}">
                         家居美化
-                        <span class="blue">-专属企业管家，锁定服务人员</span>
-                        <span class="org">-100m 3小时</span>
+                        <span class="blue">-冰箱物品整理</span>
+                        <span class="org">-会员价 每小时30元</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiajumeihua/2.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居美化
+                        <span class="blue">-橱柜内部清洁</span>
+                        <span class="org">-会员价 100元每米</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiajumeihua/3.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居美化
+                        <span class="blue">-家居软装<</span>
+                        <span class="org"></span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiajumeihua/4.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居美化
+                        <span class="blue">-绿植照料</span>
+                        <span class="org">-会员价 每小时30元</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiajumeihua/5.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居美化
+                        <span class="blue">-书房整理</span>
+                        <span class="org">-会员价 每小时160元</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+		        <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jiajumeihua/6.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        家居美化
+                        <span class="blue">-衣橱整理</span>
+                        <span class="org">-会员价 200元起</span>
                     </a>
                 </p>
             </div>
@@ -154,18 +382,73 @@
     </div>
 
     <div class="article-block hide">
-        <div class="goodsItem">
+	
+	 <div class="goodsItem">
             <a >
-                <img src="themes/default/images/goods/g1.jpg"  class="goodsimg" />
+                <img src="themes/default/images/family/jujia/1.png"  class="goodsimg" />
             </a>
-            <div class="star star1"></div>
             <div class="content">
                 <p>
                     <a href="" title="{$goods.name|escape:html}">
-
                         居家陪护
-                        <span class="blue">-专属企业管家，锁定服务人员</span>
-                        <span class="org">-100m 3小时</span>
+                        <span class="blue">-家庭医生 健康贴心陪护 我们更专业</span>
+                        <span class="org">-5000元起</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+			 <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jujia/2.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        居家陪护
+                        <span class="blue">-家务管理</span>
+                        <span class="org">-4000元起</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+			 <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jujia/3.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        居家陪护
+                        <span class="blue">-居家养老 健康贴心陪护 我们更专业</span>
+                        <span class="org">-4000元起</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+			 <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jujia/4.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        居家陪护
+                        <span class="blue">-母婴护理 健康贴心陪护 我们更专业</span>
+                        <span class="org">-8000元起</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+			 <div class="goodsItem">
+            <a >
+                <img src="themes/default/images/family/jujia/5.png"  class="goodsimg" />
+            </a>
+            <div class="content">
+                <p>
+                    <a href="" title="{$goods.name|escape:html}">
+                        居家陪护
+                        <span class="blue">-育儿早教 健康贴心陪护 我们更专业</span>
+                        <span class="org">-8000元起</span>
                     </a>
                 </p>
             </div>
