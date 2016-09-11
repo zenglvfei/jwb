@@ -102,6 +102,7 @@ if (!$smarty->is_cached('index.dwt', $cache_id))
     $position = assign_ur_here();
     $smarty->assign('page_title',      $position['title']);    // 页面标题
     $smarty->assign('ur_here',         $position['ur_here']);  // 当前位置
+    $smarty->assign('page', 'index');  // 当前位置
 
     /* meta information */
     $smarty->assign('keywords',        htmlspecialchars($_CFG['shop_keywords']));

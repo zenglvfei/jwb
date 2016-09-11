@@ -10,13 +10,13 @@ var process_request = "{$lang.process_request}";
  <div class="header-title log">
    <ul>
         <li id="topNav" class="clearfix">
-            <a href="index.php">首页</a>
-            <a href="family.php">家庭服务</a>
-            <a href="companyService.php">企业服务</a>
-            <a href="lifeManager.php">生活管家</a>
-            <a href="school.php">家务宝学院</a>
-            <a href="channel.php">合作渠道</a>
-            <a href="aboutus.php">家务宝故事</a>
+            <a href="index.php" class="{if $page == 'index'}active{/if}">首页</a>
+            <a href="family.php" class="{if $page == 'family'}active{/if}">家庭服务</a>
+            <a href="companyService.php" class="{if $page == 'companyService'}active{/if}">企业服务</a>
+            <a href="lifeManager.php" class="{if $page == 'lifeManager'}active{/if}">生活管家</a>
+            <a href="school.php" class="{if $page == 'school'}active{/if}">家务宝学院</a>
+            <a href="channel.php" class="{if $page == 'channel'}active{/if}">合作渠道</a>
+            <a href="aboutus.php" class="{if $page == 'aboutus'}active{/if}">家务宝故事</a>
           </li>
    </ul>
  </div>

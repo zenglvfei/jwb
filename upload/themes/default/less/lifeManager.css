@@ -128,6 +128,9 @@ iframe {
   width: 100%;
   height: 100%;
 }
+#topNav .active {
+  color: #00CCFF;
+}
 .life-manager {
   background: #FDFDFD;
 }
