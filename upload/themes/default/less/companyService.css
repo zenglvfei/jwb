@@ -149,9 +149,10 @@ iframe {
 }
 .company-service .slogan .block {
   display: inline-block;
-  width: 24%;
+  width: 22%;
   text-align: center;
   vertical-align: top;
+  margin-left: 20px;
 }
 .company-service .service {
   margin-top: 80px;
