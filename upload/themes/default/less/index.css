@@ -538,3 +538,27 @@ iframe {
 .index .aboutus-block .right .more {
   margin-left: 100px;
 }
+.index .cooperate-block {
+  margin-top: 60px;
+  border-top: 1px solid #CCCCCC;
+  position: relative;
+  padding-top: 40px;
+}
+.index .cooperate-block .title {
+  font-size: 33px;
+  line-height: 32px;
+  color: #666;
+  position: absolute;
+  top: -103px;
+  background: white;
+  left: 454px;
+  padding: 0 40px;
+}
+.index .cooperate-block .img-wrap {
+  display: inline-block;
+}
+.index .cooperate-block .img-wrap img {
+  margin-left: 35px;
+  width: 250px;
+  height: 110px;
+}

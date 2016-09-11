@@ -17,7 +17,7 @@
 {* 包含脚本文件 *}
 {insert_scripts files='common.js,index.js'}
 </head>
-<body class="index">
+<body class="index" style="background: #ffffff">
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 
 
@@ -264,6 +264,43 @@
     </div>
     </div>
 </div>
+
+<div class="block cooperate-block">
+    <div class="title">
+        <div>
+            品牌合作
+        </div>
+        <div>
+            Brand coopertion
+        </div>
+    </div>
+    <div class="logo-content">
+        <div class="img-wrap">
+            <img src="images/index/logo1.png">
+        </div>
+        <div class="img-wrap">
+            <img src="images/index/logo2.png">
+        </div>
+        <div class="img-wrap">
+            <img src="images/index/logo3.png">
+        </div>
+        <div class="img-wrap">
+            <img src="images/index/logo4.png">
+        </div>
+        <div class="img-wrap">
+            <img src="images/index/logo5.png">
+        </div>
+        <div class="img-wrap">
+            <img src="images/index/logo6.png">
+        </div>
+        <div class="img-wrap">
+            <img src="images/index/logo7.png">
+        </div>
+        <div class="img-wrap">
+            <img src="images/index/logo8.png">
+        </div>
+    </div>
+</div>
 <!--<div class="tehui-bg">
     <div class="index-gooder-header">
     </div>
@@ -276,39 +313,6 @@
 
 <div class="block clearfix" >
 
-    <!-- {if $best_goods} -->
-<!-- {if $cat_rec_sign neq 1} -->
-<div class="box">
-<div class="box_2 centerPadd">
-  <div id="show_best_area" class="clearfix goodsBox">
-  <!-- {/if} -->
-  <!--{foreach from=$best_goods item=goods}-->
-<!--  <div class="goodsItem">
-           <a href="{$goods.url}"><img src="{$goods.original_img}" alt="{$goods.name|escape:html}" class="goodsimg" /></a>
-      <div class="content">
-          <p><a href="" title="{$goods.name|escape:html}">{$goods.name}</a></p>
-          <font class="price">
-              &lt;!&ndash; {if $goods.promote_price neq ""} &ndash;&gt;
-              {$goods.promote_price}
-              &lt;!&ndash; {else}&ndash;&gt;
-              {$goods.shop_price}
-              &lt;!&ndash;{/if}&ndash;&gt;
-          </font>
-          <div class="btn btn-org">立即预定</div>
-      </div>
-  </div>-->
-  <!--{/foreach}-->
-
-<!--  <div class="more">
-      <a href="../search.php?intro=best"><img src="images/more.gif" /></a>
-  </div>-->
-  <!-- {if $cat_rec_sign neq 1} -->
-  </div>
-</div>
-</div>
-<div class="blank5"></div>
-  <!-- {/if} -->
-<!-- {/if} -->
 
  <!-- #EndLibraryItem -->
 
