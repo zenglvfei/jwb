@@ -28,7 +28,8 @@
 {* 包含脚本文件 *}
 {insert_scripts files='common.js,index.js'}
 </head>
-<body class="index" style="background: #ffffff">
+<body class="index" style="background: #ffffff;overflow-x:hidden; ">
+
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 <script>
     $(document).ready(function(){
