@@ -1,4 +1,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible"content="IE=9; IE=8;IE=EDGE">
 <script type="text/javascript">
 var process_request = "{$lang.process_request}";
 </script>
@@ -17,7 +19,9 @@ var process_request = "{$lang.process_request}";
             <a href="school.php" class="{if $page == 'school'}active{/if}">家务宝学院</a>
             <a href="channel.php" class="{if $page == 'channel'}active{/if}">合作渠道</a>
             <a href="aboutus.php" class="{if $page == 'aboutus'}active{/if}">家务宝故事</a>
+            <img  class="service-phone" src="images/servicePhone.png"/>
           </li>
    </ul>
  </div>
+
 </div>

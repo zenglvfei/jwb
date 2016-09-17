@@ -261,7 +261,7 @@ h6 span{float:left; padding-left:15px;}
     width: 100%;
     border: 1px solid #C0C1C0;
     margin-bottom: 4px;
-    height: 227px;
+    height: auto;
 }
 .goodsItem img{width:52px; height:17px;}
 .goodsItem p{text-align:left; color:#3f3f3f; margin-bottom: 5px}
@@ -770,5 +770,13 @@ h6 span{float:left; padding-left:15px;}
  }
 .header-logo{
     display: inline-block;
+}
+.header-block .logo {
+    width: 180px;
+    height: 70px;
+    background: url(images/logo1.png) no-repeat 0px 6px;
+}
+.header-logo {
+    margin-top: 10px;
 }
 

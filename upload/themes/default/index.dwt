@@ -277,14 +277,21 @@
                 flashplayer: "js/jwplayer/player.swf",
                 file: "xuanchuanpian.mp4",
                 image: "preview.jpg",
-                width: 500,
-                height:297
+                width: 430,
+                height: 304
 
             });
         </script>
 
     </div>
     </div>
+</div>
+<div class="talk-inline">
+    <img src="images/talk.png" style="width: 100px"/>
+    <p>
+        在线咨询
+    </p>
+
 </div>
 
 <div class="block cooperate-block">
@@ -298,28 +305,31 @@
     </div>
     <div class="logo-content">
         <div class="img-wrap">
-            <img src="images/index/logo1.png">
+            <img src="images/index/logo1.jpg">
         </div>
         <div class="img-wrap">
-            <img src="images/index/logo2.png">
+            <img src="images/index/logo2.jpg">
         </div>
         <div class="img-wrap">
-            <img src="images/index/logo3.png">
+            <img src="images/index/logo3.jpg">
         </div>
         <div class="img-wrap">
-            <img src="images/index/logo4.png">
+            <img src="images/index/logo4.jpg">
         </div>
         <div class="img-wrap">
-            <img src="images/index/logo5.png">
+            <img src="images/index/logo5.jpg">
         </div>
         <div class="img-wrap">
-            <img src="images/index/logo6.png">
+            <img src="images/index/logo6.jpg">
         </div>
         <div class="img-wrap">
-            <img src="images/index/logo7.png">
+            <img src="images/index/logo7.jpg">
         </div>
         <div class="img-wrap">
-            <img src="images/index/logo8.png">
+            <img src="images/index/logo8.jpg">
+        </div>
+        <div class="img-wrap">
+            <img src="images/index/logo9.jpg">
         </div>
     </div>
 </div>
@@ -417,6 +427,10 @@
         $('.scroll-block-hover').eq(index).animate({
             height: '0px'
         })
+    });
+    $('.talk-inline').click(function() {
+        window.open('http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes');
+        //window.open('http://b.qq.com/webc.htm?new=0&sid=391651121&o=http://localhost/ecshop/upload/index.php&q=7', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');
     });
 
 </script>

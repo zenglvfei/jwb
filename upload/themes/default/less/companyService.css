@@ -112,7 +112,7 @@ body {
   top: 10px;
 }
 .goodsItem .content {
-  font-size: 9px;
+  font-size: 14px;
   padding: 3px;
   width: 377px;
   border: 1px solid #C0C1C0;
@@ -130,6 +130,10 @@ iframe {
 }
 #topNav .active {
   color: #00CCFF;
+}
+.service-phone {
+  width: 200px;
+  margin-left: 20px;
 }
 .company-service .title {
   color: #343434;

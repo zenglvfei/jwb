@@ -112,7 +112,7 @@ body {
   top: 10px;
 }
 .goodsItem .content {
-  font-size: 9px;
+  font-size: 14px;
   padding: 3px;
   width: 377px;
   border: 1px solid #C0C1C0;
@@ -131,18 +131,14 @@ iframe {
 #topNav .active {
   color: #00CCFF;
 }
+.service-phone {
+  width: 200px;
+  margin-left: 20px;
+}
 .header-img {
   background: url(../images/banner.jpg) no-repeat center;
   height: 730px;
   position: relative;
-}
-.service-phone {
-  color: white;
-  height: 40px;
-  line-height: 40px;
-  background: #0093dd;
-  text-align: right;
-  padding-right: 15px ;
 }
 .service-phone .big {
   font-size: 25px;
@@ -541,6 +537,9 @@ iframe {
 .index .aboutus-block .right .more {
   margin-left: 100px;
 }
+.index .logo-content {
+  margin-top: 30px;
+}
 .index .cooperate-block {
   margin-top: 60px;
   border-top: 1px solid #CCCCCC;
@@ -562,9 +561,15 @@ iframe {
 }
 .index .cooperate-block .img-wrap img {
   margin-left: 35px;
-  width: 250px;
-  height: 110px;
+  width: 200px;
 }
-.index .header-block .logo {
-  background: url(../images/logo1.png) no-repeat 0px 6px;
+.index .talk-inline {
+  padding: 10px;
+  background: #01A3E5;
+  position: fixed;
+  right: 0px;
+  top: 40%;
+  z-index: 1000;
+  text-align: center;
+  color: white;
 }
